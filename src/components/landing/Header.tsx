@@ -56,14 +56,6 @@ export const Header = () => {
           ))}
         </nav>
         <div className="flex items-center gap-2">
-          <div className="hidden md:flex items-center space-x-2">
-            <Link to="/login">
-              <Button variant="ghost" className="hover:bg-orange-500 hover:text-white">{t("header.login")}</Button>
-            </Link>
-            <Link to="/register">
-              <Button>{t("header.register")}</Button>
-            </Link>
-          </div>
           <ThemeToggle />
           <LanguageSelector />
           <div className="md:hidden">
@@ -87,14 +79,6 @@ export const Header = () => {
                       {link.name}
                     </a>
                   ))}
-                  <div className="flex flex-col space-y-2 pt-6">
-                    <Link to="/login">
-                      <Button variant="ghost" className="w-full hover:bg-orange-500 hover:text-white">{t("header.login")}</Button>
-                    </Link>
-                    <Link to="/register">
-                      <Button className="w-full">{t("header.register")}</Button>
-                    </Link>
-                  </div>
                 </div>
               </SheetContent>
             </Sheet>
