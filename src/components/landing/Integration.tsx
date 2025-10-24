@@ -5,6 +5,7 @@ import { NodeJsIcon } from "@/components/icons/NodeJsIcon";
 import { JavaIcon } from "@/components/icons/JavaIcon";
 import { CSharpIcon } from "@/components/icons/CSharpIcon";
 import { useTranslation } from "react-i18next";
+import { cn } from "@/lib/utils";
 
 export const Integration = () => {
   const { t } = useTranslation();
@@ -40,7 +41,15 @@ export const Integration = () => {
             </div>
             <div className="grid grid-cols-3 gap-4 text-center">
               {languages.map(lang => (
-                <div key={lang.name} className="bg-slate-800/50 p-4 rounded-md flex flex-col items-center justify-center hover:bg-slate-700/50 transition-colors">
+                <div 
+                  key={lang.name} 
+                  className={cn(
+                    "p-4 rounded-md flex flex-col items-center justify-center transition-colors",
+                    lang.name === t("integration.more") 
+                      ? "bg-orange-500 text-white hover:bg-emerald-600 cursor-pointer" 
+                      : "bg-slate-800/50 hover:bg-slate-700/50"
+                  )}
+                >
                   {lang.icon}
                   <span className="text-sm font-medium">{lang.name}</span>
                 </div>
