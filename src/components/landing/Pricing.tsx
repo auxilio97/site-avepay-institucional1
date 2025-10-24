@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
 
 export const Pricing = () => {
@@ -88,7 +88,7 @@ export const Pricing = () => {
               <CardFooter>
                 <Button className="w-full" variant={plan.popular ? 'default' : 'outline'}>Começar agora</Button>
               </CardFooter>
-            </card>
+            </Card>
           ))}
         </div>
       </div>
