@@ -20,10 +20,12 @@ export const Hero = () => {
         <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground mb-10">
           {t("hero.subtitle")}
         </p>
-        <Button size="lg" className="bg-orange-500 hover:bg-primary text-primary-foreground">
-          {t("hero.cta")}
-          <ArrowRight className="ml-2 h-5 w-5" />
-        </Button>
+        <a href="https://avepaygateway.avenatec.it.com" target="_blank" rel="noopener noreferrer">
+          <Button size="lg" className="bg-orange-500 hover:bg-primary text-primary-foreground">
+            {t("hero.cta")}
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+        </a>
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {stats.map((stat) => (
             <div key={stat.label}>

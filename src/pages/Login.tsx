@@ -40,12 +40,14 @@ const Login = () => {
           </div>
         </CardContent>
         <CardFooter className="flex flex-col">
-          <Button className="w-full">Entrar</Button>
+          <a href="https://avepaygateway.avenatec.it.com" target="_blank" rel="noopener noreferrer" className="w-full">
+            <Button className="w-full">Entrar</Button>
+          </a>
           <div className="mt-4 text-center text-sm">
             Não tem uma conta?{" "}
-            <Link to="/register" className="underline">
+            <a href="https://avepaygateway.avenatec.it.com" target="_blank" rel="noopener noreferrer" className="underline">
               Registar
-            </Link>
+            </a>
           </div>
         </CardFooter>
       </Card>

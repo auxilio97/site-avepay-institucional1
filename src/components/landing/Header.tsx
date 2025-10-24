@@ -57,12 +57,12 @@ export const Header = () => {
         </nav>
         <div className="flex items-center gap-2">
           <div className="hidden md:flex items-center space-x-2">
-            <Link to="/login">
+            <a href="https://avepaygateway.avenatec.it.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="hover:bg-orange-500 hover:text-white">{t("header.login")}</Button>
-            </Link>
-            <Link to="/register">
+            </a>
+            <a href="https://avepaygateway.avenatec.it.com" target="_blank" rel="noopener noreferrer">
               <Button>{t("header.register")}</Button>
-            </Link>
+            </a>
           </div>
           <ThemeToggle />
           <LanguageSelector />
@@ -88,12 +88,12 @@ export const Header = () => {
                     </a>
                   ))}
                   <div className="flex flex-col space-y-2 pt-6">
-                    <Link to="/login">
+                    <a href="https://avepaygateway.avenatec.it.com" target="_blank" rel="noopener noreferrer" className="w-full">
                       <Button variant="ghost" className="w-full hover:bg-orange-500 hover:text-white">{t("header.login")}</Button>
-                    </Link>
-                    <Link to="/register">
+                    </a>
+                    <a href="https://avepaygateway.avenatec.it.com" target="_blank" rel="noopener noreferrer" className="w-full">
                       <Button className="w-full">{t("header.register")}</Button>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </SheetContent>

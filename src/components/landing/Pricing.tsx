@@ -107,7 +107,9 @@ export const Pricing = () => {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button className={cn("w-full", plan.buttonClasses)}>{t("pricing.cta")}</Button>
+                <a href="https://avepaygateway.avenatec.it.com" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button className={cn("w-full", plan.buttonClasses)}>{t("pricing.cta")}</Button>
+                </a>
               </CardFooter>
             </Card>
           ))}

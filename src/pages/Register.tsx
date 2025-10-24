@@ -44,12 +44,14 @@ const Register = () => {
           </div>
         </CardContent>
         <CardFooter className="flex flex-col">
-          <Button className="w-full">Criar Conta</Button>
+          <a href="https://avepaygateway.avenatec.it.com" target="_blank" rel="noopener noreferrer" className="w-full">
+            <Button className="w-full">Criar Conta</Button>
+          </a>
           <div className="mt-4 text-center text-sm">
             Já tem uma conta?{" "}
-            <Link to="/login" className="underline">
+            <a href="https://avepaygateway.avenatec.it.com" target="_blank" rel="noopener noreferrer" className="underline">
               Entrar
-            </Link>
+            </a>
           </div>
         </CardFooter>
       </Card>

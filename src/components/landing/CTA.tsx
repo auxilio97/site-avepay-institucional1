@@ -19,7 +19,9 @@ export const CTA = () => {
           <div className="max-w-lg mx-auto">
             <div className="flex flex-col sm:flex-row gap-2 mb-4">
               <Input type="email" placeholder={t("cta.placeholder")} className="flex-grow" />
-              <Button type="submit" size="lg" className="bg-orange-500 hover:bg-primary text-white">{t("cta.button")}</Button>
+              <a href="https://avepaygateway.avenatec.it.com" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-orange-500 hover:bg-primary text-white">{t("cta.button")}</Button>
+              </a>
             </div>
             <div className="flex items-center justify-center space-x-2 mb-6">
               <Checkbox id="terms" />
