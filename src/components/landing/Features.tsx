@@ -1,27 +1,29 @@
 import { Globe, CreditCard, Zap, Percent } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { useTranslation } from "react-i18next";
 
 export const Features = () => {
+  const { t } = useTranslation();
   const features = [
     {
       icon: <Globe className="h-8 w-8 text-primary" />,
-      title: "Alcance Global",
-      description: "Opere em mais de 180 países com suporte a múltiplas moedas.",
+      title: t("features.items.global.title"),
+      description: t("features.items.global.description"),
     },
     {
       icon: <CreditCard className="h-8 w-8 text-primary" />,
-      title: "Múltiplos Métodos",
-      description: "Aceite Visa, Mastercard, PIX, MBWay e muito mais.",
+      title: t("features.items.methods.title"),
+      description: t("features.items.methods.description"),
     },
     {
       icon: <Zap className="h-8 w-8 text-primary" />,
-      title: "Conversão Inteligente",
-      description: "Receba em Kwanza e saque em qualquer moeda global.",
+      title: t("features.items.conversion.title"),
+      description: t("features.items.conversion.description"),
     },
     {
       icon: <Percent className="h-8 w-8 text-primary" />,
-      title: "Taxas Competitivas",
-      description: "A partir de 0.95% + IVA com mensalidade isenta.",
+      title: t("features.items.rates.title"),
+      description: t("features.items.rates.description"),
     },
   ];
 
@@ -30,10 +32,10 @@ export const Features = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Soluções poderosas para empresas modernas
+            {t("features.title")}
           </h2>
           <p className="text-muted-foreground text-lg mb-12">
-            A AvePay permite cobrar em Kwanza (AOA) e sacar para qualquer conta no mundo, em dólar, euro, real, yuan, cripto e libra. Na fase inicial, suporta Visa e Mastercard.
+            {t("features.subtitle")}
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

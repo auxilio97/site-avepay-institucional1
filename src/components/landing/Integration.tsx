@@ -2,31 +2,28 @@ import { CheckCircle, Coffee, Hash, PlusCircle } from "lucide-react";
 import { PythonIcon } from "@/components/icons/PythonIcon";
 import { PhpIcon } from "@/components/icons/PhpIcon";
 import { NodeJsIcon } from "@/components/icons/NodeJsIcon";
+import { useTranslation } from "react-i18next";
 
 export const Integration = () => {
+  const { t } = useTranslation();
   const languages = [
     { name: "Python", icon: <PythonIcon className="h-8 w-8 mb-2" /> },
     { name: "PHP", icon: <PhpIcon className="h-8 w-8 mb-2" /> },
     { name: "Node.js", icon: <NodeJsIcon className="h-8 w-8 mb-2" /> },
     { name: "Java", icon: <Coffee className="h-8 w-8 mb-2" /> },
     { name: "C#", icon: <Hash className="h-8 w-8 mb-2" /> },
-    { name: "+ Mais", icon: <PlusCircle className="h-8 w-8 mb-2" /> },
+    { name: t("integration.more"), icon: <PlusCircle className="h-8 w-8 mb-2" /> },
   ];
-  const features = [
-    "Guias passo a passo",
-    "Exemplos de código",
-    "Sandbox para testes",
-    "Suporte técnico dedicado",
-  ];
+  const features = t("integration.features", { returnObjects: true }) as string[];
 
   return (
     <section className="py-20 md:py-28">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Integre a AvePay ao seu negócio</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("integration.title")}</h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Integre a AvePay ao seu site, app ou sistema com nossa API multilíngue segura e bem documentada. Comece a aceitar pagamentos em minutos.
+              {t("integration.subtitle")}
             </p>
             <div className="space-y-3">
               {features.map(feature => (
@@ -38,7 +35,7 @@ export const Integration = () => {
             </div>
           </div>
           <div className="bg-slate-900 text-slate-100 p-8 rounded-lg">
-            <h3 className="text-xl font-semibold mb-6">Documentação Completa</h3>
+            <h3 className="text-xl font-semibold mb-6">{t("integration.docs_title")}</h3>
             <div className="grid grid-cols-3 gap-4 text-center">
               {languages.map(lang => (
                 <div key={lang.name} className="bg-slate-800 p-4 rounded-md flex flex-col items-center justify-center">

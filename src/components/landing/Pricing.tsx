@@ -1,43 +1,45 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export const Pricing = () => {
+  const { t } = useTranslation();
   const plans = [
     {
-      name: "Ofetikilo",
+      name: t("pricing.plans.ofetikilo.name"),
       adhesion: "4.999 Kz",
-      methods: "Express (QR e Mobile)",
+      methods: t("pricing.plans.ofetikilo.methods"),
       taxa: "0,95% + IVA",
-      mensalidade: "Isenta",
-      features: ["Pagamento via QR Code", "Mobile Money", "Suporte básico"],
+      mensalidade: t("pricing.exempt"),
+      features: t("pricing.plans.ofetikilo.features", { returnObjects: true }) as string[],
       popular: false,
     },
     {
-      name: "Jikulomesso",
+      name: t("pricing.plans.jikulomesso.name"),
       adhesion: "9.999 Kz",
-      methods: "Express, Unitel Money, Referências Kwanza",
+      methods: t("pricing.plans.jikulomesso.methods"),
       taxa: "0,95% + IVA",
-      mensalidade: "Isenta",
-      features: ["Todos os métodos Express", "Unitel Money", "Referências Kwanza", "Suporte prioritário"],
+      mensalidade: t("pricing.exempt"),
+      features: t("pricing.plans.jikulomesso.features", { returnObjects: true }) as string[],
       popular: false,
     },
     {
-      name: "Kintungu",
+      name: t("pricing.plans.kintungu.name"),
       adhesion: "12.999 Kz",
-      methods: "Express, Unitel Money, Referências, Criptomoedas",
+      methods: t("pricing.plans.kintungu.methods"),
       taxa: "0,95% + IVA",
-      mensalidade: "Isenta",
-      features: ["Todos os métodos anteriores", "Pagamento com Cripto", "Dashboard avançado", "API completa"],
+      mensalidade: t("pricing.exempt"),
+      features: t("pricing.plans.kintungu.features", { returnObjects: true }) as string[],
       popular: true,
     },
     {
-      name: "Global",
+      name: t("pricing.plans.global.name"),
       adhesion: "67.989 Kz",
-      methods: "Visa, Mastercard, Amex, UnionPay, PIX, MBWay, Skrill, Neteller, SEPA",
-      taxa: "0,95% + IVA (Kwanza)",
-      mensalidade: "Isenta",
-      features: ["Todos os cartões internacionais", "Métodos globais", "Multi-moeda", "Suporte 24/7"],
+      methods: t("pricing.plans.global.methods"),
+      taxa: t("pricing.plans.global.rate"),
+      mensalidade: t("pricing.exempt"),
+      features: t("pricing.plans.global.features", { returnObjects: true }) as string[],
       popular: false,
     },
   ];
@@ -47,32 +49,32 @@ export const Pricing = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Planos para cada tipo de negócio
+            {t("pricing.title")}
           </h2>
           <p className="text-muted-foreground text-lg mb-12">
-            Escolha o plano ideal para sua empresa e comece a aceitar pagamentos hoje mesmo.
+            {t("pricing.subtitle")}
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
           {plans.map((plan) => (
             <Card key={plan.name} className={`flex flex-col h-full transition-all duration-300 hover:-translate-y-2 ${plan.popular ? 'border-primary border-2 shadow-lg' : 'shadow-md'}`}>
-              {plan.popular && <div className="bg-primary text-primary-foreground text-center text-sm font-bold py-1 rounded-t-md">Mais Popular</div>}
+              {plan.popular && <div className="bg-primary text-primary-foreground text-center text-sm font-bold py-1 rounded-t-md">{t("pricing.popular")}</div>}
               <CardHeader>
                 <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>
-                <p className="text-4xl font-bold pt-4">{plan.adhesion}<span className="text-sm font-normal text-muted-foreground"> / adesão</span></p>
+                <p className="text-4xl font-bold pt-4">{plan.adhesion}<span className="text-sm font-normal text-muted-foreground"> / {t("pricing.adhesion")}</span></p>
               </CardHeader>
               <CardContent className="flex-grow">
                 <div className="space-y-4 mb-6 border-t pt-4">
                   <div>
-                    <p className="text-sm font-semibold">Métodos:</p>
+                    <p className="text-sm font-semibold">{t("pricing.methods")}</p>
                     <p className="text-sm text-muted-foreground">{plan.methods}</p>
                   </div>
                   <div>
-                    <p className="text-sm font-semibold">Taxa:</p>
+                    <p className="text-sm font-semibold">{t("pricing.rate")}</p>
                     <p className="text-sm text-muted-foreground">{plan.taxa}</p>
                   </div>
                   <div>
-                    <p className="text-sm font-semibold">Mensalidade:</p>
+                    <p className="text-sm font-semibold">{t("pricing.monthly_fee")}</p>
                     <p className="text-sm text-muted-foreground">{plan.mensalidade}</p>
                   </div>
                 </div>
@@ -86,7 +88,7 @@ export const Pricing = () => {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button className="w-full" variant={plan.popular ? 'default' : 'outline'}>Começar agora</Button>
+                <Button className="w-full" variant={plan.popular ? 'default' : 'outline'}>{t("pricing.cta")}</Button>
               </CardFooter>
             </Card>
           ))}

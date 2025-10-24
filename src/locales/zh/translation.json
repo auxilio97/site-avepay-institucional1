@@ -7,5 +7,163 @@
     "contact": "联系",
     "login": "登录",
     "register": "注册我的业务"
+  },
+  "hero": {
+    "title": "为扩张中企业打造的全球支付与金融平台",
+    "subtitle": "超过15,000家公司信赖AvePay来管理财务和全球扩张。在单一平台上开设商业账户、接受付款并控制支出。",
+    "cta": "立即开始",
+    "stats": {
+      "companies": "公司",
+      "countries": "国家",
+      "processed": "已处理"
+    }
+  },
+  "features": {
+    "title": "为现代企业提供强大的解决方案",
+    "subtitle": "AvePay允许您以宽扎（AOA）收费，并提取到世界上任何账户，支持美元、欧元、雷亚尔、人民币、加密货币和英镑。初期支持Visa和万事达卡。",
+    "items": {
+      "global": {
+        "title": "全球覆盖",
+        "description": "在超过180个国家运营，支持多种货币。"
+      },
+      "methods": {
+        "title": "多种方式",
+        "description": "接受Visa、万事达卡、PIX、MBWay等多种支付方式。"
+      },
+      "conversion": {
+        "title": "智能转换",
+        "description": "以宽扎收款，以任何全球货币提款。"
+      },
+      "rates": {
+        "title": "有竞争力的费率",
+        "description": "从0.95% + 增值税起，免月费。"
+      }
+    }
+  },
+  "solutions": {
+    "title": "AvePay解决方案",
+    "subtitle": "您的企业全球发展所需的一切",
+    "items": [
+      "商业账户",
+      "AvePay支出",
+      "支付",
+      "金融API"
+    ],
+    "dashboard_uptime": "AvePay仪表板 - 99.9%正常运行时间",
+    "stats": {
+      "local_receipts": "国家提供本地收款",
+      "direct_transfers": "国家提供直接转账",
+      "processed_annually": "每年处理",
+      "active_markets": "活跃市场"
+    },
+    "unified_platform": {
+      "title": "统一平台",
+      "description": "您的企业所需的一切——账户、支付、支出和转账——尽在一个集成且易于使用的平台中。",
+      "features": [
+        "全球商业账户",
+        "多币种支付",
+        "智能支出控制",
+        "国际转账",
+        "强大且安全的API",
+        "直观的仪表板"
+      ]
+    }
+  },
+  "pricing": {
+    "title": "适合各类业务的计划",
+    "subtitle": "为您的公司选择理想的计划，立即开始接受付款。",
+    "adhesion": "一次性费用",
+    "methods": "方式：",
+    "rate": "费率：",
+    "monthly_fee": "月费：",
+    "exempt": "豁免",
+    "popular": "最受欢迎",
+    "cta": "开始",
+    "plans": {
+      "ofetikilo": {
+        "name": "Ofetikilo",
+        "methods": "快捷支付（二维码和移动）",
+        "features": ["二维码支付", "移动货币", "基本支持"]
+      },
+      "jikulomesso": {
+        "name": "Jikulomesso",
+        "methods": "快捷支付、Unitel Money、宽扎参考",
+        "features": ["所有快捷支付方式", "Unitel Money", "宽扎参考", "优先支持"]
+      },
+      "kintungu": {
+        "name": "Kintungu",
+        "methods": "快捷支付、Unitel Money、参考、加密货币",
+        "features": ["所有先前的方式", "加密货币支付", "高级仪表板", "完整API"]
+      },
+      "global": {
+        "name": "全球",
+        "methods": "Visa、万事达卡、美国运通、银联、PIX、MBWay、Skrill、Neteller、SEPA",
+        "rate": "0.95% + 增值税（宽扎）",
+        "features": ["所有国际卡", "全球方式", "多币种", "24/7支持"]
+      }
+    }
+  },
+  "testimonials": {
+    "title": "客户评价",
+    "subtitle": "全球各地的公司都信赖AvePay来管理他们的付款",
+    "items": [
+      {
+        "quote": "AvePay降低了我们的成本，加快了收款速度。集成简单，支持非常出色。",
+        "name": "Maria Santos",
+        "title": "TechStart Angola首席执行官"
+      },
+      {
+        "quote": "我们在不到一周的时间内集成了全球支付。该平台直观，API文档非常完善。",
+        "name": "João Ferreira",
+        "title": "Commerce Solutions首席技术官"
+      },
+      {
+        "quote": "API安全且实施迅速。我们的公司在短短3个月内扩展到5个新国家。",
+        "name": "Carlos Mendes",
+        "title": "Global Exports创始人"
+      }
+    ]
+  },
+  "integration": {
+    "title": "将AvePay集成到您的业务中",
+    "subtitle": "通过我们安全且文档齐全的多语言API，将AvePay集成到您的网站、应用程序或系统中。在几分钟内开始接受付款。",
+    "features": [
+      "分步指南",
+      "代码示例",
+      "用于测试的沙箱",
+      "专门的技术支持"
+    ],
+    "docs_title": "完整文档",
+    "more": "+ 更多"
+  },
+  "cta": {
+    "title": "准备好开始了吗？",
+    "subtitle": "创建您的免费账户，在几分钟内开始接受付款",
+    "placeholder": "您的企业邮箱",
+    "button": "创建账户 →",
+    "agreement": "我同意接收AvePay关于产品、服务和活动的通讯",
+    "terms": "创建账户即表示您同意我们的服务条款和隐私政策",
+    "compliance": [
+      "PCI DSS认证",
+      "SOC1和SOC2",
+      "SSL加密"
+    ]
+  },
+  "footer": {
+    "description": "为扩张中企业打造的全球支付与金融平台。接受宽扎付款，并以世界上任何货币提款。",
+    "products": {
+      "title": "产品",
+      "items": ["商业账户", "AvePay支出", "支付", "金融API"]
+    },
+    "company": {
+      "title": "公司",
+      "items": ["关于我们", "招聘", "新闻", "合作伙伴"]
+    },
+    "resources": {
+      "title": "资源",
+      "items": ["文档", "博客", "支持", "状态"]
+    },
+    "copyright": "© AvePay 2025 – 版权所有。由Avenatec LDA创建和开发",
+    "legal": "资金存放在安全且受监管的金融机构中。支付服务由AvePay Angola, Lda.提供。"
   }
 }

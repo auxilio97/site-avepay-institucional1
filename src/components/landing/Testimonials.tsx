@@ -1,38 +1,31 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { useTranslation } from "react-i18next";
+
+interface Testimonial {
+  quote: string;
+  name: string;
+  title: string;
+  avatar: string;
+}
 
 export const Testimonials = () => {
-  const testimonials = [
-    {
-      quote: "A AvePay reduziu nossos custos e acelerou recebimentos. A integração foi simples e o suporte é excepcional.",
-      name: "Maria Santos",
-      title: "CEO, TechStart Angola",
-      avatar: "MS",
-    },
-    {
-      quote: "Integramos pagamentos globais em menos de uma semana. A plataforma é intuitiva e as APIs são muito bem documentadas.",
-      name: "João Ferreira",
-      title: "CTO, Commerce Solutions",
-      avatar: "JF",
-    },
-    {
-      quote: "As APIs são seguras e rápidas de implementar. Nossa empresa expandiu para 5 novos países em apenas 3 meses.",
-      name: "Carlos Mendes",
-      title: "Founder, Global Exports",
-      avatar: "CM",
-    },
-  ];
+  const { t } = useTranslation();
+  const testimonials: Testimonial[] = t("testimonials.items", { returnObjects: true }).map((item: Omit<Testimonial, 'avatar'>) => ({
+    ...item,
+    avatar: item.name.split(' ').map(n => n[0]).join('')
+  }));
 
   return (
     <section className="py-20 md:py-28 bg-slate-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            O que nossos clientes dizem
+            {t("testimonials.title")}
           </h2>
           <p className="text-muted-foreground text-lg mb-12">
-            Empresas de todo o mundo confiam na AvePay para gerenciar seus pagamentos
+            {t("testimonials.subtitle")}
           </p>
         </div>
         <Carousel opts={{ loop: true }} className="w-full max-w-4xl mx-auto">

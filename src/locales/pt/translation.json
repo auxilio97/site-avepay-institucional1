@@ -7,5 +7,163 @@
     "contact": "Contato",
     "login": "Entrar",
     "register": "Cadastrar Meu Negócio"
+  },
+  "hero": {
+    "title": "A plataforma global de pagamentos e finanças para empresas em expansão",
+    "subtitle": "Mais de 15.000 empresas confiam na AvePay para gerenciar finanças e expandir globalmente. Abra contas comerciais, aceite pagamentos e controle gastos em uma única plataforma.",
+    "cta": "Comece agora",
+    "stats": {
+      "companies": "Empresas",
+      "countries": "Países",
+      "processed": "Processados"
+    }
+  },
+  "features": {
+    "title": "Soluções poderosas para empresas modernas",
+    "subtitle": "A AvePay permite cobrar em Kwanza (AOA) e sacar para qualquer conta no mundo, em dólar, euro, real, yuan, cripto e libra. Na fase inicial, suporta Visa e Mastercard.",
+    "items": {
+      "global": {
+        "title": "Alcance Global",
+        "description": "Opere em mais de 180 países com suporte a múltiplas moedas."
+      },
+      "methods": {
+        "title": "Múltiplos Métodos",
+        "description": "Aceite Visa, Mastercard, PIX, MBWay e muito mais."
+      },
+      "conversion": {
+        "title": "Conversão Inteligente",
+        "description": "Receba em Kwanza e saque em qualquer moeda global."
+      },
+      "rates": {
+        "title": "Taxas Competitivas",
+        "description": "A partir de 0.95% + IVA com mensalidade isenta."
+      }
+    }
+  },
+  "solutions": {
+    "title": "Soluções AvePay",
+    "subtitle": "Tudo o que sua empresa precisa para crescer globalmente",
+    "items": [
+      "Contas Comerciais",
+      "AvePay Spend",
+      "Pagamentos",
+      "APIs Financeiras"
+    ],
+    "dashboard_uptime": "AvePay Dashboard - 99.9% Uptime",
+    "stats": {
+      "local_receipts": "países com recebimentos locais",
+      "direct_transfers": "países com transferências diretas",
+      "processed_annually": "processados por ano",
+      "active_markets": "mercados de atuação"
+    },
+    "unified_platform": {
+      "title": "Plataforma Unificada",
+      "description": "Tudo o que sua empresa precisa — contas, pagamentos, gastos e transferências — em uma única plataforma integrada e fácil de usar.",
+      "features": [
+        "Contas comerciais globais",
+        "Pagamentos em múltiplas moedas",
+        "Controle de gastos inteligente",
+        "Transferências internacionais",
+        "APIs robustas e seguras",
+        "Dashboard intuitivo"
+      ]
+    }
+  },
+  "pricing": {
+    "title": "Planos para cada tipo de negócio",
+    "subtitle": "Escolha o plano ideal para sua empresa e comece a aceitar pagamentos hoje mesmo.",
+    "adhesion": "adesão",
+    "methods": "Métodos:",
+    "rate": "Taxa:",
+    "monthly_fee": "Mensalidade:",
+    "exempt": "Isenta",
+    "popular": "Mais Popular",
+    "cta": "Começar agora",
+    "plans": {
+      "ofetikilo": {
+        "name": "Ofetikilo",
+        "methods": "Express (QR e Mobile)",
+        "features": ["Pagamento via QR Code", "Mobile Money", "Suporte básico"]
+      },
+      "jikulomesso": {
+        "name": "Jikulomesso",
+        "methods": "Express, Unitel Money, Referências Kwanza",
+        "features": ["Todos os métodos Express", "Unitel Money", "Referências Kwanza", "Suporte prioritário"]
+      },
+      "kintungu": {
+        "name": "Kintungu",
+        "methods": "Express, Unitel Money, Referências, Criptomoedas",
+        "features": ["Todos os métodos anteriores", "Pagamento com Cripto", "Dashboard avançado", "API completa"]
+      },
+      "global": {
+        "name": "Global",
+        "methods": "Visa, Mastercard, Amex, UnionPay, PIX, MBWay, Skrill, Neteller, SEPA",
+        "rate": "0,95% + IVA (Kwanza)",
+        "features": ["Todos os cartões internacionais", "Métodos globais", "Multi-moeda", "Suporte 24/7"]
+      }
+    }
+  },
+  "testimonials": {
+    "title": "O que nossos clientes dizem",
+    "subtitle": "Empresas de todo o mundo confiam na AvePay para gerenciar seus pagamentos",
+    "items": [
+      {
+        "quote": "A AvePay reduziu nossos custos e acelerou recebimentos. A integração foi simples e o suporte é excepcional.",
+        "name": "Maria Santos",
+        "title": "CEO, TechStart Angola"
+      },
+      {
+        "quote": "Integramos pagamentos globais em menos de uma semana. A plataforma é intuitiva e as APIs são muito bem documentadas.",
+        "name": "João Ferreira",
+        "title": "CTO, Commerce Solutions"
+      },
+      {
+        "quote": "As APIs são seguras e rápidas de implementar. Nossa empresa expandiu para 5 novos países em apenas 3 meses.",
+        "name": "Carlos Mendes",
+        "title": "Founder, Global Exports"
+      }
+    ]
+  },
+  "integration": {
+    "title": "Integre a AvePay ao seu negócio",
+    "subtitle": "Integre a AvePay ao seu site, app ou sistema com nossa API multilíngue segura e bem documentada. Comece a aceitar pagamentos em minutos.",
+    "features": [
+      "Guias passo a passo",
+      "Exemplos de código",
+      "Sandbox para testes",
+      "Suporte técnico dedicado"
+    ],
+    "docs_title": "Documentação Completa",
+    "more": "+ Mais"
+  },
+  "cta": {
+    "title": "Pronto para começar?",
+    "subtitle": "Crie sua conta gratuita e comece a aceitar pagamentos em minutos",
+    "placeholder": "Seu e-mail comercial",
+    "button": "Criar Conta →",
+    "agreement": "Concordo em receber comunicações da AvePay sobre produtos, serviços e eventos",
+    "terms": "Ao criar uma conta, você concorda com nossos Termos de Serviço e Política de Privacidade",
+    "compliance": [
+      "PCI DSS Certificado",
+      "SOC1 & SOC2",
+      "Criptografia SSL"
+    ]
+  },
+  "footer": {
+    "description": "A plataforma global de pagamentos e finanças para empresas em expansão. Aceite pagamentos em Kwanza e saque para qualquer moeda do mundo.",
+    "products": {
+      "title": "Produtos",
+      "items": ["Contas Comerciais", "AvePay Spend", "Pagamentos", "APIs Financeiras"]
+    },
+    "company": {
+      "title": "Empresa",
+      "items": ["Sobre Nós", "Carreiras", "Imprensa", "Parceiros"]
+    },
+    "resources": {
+      "title": "Recursos",
+      "items": ["Documentação", "Blog", "Suporte", "Status"]
+    },
+    "copyright": "© AvePay 2025 – Todos os direitos reservados. Criado e desenvolvido pela: Avenatec LDA",
+    "legal": "Fundos mantidos em instituições financeiras seguras e regulamentadas. Serviços de pagamento fornecidos pela AvePay Angola, Lda."
   }
 }
