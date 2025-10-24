@@ -1,7 +1,9 @@
-import { CheckCircle, Coffee, Hash, PlusCircle } from "lucide-react";
+import { CheckCircle, PlusCircle } from "lucide-react";
 import { PythonIcon } from "@/components/icons/PythonIcon";
 import { PhpIcon } from "@/components/icons/PhpIcon";
 import { NodeJsIcon } from "@/components/icons/NodeJsIcon";
+import { JavaIcon } from "@/components/icons/JavaIcon";
+import { CSharpIcon } from "@/components/icons/CSharpIcon";
 import { useTranslation } from "react-i18next";
 
 export const Integration = () => {
@@ -10,8 +12,8 @@ export const Integration = () => {
     { name: "Python", icon: <PythonIcon className="h-8 w-8 mb-2" /> },
     { name: "PHP", icon: <PhpIcon className="h-8 w-8 mb-2" /> },
     { name: "Node.js", icon: <NodeJsIcon className="h-8 w-8 mb-2" /> },
-    { name: "Java", icon: <Coffee className="h-8 w-8 mb-2" /> },
-    { name: "C#", icon: <Hash className="h-8 w-8 mb-2" /> },
+    { name: "Java", icon: <JavaIcon className="h-8 w-8 mb-2" /> },
+    { name: "C#", icon: <CSharpIcon className="h-8 w-8 mb-2" /> },
     { name: t("integration.more"), icon: <PlusCircle className="h-8 w-8 mb-2" /> },
   ];
   const features = t("integration.features", { returnObjects: true }) as string[];
