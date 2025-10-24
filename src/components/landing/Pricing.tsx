@@ -8,7 +8,8 @@ export const Pricing = () => {
   const { t } = useTranslation();
   const plans = [
     {
-      icon: <Smartphone className="h-10 w-10 mb-4 text-orange-500" />,
+      icon: <Smartphone className="h-10 w-10 text-orange-500" />,
+      frameColor: "bg-orange-500",
       name: t("pricing.plans.ofetikilo.name"),
       adhesion: "4.999 Kz",
       methods: t("pricing.plans.ofetikilo.methods"),
@@ -20,7 +21,8 @@ export const Pricing = () => {
       buttonClasses: "bg-orange-500 hover:bg-orange-600 text-white",
     },
     {
-      icon: <Wallet className="h-10 w-10 mb-4 text-blue-500" />,
+      icon: <Wallet className="h-10 w-10 text-blue-500" />,
+      frameColor: "bg-blue-500",
       name: t("pricing.plans.jikulomesso.name"),
       adhesion: "9.999 Kz",
       methods: t("pricing.plans.jikulomesso.methods"),
@@ -32,7 +34,8 @@ export const Pricing = () => {
       buttonClasses: "bg-blue-500 hover:bg-orange-500 text-white",
     },
     {
-      icon: <Gem className="h-10 w-10 mb-4 text-purple-600" />,
+      icon: <Gem className="h-10 w-10 text-purple-600" />,
+      frameColor: "bg-purple-600",
       name: t("pricing.plans.kintungu.name"),
       adhesion: "12.999 Kz",
       methods: t("pricing.plans.kintungu.methods"),
@@ -40,11 +43,12 @@ export const Pricing = () => {
       mensalidade: t("pricing.exempt"),
       features: t("pricing.plans.kintungu.features", { returnObjects: true }) as string[],
       popular: true,
-      borderColor: "border-blue-500",
+      borderColor: "border-purple-600",
       buttonClasses: "bg-purple-600 hover:bg-orange-500 text-white",
     },
     {
-      icon: <Globe className="h-10 w-10 mb-4 text-green-500" />,
+      icon: <Globe className="h-10 w-10 text-green-500" />,
+      frameColor: "bg-green-500",
       name: t("pricing.plans.global.name"),
       adhesion: "67.989 Kz",
       methods: t("pricing.plans.global.methods"),
@@ -74,6 +78,7 @@ export const Pricing = () => {
               {plan.popular && <div className="bg-primary text-primary-foreground text-center text-sm font-bold py-1 rounded-t-md">{t("pricing.popular")}</div>}
               <CardHeader className="items-center text-center">
                 {plan.icon}
+                <div className={cn("w-1/4 h-1 rounded-full mb-4", plan.frameColor)} />
                 <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>
                 <p className="text-4xl font-bold pt-4">{plan.adhesion}<span className="text-sm font-normal text-muted-foreground"> / {t("pricing.adhesion")}</span></p>
               </CardHeader>
