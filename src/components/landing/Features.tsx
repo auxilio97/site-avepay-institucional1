@@ -38,7 +38,7 @@ export const Features = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature) => (
-            <Card key={feature.title} className="text-center border-none shadow-lg hover:shadow-xl transition-shadow">
+            <Card key={feature.title} className="text-center border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <CardHeader>
                 <div className="mx-auto bg-primary/10 p-3 rounded-full">
                   {feature.icon}

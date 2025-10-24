@@ -55,7 +55,7 @@ export const Pricing = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
           {plans.map((plan) => (
-            <Card key={plan.name} className={`flex flex-col h-full ${plan.popular ? 'border-primary border-2 shadow-lg' : ''}`}>
+            <Card key={plan.name} className={`flex flex-col h-full transition-all duration-300 hover:-translate-y-2 ${plan.popular ? 'border-primary border-2 shadow-lg' : 'shadow-md'}`}>
               {plan.popular && <div className="bg-primary text-primary-foreground text-center text-sm font-bold py-1 rounded-t-md">Mais Popular</div>}
               <CardHeader>
                 <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>

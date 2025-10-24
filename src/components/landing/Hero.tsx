@@ -17,7 +17,7 @@ export const Hero = () => {
         <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground mb-10">
           Mais de 15.000 empresas confiam na AvePay para gerenciar finanças e expandir globalmente. Abra contas comerciais, aceite pagamentos e controle gastos em uma única plataforma.
         </p>
-        <Button size="lg">
+        <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
           Comece agora
           <ArrowRight className="ml-2 h-5 w-5" />
         </Button>
