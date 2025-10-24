@@ -1,0 +1,11 @@
+{
+  "header": {
+    "product": "Product",
+    "services": "Services",
+    "solutions": "Solutions",
+    "howItWorks": "How It Works",
+    "contact": "Contact",
+    "login": "Log In",
+    "register": "Register My Business"
+  }
+}

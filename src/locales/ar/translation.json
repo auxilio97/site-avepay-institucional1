@@ -1,0 +1,11 @@
+{
+  "header": {
+    "product": "المنتج",
+    "services": "الخدمات",
+    "solutions": "الحلول",
+    "howItWorks": "كيف يعمل",
+    "contact": "اتصل",
+    "login": "تسجيل الدخول",
+    "register": "سجل عملي"
+  }
+}

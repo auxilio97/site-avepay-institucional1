@@ -5,9 +5,12 @@ import { Menu } from "lucide-react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "../theme-toggle";
+import { LanguageSelector } from "../LanguageSelector";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,11 +24,11 @@ export const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: "Produto", href: "#" },
-    { name: "Serviços", href: "#" },
-    { name: "Soluções", href: "#" },
-    { name: "Como Funciona", href: "#" },
-    { name: "Contato", href: "#" },
+    { name: t("header.product"), href: "#" },
+    { name: t("header.services"), href: "#" },
+    { name: t("header.solutions"), href: "#" },
+    { name: t("header.howItWorks"), href: "#" },
+    { name: t("header.contact"), href: "#" },
   ];
 
   return (
@@ -55,13 +58,14 @@ export const Header = () => {
         <div className="flex items-center gap-2">
           <div className="hidden md:flex items-center space-x-2">
             <Link to="/login">
-              <Button variant="ghost">Entrar</Button>
+              <Button variant="ghost">{t("header.login")}</Button>
             </Link>
             <Link to="/register">
-              <Button>Cadastrar Meu Negócio</Button>
+              <Button>{t("header.register")}</Button>
             </Link>
           </div>
           <ThemeToggle />
+          <LanguageSelector />
           <div className="md:hidden">
             <Sheet>
               <SheetTrigger asChild>
@@ -85,10 +89,10 @@ export const Header = () => {
                   ))}
                   <div className="flex flex-col space-y-2 pt-6">
                     <Link to="/login">
-                      <Button variant="ghost" className="w-full">Entrar</Button>
+                      <Button variant="ghost" className="w-full">{t("header.login")}</Button>
                     </Link>
                     <Link to="/register">
-                      <Button className="w-full">Cadastrar Meu Negócio</Button>
+                      <Button className="w-full">{t("header.register")}</Button>
                     </Link>
                   </div>
                 </div>

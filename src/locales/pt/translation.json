@@ -1,0 +1,11 @@
+{
+  "header": {
+    "product": "Produto",
+    "services": "Serviços",
+    "solutions": "Soluções",
+    "howItWorks": "Como Funciona",
+    "contact": "Contato",
+    "login": "Entrar",
+    "register": "Cadastrar Meu Negócio"
+  }
+}

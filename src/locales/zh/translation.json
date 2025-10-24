@@ -1,0 +1,11 @@
+{
+  "header": {
+    "product": "产品",
+    "services": "服务",
+    "solutions": "解决方案",
+    "howItWorks": "如何运作",
+    "contact": "联系",
+    "login": "登录",
+    "register": "注册我的业务"
+  }
+}
