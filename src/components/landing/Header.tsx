@@ -52,8 +52,12 @@ export const Header = () => {
           ))}
         </nav>
         <div className="hidden md:flex items-center space-x-4">
-          <Button variant="ghost">Entrar</Button>
-          <Button>Cadastrar Meu Negócio</Button>
+          <Link to="/login">
+            <Button variant="ghost">Entrar</Button>
+          </Link>
+          <Link to="/register">
+            <Button>Cadastrar Meu Negócio</Button>
+          </Link>
         </div>
         <div className="md:hidden">
           <Sheet>
@@ -77,8 +81,12 @@ export const Header = () => {
                   </a>
                 ))}
                 <div className="flex flex-col space-y-2 pt-6">
-                  <Button variant="ghost">Entrar</Button>
-                  <Button>Cadastrar Meu Negócio</Button>
+                  <Link to="/login">
+                    <Button variant="ghost" className="w-full">Entrar</Button>
+                  </Link>
+                  <Link to="/register">
+                    <Button className="w-full">Cadastrar Meu Negócio</Button>
+                  </Link>
                 </div>
               </div>
             </SheetContent>
