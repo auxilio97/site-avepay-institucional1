@@ -1,31 +1,32 @@
 import { Globe, CreditCard, Zap, Percent } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const Features = () => {
   const features = [
     {
       icon: <Globe className="h-8 w-8 text-primary" />,
       title: "Alcance Global",
-      description: "Opere em mais de 180 países com suporte a múltiplas moedas",
+      description: "Opere em mais de 180 países com suporte a múltiplas moedas.",
     },
     {
       icon: <CreditCard className="h-8 w-8 text-primary" />,
       title: "Múltiplos Métodos",
-      description: "Aceite Visa, Mastercard, PIX, MBWay e muito mais",
+      description: "Aceite Visa, Mastercard, PIX, MBWay e muito mais.",
     },
     {
       icon: <Zap className="h-8 w-8 text-primary" />,
       title: "Conversão Inteligente",
-      description: "Receba em Kwanza e saque em qualquer moeda global",
+      description: "Receba em Kwanza e saque em qualquer moeda global.",
     },
     {
       icon: <Percent className="h-8 w-8 text-primary" />,
       title: "Taxas Competitivas",
-      description: "A partir de 0.95% + IVA com mensalidade isenta",
+      description: "A partir de 0.95% + IVA com mensalidade isenta.",
     },
   ];
 
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-28 bg-slate-50 dark:bg-slate-900">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -37,11 +38,17 @@ export const Features = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature) => (
-            <div key={feature.title} className="text-center p-6 rounded-lg">
-              <div className="flex justify-center mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-muted-foreground">{feature.description}</p>
-            </div>
+            <Card key={feature.title} className="text-center border-none shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <div className="mx-auto bg-primary/10 p-3 rounded-full">
+                  {feature.icon}
+                </div>
+              </CardHeader>
+              <CardContent>
+                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                <p className="text-muted-foreground">{feature.description}</p>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>
