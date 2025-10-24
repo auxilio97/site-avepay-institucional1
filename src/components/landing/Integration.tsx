@@ -1,7 +1,17 @@
-import { CheckCircle, Code } from "lucide-react";
+import { CheckCircle, Coffee, Hash, PlusCircle } from "lucide-react";
+import { PythonIcon } from "@/components/icons/PythonIcon";
+import { PhpIcon } from "@/components/icons/PhpIcon";
+import { NodeJsIcon } from "@/components/icons/NodeJsIcon";
 
 export const Integration = () => {
-  const languages = ["Python", "PHP", "Node.js", "Java", "C#", "+ Mais"];
+  const languages = [
+    { name: "Python", icon: <PythonIcon className="h-8 w-8 mb-2" /> },
+    { name: "PHP", icon: <PhpIcon className="h-8 w-8 mb-2" /> },
+    { name: "Node.js", icon: <NodeJsIcon className="h-8 w-8 mb-2" /> },
+    { name: "Java", icon: <Coffee className="h-8 w-8 mb-2" /> },
+    { name: "C#", icon: <Hash className="h-8 w-8 mb-2" /> },
+    { name: "+ Mais", icon: <PlusCircle className="h-8 w-8 mb-2" /> },
+  ];
   const features = [
     "Guias passo a passo",
     "Exemplos de código",
@@ -31,9 +41,9 @@ export const Integration = () => {
             <h3 className="text-xl font-semibold mb-6">Documentação Completa</h3>
             <div className="grid grid-cols-3 gap-4 text-center">
               {languages.map(lang => (
-                <div key={lang} className="bg-slate-800 p-4 rounded-md flex flex-col items-center justify-center">
-                  <Code className="h-8 w-8 mb-2" />
-                  <span className="text-sm font-medium">{lang}</span>
+                <div key={lang.name} className="bg-slate-800 p-4 rounded-md flex flex-col items-center justify-center">
+                  {lang.icon}
+                  <span className="text-sm font-medium">{lang.name}</span>
                 </div>
               ))}
             </div>
