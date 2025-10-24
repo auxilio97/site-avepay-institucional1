@@ -17,28 +17,28 @@ export const Integration = () => {
   const features = t("integration.features", { returnObjects: true }) as string[];
 
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-28 bg-gradient-to-br from-slate-900 to-slate-800 text-slate-100">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("integration.title")}</h2>
-            <p className="text-muted-foreground text-lg mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">{t("integration.title")}</h2>
+            <p className="text-slate-300 text-lg mb-8">
               {t("integration.subtitle")}
             </p>
             <div className="space-y-3">
               {features.map(feature => (
                 <div key={feature} className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-primary mr-2" />
+                  <CheckCircle className="h-5 w-5 text-green-400 mr-2" />
                   <span>{feature}</span>
                 </div>
               ))}
             </div>
           </div>
-          <div className="bg-slate-900 text-slate-100 p-8 rounded-lg">
-            <h3 className="text-xl font-semibold mb-6">{t("integration.docs_title")}</h3>
+          <div className="bg-slate-950/50 border border-slate-700 p-8 rounded-lg">
+            <h3 className="text-xl font-semibold mb-6 text-white">{t("integration.docs_title")}</h3>
             <div className="grid grid-cols-3 gap-4 text-center">
               {languages.map(lang => (
-                <div key={lang.name} className="bg-slate-800 p-4 rounded-md flex flex-col items-center justify-center">
+                <div key={lang.name} className="bg-slate-800 p-4 rounded-md flex flex-col items-center justify-center hover:bg-slate-700 transition-colors">
                   {lang.icon}
                   <span className="text-sm font-medium">{lang.name}</span>
                 </div>
