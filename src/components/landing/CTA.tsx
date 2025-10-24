@@ -19,7 +19,7 @@ export const CTA = () => {
           <div className="max-w-lg mx-auto">
             <div className="flex flex-col sm:flex-row gap-2 mb-4">
               <Input type="email" placeholder={t("cta.placeholder")} className="flex-grow" />
-              <Button type="submit" size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">{t("cta.button")}</Button>
+              <Button type="submit" size="lg" className="bg-orange-500 hover:bg-orange-600 text-white">{t("cta.button")}</Button>
             </div>
             <div className="flex items-center justify-center space-x-2 mb-6">
               <Checkbox id="terms" />
