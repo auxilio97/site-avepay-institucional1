@@ -6,28 +6,39 @@ export const Pricing = () => {
   const plans = [
     {
       name: "Ofetikilo",
-      description: "Ideal para pequenos negócios e empreendedores individuais.",
       adhesion: "4.999 Kz",
+      methods: "Express (QR e Mobile)",
+      taxa: "0,95% + IVA",
+      mensalidade: "Isenta",
       features: ["Pagamento via QR Code", "Mobile Money", "Suporte básico"],
+      popular: false,
     },
     {
       name: "Jikulomesso",
-      description: "Para empresas em crescimento que precisam de mais opções.",
       adhesion: "9.999 Kz",
-      features: ["Tudo do Ofetikilo", "Unitel Money", "Referências Kwanza", "Suporte prioritário"],
+      methods: "Express, Unitel Money, Referências Kwanza",
+      taxa: "0,95% + IVA",
+      mensalidade: "Isenta",
+      features: ["Todos os métodos Express", "Unitel Money", "Referências Kwanza", "Suporte prioritário"],
+      popular: false,
     },
     {
       name: "Kintungu",
-      description: "A solução completa para negócios estabelecidos.",
       adhesion: "12.999 Kz",
-      features: ["Tudo do Jikulomesso", "Pagamento com Cripto", "Dashboard avançado", "API completa"],
+      methods: "Express, Unitel Money, Referências, Criptomoedas",
+      taxa: "0,95% + IVA",
+      mensalidade: "Isenta",
+      features: ["Todos os métodos anteriores", "Pagamento com Cripto", "Dashboard avançado", "API completa"],
       popular: true,
     },
     {
       name: "Global",
-      description: "Para empresas que operam em escala internacional.",
       adhesion: "67.989 Kz",
-      features: ["Visa & Mastercard", "Métodos globais", "Multi-moeda", "Suporte 24/7"],
+      methods: "Visa, Mastercard, Amex, UnionPay, PIX, MBWay, Skrill, Neteller, SEPA",
+      taxa: "0,95% + IVA (Kwanza)",
+      mensalidade: "Isenta",
+      features: ["Todos os cartões internacionais", "Métodos globais", "Multi-moeda", "Suporte 24/7"],
+      popular: false,
     },
   ];
 
@@ -48,10 +59,23 @@ export const Pricing = () => {
               {plan.popular && <div className="bg-primary text-primary-foreground text-center text-sm font-bold py-1 rounded-t-md">Mais Popular</div>}
               <CardHeader>
                 <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>
-                <CardDescription>{plan.description}</CardDescription>
                 <p className="text-4xl font-bold pt-4">{plan.adhesion}<span className="text-sm font-normal text-muted-foreground"> / adesão</span></p>
               </CardHeader>
               <CardContent className="flex-grow">
+                <div className="space-y-4 mb-6 border-t pt-4">
+                  <div>
+                    <p className="text-sm font-semibold">Métodos:</p>
+                    <p className="text-sm text-muted-foreground">{plan.methods}</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold">Taxa:</p>
+                    <p className="text-sm text-muted-foreground">{plan.taxa}</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold">Mensalidade:</p>
+                    <p className="text-sm text-muted-foreground">{plan.mensalidade}</p>
+                  </div>
+                </div>
                 <ul className="space-y-3">
                   {plan.features.map(feature => (
                     <li key={feature} className="flex items-start">
@@ -64,7 +88,7 @@ export const Pricing = () => {
               <CardFooter>
                 <Button className="w-full" variant={plan.popular ? 'default' : 'outline'}>Começar agora</Button>
               </CardFooter>
-            </Card>
+            </card>
           ))}
         </div>
       </div>
