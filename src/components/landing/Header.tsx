@@ -14,8 +14,8 @@ export const Header = () => {
   return (
     <header className="bg-background sticky top-0 z-50 border-b">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <a href="#" className="text-2xl font-bold text-primary">
-          AvePay
+        <a href="#">
+          <img src="/logo.png" alt="AvePay Logo" className="h-12" />
         </a>
         <nav className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
@@ -41,8 +41,8 @@ export const Header = () => {
             </SheetTrigger>
             <SheetContent side="right">
               <div className="grid gap-4 py-6">
-                <a href="#" className="text-2xl font-bold text-primary mb-4">
-                  AvePay
+                <a href="#" className="mb-4">
+                  <img src="/logo.png" alt="AvePay Logo" className="h-12" />
                 </a>
                 {navLinks.map((link) => (
                   <a
