@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { cn } from "@/lib/utils";
 
 export const Pricing = () => {
   const { t } = useTranslation();
@@ -14,6 +15,8 @@ export const Pricing = () => {
       mensalidade: t("pricing.exempt"),
       features: t("pricing.plans.ofetikilo.features", { returnObjects: true }) as string[],
       popular: false,
+      borderColor: "border-orange-500",
+      buttonClasses: "bg-orange-500 hover:bg-orange-600 text-white",
     },
     {
       name: t("pricing.plans.jikulomesso.name"),
@@ -23,6 +26,8 @@ export const Pricing = () => {
       mensalidade: t("pricing.exempt"),
       features: t("pricing.plans.jikulomesso.features", { returnObjects: true }) as string[],
       popular: false,
+      borderColor: "border-blue-500",
+      buttonClasses: "bg-blue-500 hover:bg-orange-500 text-white",
     },
     {
       name: t("pricing.plans.kintungu.name"),
@@ -32,6 +37,8 @@ export const Pricing = () => {
       mensalidade: t("pricing.exempt"),
       features: t("pricing.plans.kintungu.features", { returnObjects: true }) as string[],
       popular: true,
+      borderColor: "border-blue-500",
+      buttonClasses: "bg-purple-600 hover:bg-orange-500 text-white",
     },
     {
       name: t("pricing.plans.global.name"),
@@ -41,6 +48,8 @@ export const Pricing = () => {
       mensalidade: t("pricing.exempt"),
       features: t("pricing.plans.global.features", { returnObjects: true }) as string[],
       popular: false,
+      borderColor: "border-green-500",
+      buttonClasses: "bg-green-500 hover:bg-orange-500 text-white",
     },
   ];
 
@@ -57,7 +66,7 @@ export const Pricing = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
           {plans.map((plan) => (
-            <Card key={plan.name} className={`flex flex-col h-full transition-all duration-300 hover:-translate-y-2 ${plan.popular ? 'border-primary border-2 shadow-lg' : 'shadow-md'}`}>
+            <Card key={plan.name} className={cn('flex flex-col h-full transition-all duration-300 hover:-translate-y-2 border-2 shadow-md', plan.borderColor, { 'shadow-lg': plan.popular })}>
               {plan.popular && <div className="bg-primary text-primary-foreground text-center text-sm font-bold py-1 rounded-t-md">{t("pricing.popular")}</div>}
               <CardHeader>
                 <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>
@@ -88,7 +97,7 @@ export const Pricing = () => {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button className="w-full" variant={plan.popular ? 'default' : 'outline'}>{t("pricing.cta")}</Button>
+                <Button className={cn("w-full", plan.buttonClasses)}>{t("pricing.cta")}</Button>
               </CardFooter>
             </Card>
           ))}
