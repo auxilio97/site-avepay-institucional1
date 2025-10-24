@@ -1,0 +1,68 @@
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Card, CardContent } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+
+export const Testimonials = () => {
+  const testimonials = [
+    {
+      quote: "A AvePay reduziu nossos custos e acelerou recebimentos. A integração foi simples e o suporte é excepcional.",
+      name: "Maria Santos",
+      title: "CEO, TechStart Angola",
+      avatar: "MS",
+    },
+    {
+      quote: "Integramos pagamentos globais em menos de uma semana. A plataforma é intuitiva e as APIs são muito bem documentadas.",
+      name: "João Ferreira",
+      title: "CTO, Commerce Solutions",
+      avatar: "JF",
+    },
+    {
+      quote: "As APIs são seguras e rápidas de implementar. Nossa empresa expandiu para 5 novos países em apenas 3 meses.",
+      name: "Carlos Mendes",
+      title: "Founder, Global Exports",
+      avatar: "CM",
+    },
+  ];
+
+  return (
+    <section className="py-20 md:py-28 bg-slate-50">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            O que nossos clientes dizem
+          </h2>
+          <p className="text-muted-foreground text-lg mb-12">
+            Empresas de todo o mundo confiam na AvePay para gerenciar seus pagamentos
+          </p>
+        </div>
+        <Carousel opts={{ loop: true }} className="w-full max-w-4xl mx-auto">
+          <CarouselContent>
+            {testimonials.map((testimonial, index) => (
+              <CarouselItem key={index}>
+                <div className="p-1">
+                  <Card>
+                    <CardContent className="flex flex-col items-center justify-center p-8 text-center">
+                      <p className="text-lg italic mb-6">"{testimonial.quote}"</p>
+                      <div className="flex items-center">
+                        <Avatar className="h-12 w-12 mr-4">
+                          <AvatarImage src={`https://api.dicebear.com/8.x/initials/svg?seed=${testimonial.name}`} />
+                          <AvatarFallback>{testimonial.avatar}</AvatarFallback>
+                        </Avatar>
+                        <div>
+                          <p className="font-semibold">{testimonial.name}</p>
+                          <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      </div>
+    </section>
+  );
+};
