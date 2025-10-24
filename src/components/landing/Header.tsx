@@ -49,7 +49,7 @@ export const Header = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-foreground/70 transition-colors hover:text-foreground"
+              className="text-sm font-medium text-foreground/70 transition-colors hover:text-accent"
             >
               {link.name}
             </a>
@@ -82,7 +82,7 @@ export const Header = () => {
                     <a
                       key={link.name}
                       href={link.href}
-                      className="text-base font-medium text-foreground/70 transition-colors hover:text-foreground"
+                      className="text-base font-medium text-foreground/70 transition-colors hover:text-accent"
                     >
                       {link.name}
                     </a>
