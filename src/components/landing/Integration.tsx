@@ -24,10 +24,13 @@ export const Integration = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">{t("integration.title")}</h2>
-            <p className="text-slate-300 text-lg mb-8">
+            <p className="text-slate-300 text-lg">
               {t("integration.subtitle")}
             </p>
-            <div className="space-y-3">
+          </div>
+          <div className="bg-slate-950/30 backdrop-blur-xl border border-slate-700/50 p-8 rounded-2xl shadow-2xl">
+            <h3 className="text-xl font-semibold mb-6 text-white">{t("integration.docs_title")}</h3>
+            <div className="space-y-3 mb-8">
               {features.map(feature => (
                 <div key={feature} className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-green-400 mr-2" />
@@ -35,12 +38,9 @@ export const Integration = () => {
                 </div>
               ))}
             </div>
-          </div>
-          <div className="bg-slate-950/50 border border-slate-700 p-8 rounded-lg">
-            <h3 className="text-xl font-semibold mb-6 text-white">{t("integration.docs_title")}</h3>
             <div className="grid grid-cols-3 gap-4 text-center">
               {languages.map(lang => (
-                <div key={lang.name} className="bg-slate-800 p-4 rounded-md flex flex-col items-center justify-center hover:bg-slate-700 transition-colors">
+                <div key={lang.name} className="bg-slate-800/50 p-4 rounded-md flex flex-col items-center justify-center hover:bg-slate-700/50 transition-colors">
                   {lang.icon}
                   <span className="text-sm font-medium">{lang.name}</span>
                 </div>
