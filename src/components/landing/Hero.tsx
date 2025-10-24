@@ -19,7 +19,7 @@ export const Hero = () => {
         <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground mb-10">
           {t("hero.subtitle")}
         </p>
-        <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+        <Button size="lg" className="bg-primary hover:bg-orange-500 text-primary-foreground">
           {t("hero.cta")}
           <ArrowRight className="ml-2 h-5 w-5" />
         </Button>
