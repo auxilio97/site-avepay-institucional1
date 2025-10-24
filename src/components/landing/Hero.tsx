@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import CountUp from "react-countup";
 
 export const Hero = () => {
   const { t } = useTranslation();
   const stats = [
-    { value: "15.000+", label: t("hero.stats.companies") },
-    { value: "180+", label: t("hero.stats.countries") },
-    { value: "200Mi Kz", label: t("hero.stats.processed") },
+    { end: 15000, suffix: "+", separator: ".", label: t("hero.stats.companies") },
+    { end: 180, suffix: "+", label: t("hero.stats.countries") },
+    { end: 200, suffix: "Mi Kz", label: t("hero.stats.processed") },
   ];
 
   return (
@@ -26,7 +27,14 @@ export const Hero = () => {
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {stats.map((stat) => (
             <div key={stat.label}>
-              <p className="text-4xl font-bold">{stat.value}</p>
+              <p className="text-4xl font-bold">
+                <CountUp 
+                  end={stat.end} 
+                  duration={2.5} 
+                  separator={stat.separator} 
+                  suffix={stat.suffix} 
+                />
+              </p>
               <p className="text-muted-foreground">{stat.label}</p>
             </div>
           ))}
