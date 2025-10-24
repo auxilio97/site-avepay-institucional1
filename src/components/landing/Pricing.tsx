@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check } from "lucide-react";
+import { Check, Smartphone, Wallet, Gem, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 
@@ -8,6 +8,7 @@ export const Pricing = () => {
   const { t } = useTranslation();
   const plans = [
     {
+      icon: <Smartphone className="h-10 w-10 mb-4 text-orange-500" />,
       name: t("pricing.plans.ofetikilo.name"),
       adhesion: "4.999 Kz",
       methods: t("pricing.plans.ofetikilo.methods"),
@@ -19,6 +20,7 @@ export const Pricing = () => {
       buttonClasses: "bg-orange-500 hover:bg-orange-600 text-white",
     },
     {
+      icon: <Wallet className="h-10 w-10 mb-4 text-blue-500" />,
       name: t("pricing.plans.jikulomesso.name"),
       adhesion: "9.999 Kz",
       methods: t("pricing.plans.jikulomesso.methods"),
@@ -30,6 +32,7 @@ export const Pricing = () => {
       buttonClasses: "bg-blue-500 hover:bg-orange-500 text-white",
     },
     {
+      icon: <Gem className="h-10 w-10 mb-4 text-purple-600" />,
       name: t("pricing.plans.kintungu.name"),
       adhesion: "12.999 Kz",
       methods: t("pricing.plans.kintungu.methods"),
@@ -41,6 +44,7 @@ export const Pricing = () => {
       buttonClasses: "bg-purple-600 hover:bg-orange-500 text-white",
     },
     {
+      icon: <Globe className="h-10 w-10 mb-4 text-green-500" />,
       name: t("pricing.plans.global.name"),
       adhesion: "67.989 Kz",
       methods: t("pricing.plans.global.methods"),
@@ -68,7 +72,8 @@ export const Pricing = () => {
           {plans.map((plan) => (
             <Card key={plan.name} className={cn('flex flex-col h-full transition-all duration-300 hover:-translate-y-2 border-2 shadow-md', plan.borderColor, { 'shadow-lg': plan.popular })}>
               {plan.popular && <div className="bg-primary text-primary-foreground text-center text-sm font-bold py-1 rounded-t-md">{t("pricing.popular")}</div>}
-              <CardHeader>
+              <CardHeader className="items-center text-center">
+                {plan.icon}
                 <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>
                 <p className="text-4xl font-bold pt-4">{plan.adhesion}<span className="text-sm font-normal text-muted-foreground"> / {t("pricing.adhesion")}</span></p>
               </CardHeader>
