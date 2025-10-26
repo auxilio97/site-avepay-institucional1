@@ -21,26 +21,20 @@ export const TrustedBy = () => {
         <h2 className="text-center text-lg font-semibold text-muted-foreground mb-8">
           {t("trusted_by.title")}
         </h2>
-        <div
-          className="relative w-full overflow-hidden"
-          style={{
-            maskImage: "linear-gradient(to right, transparent, white 10%, white 90%, transparent)"
-          }}
-        >
-          <div className="flex w-max animate-infinite-scroll hover:[animation-play-state:paused]">
-            {[...partners, ...partners].map((partner, index) => (
-              <div key={`${partner.name}-${index}`} className="flex-shrink-0 h-24 flex justify-center items-center px-8">
-                <img
-                  src={partner.imgSrc}
-                  alt={partner.name}
-                  className={cn(
-                    "max-h-12 w-auto object-contain",
-                    partner.invertInDark && "dark:invert"
-                  )}
-                />
-              </div>
-            ))}
-          </div>
+        {/* Layout estático simplificado para depuração */}
+        <div className="flex justify-center items-center flex-wrap gap-x-12 gap-y-8">
+          {partners.map((partner, index) => (
+            <div key={`${partner.name}-${index}`} className="h-16 flex justify-center items-center">
+              <img
+                src={partner.imgSrc}
+                alt={partner.name}
+                className={cn(
+                  "max-h-10 w-auto object-contain",
+                  partner.invertInDark && "dark:invert"
+                )}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
