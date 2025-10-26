@@ -14,12 +14,19 @@ export const Hero = () => {
 
   return (
     <section className="relative py-28 md:py-40 overflow-hidden">
-      {/* Background Container */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-50/50 to-background dark:from-slate-900/50 dark:to-background" />
-        <div className="absolute -top-1/2 left-1/2 -translate-x-1/2 w-[200%] h-[200%] bg-[radial-gradient(circle_farthest-side,hsl(var(--accent)/0.15),transparent)] blur-3xl" />
-        <div className="absolute inset-0 bg-[radial-gradient(hsl(var(--muted)/0.4)_1px,transparent_1px)] [background-size:24px_24px]" />
+      {/* Video Background */}
+      <div className="absolute inset-0 -z-20">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+          src="https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4"
+        />
       </div>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-background/70 dark:bg-slate-950/80 -z-10" />
 
       {/* Content Container */}
       <div className="container mx-auto text-center px-4 md:px-6 relative">
