@@ -12,9 +12,9 @@ export const TrustedBy = () => {
     { name: "WordPress", imgSrc: "/what-is-wordpress.webp", invertInDark: true },
     { name: "Shopify", imgSrc: "/shopify_logo_black.png", invertInDark: true },
     { name: "Magento", imgSrc: "/magento-logo.webp" },
-    { name: "PrestaShop", logo: <PrestashopLogo className="h-12 w-auto" /> },
-    { name: "Stripe", logo: <StripeLogo className="h-12 w-auto" /> },
-    { name: "Wise", logo: <WiseLogo className="h-12 w-auto" /> },
+    { name: "PrestaShop", logo: <PrestashopLogo className="h-12 w-auto text-foreground" /> },
+    { name: "Stripe", logo: <StripeLogo className="h-12 w-auto text-foreground" /> },
+    { name: "Wise", logo: <WiseLogo className="h-12 w-auto text-foreground" /> },
   ];
 
   return (
@@ -25,13 +25,13 @@ export const TrustedBy = () => {
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-8 items-center">
           {partners.map((partner) => (
-            <div key={partner.name} className="flex justify-center text-foreground/70 hover:text-foreground transition-all duration-300">
+            <div key={partner.name} className="flex justify-center">
               {partner.imgSrc ? (
                 <img 
                   src={partner.imgSrc} 
                   alt={partner.name} 
                   className={cn(
-                    "h-12 w-auto object-contain opacity-70 hover:opacity-100",
+                    "h-12 w-auto object-contain",
                     partner.invertInDark && "dark:invert"
                   )}
                 />
