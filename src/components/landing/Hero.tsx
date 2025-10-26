@@ -14,8 +14,8 @@ export const Hero = () => {
 
   return (
     <section className="relative py-28 md:py-40 overflow-hidden">
-      {/* Video Background */}
-      <div className="absolute inset-0 -z-20">
+      {/* Video Background & Overlay Container */}
+      <div className="absolute inset-0">
         <video
           autoPlay
           loop
@@ -24,12 +24,12 @@ export const Hero = () => {
           className="w-full h-full object-cover"
           src="https://videos.pexels.com/video-files/7205305/7205305-hd_1920_1080_25fps.mp4"
         />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-background/70 dark:bg-slate-950/80" />
       </div>
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-background/70 dark:bg-slate-950/80 -z-10" />
 
       {/* Content Container */}
-      <div className="container mx-auto text-center px-4 md:px-6 relative">
+      <div className="container mx-auto text-center px-4 md:px-6 relative z-10">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-50 dark:to-slate-300">
           {t("hero.title")}
         </h1>
@@ -62,7 +62,7 @@ export const Hero = () => {
                   {index < stats.length - 1 && (
                     <>
                       <Separator orientation="vertical" className="hidden md:block h-16" />
-                      <Separator orientation="horizontal" className="block md:hidden w-1-2 mx-auto" />
+                      <Separator orientation="horizontal" className="block md:hidden w-1/2 mx-auto" />
                     </>
                   )}
                 </>
