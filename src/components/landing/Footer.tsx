@@ -24,8 +24,8 @@ export const Footer = () => {
       <div className="container mx-auto px-4 md:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-2">
-            <div className="inline-block mb-2">
-              <img src="/logo.png" alt="AvePay Logo" className="h-12 brightness-0 invert" />
+            <div className="bg-white rounded-lg p-2 inline-block mb-2">
+              <img src="/logo.png" alt="AvePay Logo" className="h-12" />
             </div>
             <p className="text-sm mb-4 max-w-sm">
               {t("footer.description")}
