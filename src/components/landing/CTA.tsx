@@ -1,12 +1,20 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { ShieldCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { cn } from "@/lib/utils";
 
 export const CTA = () => {
   const { t } = useTranslation();
   const complianceItems = t("cta.compliance", { returnObjects: true }) as string[];
+
+  const [email, setEmail] = useState("");
+  const [agreed, setAgreed] = useState(false);
+
+  const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const isButtonDisabled = !isValidEmail || !agreed;
 
   return (
     <section className="py-20 md:py-28 bg-gradient-to-br from-primary/5 via-background to-accent/5">
@@ -18,14 +26,36 @@ export const CTA = () => {
           </p>
           <div className="max-w-lg mx-auto">
             <div className="flex flex-col sm:flex-row gap-2 mb-4">
-              <Input type="email" placeholder={t("cta.placeholder")} className="flex-grow" />
-              <a href="https://avepaygateway.avenatec.it.com" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="bg-orange-500 hover:bg-primary text-white">{t("cta.button")}</Button>
+              <Input
+                type="email"
+                placeholder={t("cta.placeholder")}
+                className="flex-grow"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <a 
+                href="https://avepaygateway.avenatec.it.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={cn(isButtonDisabled && "cursor-not-allowed")}
+                onClick={(e) => isButtonDisabled && e.preventDefault()}
+              >
+                <Button
+                  size="lg"
+                  className="bg-orange-500 hover:bg-primary text-white w-full sm:w-auto"
+                  disabled={isButtonDisabled}
+                >
+                  {t("cta.button")}
+                </Button>
               </a>
             </div>
             <div className="flex items-center justify-center space-x-2 mb-6">
-              <Checkbox id="terms" />
-              <label htmlFor="terms" className="text-sm text-muted-foreground">
+              <Checkbox 
+                id="terms" 
+                checked={agreed}
+                onCheckedChange={(checked) => setAgreed(checked as boolean)}
+              />
+              <label htmlFor="terms" className="text-sm text-muted-foreground cursor-pointer">
                 {t("cta.agreement")}
               </label>
             </div>
