@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { PrestashopLogo } from "../icons/partners/PrestashopLogo";
 import { cn } from "@/lib/utils";
 
 export const TrustedBy = () => {
@@ -13,7 +12,6 @@ export const TrustedBy = () => {
     { name: "WordPress", imgSrc: "/what-is-wordpress.webp", invertInDark: true },
     { name: "Shopify", imgSrc: "/shopify_logo_black.png", invertInDark: true },
     { name: "Magento", imgSrc: "/magento-logo.webp" },
-    { name: "PrestaShop", logo: <PrestashopLogo className="h-12 w-auto text-foreground" /> },
   ];
 
   return (
@@ -22,21 +20,17 @@ export const TrustedBy = () => {
         <h2 className="text-center text-lg font-semibold text-muted-foreground mb-8">
           {t("trusted_by.title")}
         </h2>
-        <div className="grid grid-cols-3 sm:grid-cols-5 gap-x-8 gap-y-12 items-center justify-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-8 items-center justify-items-center">
           {partners.map((partner) => (
             <div key={partner.name} className="flex justify-center">
-              {partner.imgSrc ? (
-                <img 
-                  src={partner.imgSrc} 
-                  alt={partner.name} 
-                  className={cn(
-                    "h-12 w-auto object-contain",
-                    partner.invertInDark && "dark:invert"
-                  )}
-                />
-              ) : (
-                partner.logo
-              )}
+              <img 
+                src={partner.imgSrc} 
+                alt={partner.name} 
+                className={cn(
+                  "h-12 w-auto object-contain",
+                  partner.invertInDark && "dark:invert"
+                )}
+              />
             </div>
           ))}
         </div>
