@@ -15,14 +15,14 @@ export const Hero = () => {
   return (
     <section className="relative py-28 md:py-40 overflow-hidden">
       {/* Video Background & Overlay Container */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-0">
         <video
           autoPlay
           loop
           muted
           playsInline
           className="w-full h-full object-cover"
-          src="https://videos.pexels.com/video-files/7205305/7205305-hd_1920_1080_25fps.mp4"
+          src="/hero-video.mp4"
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-background/70 dark:bg-slate-950/80" />
