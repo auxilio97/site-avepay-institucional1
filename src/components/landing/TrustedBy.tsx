@@ -21,19 +21,26 @@ export const TrustedBy = () => {
         <h2 className="text-center text-lg font-semibold text-muted-foreground mb-8">
           {t("trusted_by.title")}
         </h2>
-        <div className="grid grid-cols-3 sm:grid-cols-5 gap-x-8 gap-y-12 items-center justify-items-center">
-          {partners.map((partner) => (
-            <div key={partner.name} className="flex justify-center">
-              <img 
-                src={partner.imgSrc} 
-                alt={partner.name} 
-                className={cn(
-                  "h-12 w-auto object-contain",
-                  partner.invertInDark && "dark:invert"
-                )}
-              />
-            </div>
-          ))}
+        <div
+          className="relative w-full overflow-hidden"
+          style={{
+            maskImage: "linear-gradient(to right, transparent, white 10%, white 90%, transparent)"
+          }}
+        >
+          <div className="flex w-max animate-infinite-scroll hover:[animation-play-state:paused]">
+            {[...partners, ...partners].map((partner, index) => (
+              <div key={`${partner.name}-${index}`} className="flex-shrink-0 w-48 flex justify-center">
+                <img
+                  src={partner.imgSrc}
+                  alt={partner.name}
+                  className={cn(
+                    "h-10 w-auto object-contain",
+                    partner.invertInDark && "dark:invert"
+                  )}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
