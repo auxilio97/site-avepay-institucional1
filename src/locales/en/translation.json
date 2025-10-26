@@ -309,5 +309,35 @@
       "subject": "Subject must be at least 5 characters.",
       "message": "Message must be at least 10 characters."
     }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to the most common questions about AvePay.",
+    "items": [
+      {
+        "question": "What is AvePay?",
+        "answer": "AvePay is a global payments and finance platform that allows businesses to accept payments in multiple currencies, manage business accounts, and control spending, all in one place."
+      },
+      {
+        "question": "What payment methods are accepted?",
+        "answer": "We accept a wide range of payment methods, including Visa, Mastercard, Unitel Money, Kwanza references, PIX, MBWay, and even cryptocurrencies, depending on the chosen plan."
+      },
+      {
+        "question": "Can I receive in Kwanza and withdraw in another currency?",
+        "answer": "Yes. One of the main advantages of AvePay is the ability to receive payments in Kwanza (AOA) and withdraw the funds to your account anywhere in the world, in currencies like Dollar (USD), Euro (EUR), Real (BRL), among others."
+      },
+      {
+        "question": "Is AvePay secure?",
+        "answer": "Security is our top priority. We are PCI DSS and SOC1 & SOC2 certified, use SSL encryption, and hold funds in secure and regulated financial institutions."
+      },
+      {
+        "question": "How can I integrate AvePay into my website?",
+        "answer": "We offer a robust and well-documented API, along with step-by-step guides and code examples for various languages. The integration is designed to be quick and simple."
+      },
+      {
+        "question": "Are there monthly fees?",
+        "answer": "No, our main plans do not have monthly fees. We charge a one-time adhesion fee and a small percentage per transaction, making costs predictable and affordable."
+      }
+    ]
   }
 }

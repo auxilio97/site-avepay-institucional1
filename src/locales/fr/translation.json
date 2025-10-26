@@ -309,5 +309,35 @@
       "subject": "Le sujet doit comporter au moins 5 caractères.",
       "message": "Le message doit comporter au menos 10 caractères."
     }
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "subtitle": "Trouvez des réponses aux questions les plus courantes sur AvePay.",
+    "items": [
+      {
+        "question": "Qu'est-ce qu'AvePay ?",
+        "answer": "AvePay est une plateforme mondiale de paiements et de finance qui permet aux entreprises d'accepter des paiements en plusieurs devises, de gérer des comptes professionnels et de contrôler les dépenses, le tout en un seul endroit."
+      },
+      {
+        "question": "Quels moyens de paiement sont acceptés ?",
+        "answer": "Nous acceptons un large éventail de moyens de paiement, notamment Visa, Mastercard, Unitel Money, les références Kwanza, PIX, MBWay et même les crypto-monnaies, selon le plan choisi."
+      },
+      {
+        "question": "Puis-je recevoir en Kwanza et retirer dans une autre devise ?",
+        "answer": "Oui. L'un des principaux avantages d'AvePay est la possibilité de recevoir des paiements en Kwanza (AOA) et de retirer les fonds sur votre compte n'importe où dans le monde, dans des devises comme le Dollar (USD), l'Euro (EUR), le Real (BRL), entre autres."
+      },
+      {
+        "question": "AvePay est-il sécurisé ?",
+        "answer": "La sécurité est notre priorité absolue. Nous sommes certifiés PCI DSS et SOC1 & SOC2, utilisons le cryptage SSL et conservons les fonds dans des institutions financières sécurisées et réglementées."
+      },
+      {
+        "question": "Comment puis-je intégrer AvePay à mon site web ?",
+        "answer": "Nous proposons une API robuste et bien documentée, ainsi que des guides pas à pas et des exemples de code pour différentes langues. L'intégration est conçue pour être rapide et simple."
+      },
+      {
+        "question": "Y a-t-il des frais mensuels ?",
+        "answer": "Non, nos principaux plans n'ont pas de frais mensuels. Nous facturons des frais d'adhésion uniques et un petit pourcentage par transaction, ce qui rend les coûts prévisibles et abordables."
+      }
+    ]
   }
 }

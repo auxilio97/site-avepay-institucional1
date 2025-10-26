@@ -309,5 +309,35 @@
       "subject": "O assunto deve ter pelo menos 5 caracteres.",
       "message": "A mensagem deve ter pelo menos 10 caracteres."
     }
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Encontre respostas para as perguntas mais comuns sobre a AvePay.",
+    "items": [
+      {
+        "question": "O que é a AvePay?",
+        "answer": "A AvePay é uma plataforma global de pagamentos e finanças que permite às empresas aceitar pagamentos em múltiplas moedas, gerir contas comerciais e controlar despesas, tudo num só lugar."
+      },
+      {
+        "question": "Quais métodos de pagamento são aceites?",
+        "answer": "Aceitamos uma vasta gama de métodos de pagamento, incluindo Visa, Mastercard, Unitel Money, referências Kwanza, PIX, MBWay e até criptomoedas, dependendo do plano escolhido."
+      },
+      {
+        "question": "Posso receber em Kwanza e sacar noutra moeda?",
+        "answer": "Sim. Uma das principais vantagens da AvePay é a capacidade de receber pagamentos em Kwanza (AOA) e sacar os fundos para a sua conta em qualquer parte do mundo, em moedas como Dólar (USD), Euro (EUR), Real (BRL), entre outras."
+      },
+      {
+        "question": "A AvePay é segura?",
+        "answer": "A segurança é a nossa prioridade máxima. Somos certificados PCI DSS e SOC1 & SOC2, utilizamos criptografia SSL e mantemos os fundos em instituições financeiras seguras e regulamentadas."
+      },
+      {
+        "question": "Como posso integrar a AvePay no meu site?",
+        "answer": "Oferecemos uma API robusta e bem documentada, juntamente com guias passo a passo e exemplos de código para várias linguagens. A integração é projetada para ser rápida e simples."
+      },
+      {
+        "question": "Existem taxas mensais?",
+        "answer": "Não, os nossos planos principais não têm taxas mensais. Cobramos uma taxa de adesão única e uma pequena percentagem por transação, tornando os custos previsíveis e acessíveis."
+      }
+    ]
   }
 }

@@ -9,6 +9,7 @@ import { Integration } from "@/components/landing/Integration";
 import { CTA } from "@/components/landing/CTA";
 import { Footer } from "@/components/landing/Footer";
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { FAQ } from "@/components/landing/FAQ";
 
 const Index = () => {
   return (
@@ -32,6 +33,9 @@ const Index = () => {
         </AnimatedSection>
         <AnimatedSection animation="fade-in-right">
           <Integration />
+        </AnimatedSection>
+        <AnimatedSection animation="fade-in-up">
+          <FAQ />
         </AnimatedSection>
         <AnimatedSection animation="fade-in-up">
           <CTA />
