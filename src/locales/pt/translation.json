@@ -153,15 +153,30 @@
     "description": "A plataforma global de pagamentos e finanças para empresas em expansão. Aceite pagamentos em Kwanza Angolano, naira, usd, euro, libra, criptomoedas, real brasileiro, yuan, yen e outras varias moedas e saque para qualquer moeda do mundo.",
     "products": {
       "title": "Produtos",
-      "items": ["Contas Comerciais", "AvePay Spend", "Pagamentos", "APIs Financeiras"]
+      "items": [
+        { "name": "Contas Comerciais", "href": "#" },
+        { "name": "AvePay Spend", "href": "#" },
+        { "name": "Pagamentos", "href": "#" },
+        { "name": "APIs Financeiras", "href": "#" }
+      ]
     },
     "company": {
       "title": "Empresa",
-      "items": ["Sobre Nós", "Carreiras", "Imprensa", "Parceiros"]
+      "items": [
+        { "name": "Sobre Nós", "href": "/about" },
+        { "name": "Carreiras", "href": "#" },
+        { "name": "Imprensa", "href": "#" },
+        { "name": "Parceiros", "href": "#" }
+      ]
     },
     "resources": {
       "title": "Recursos",
-      "items": ["Documentação", "Blog", "Suporte", "Status"]
+      "items": [
+        { "name": "Documentação", "href": "#" },
+        { "name": "Blog", "href": "#" },
+        { "name": "Suporte", "href": "#" },
+        { "name": "Status", "href": "#" }
+      ]
     },
     "copyright": "© AvePay 2025 – Todos os direitos reservados. Criado e desenvolvido pela: Avenatec LDA",
     "legal": "Fundos mantidos em instituições financeiras seguras e regulamentadas. Serviços de pagamento fornecidos pela AvePay Angola, Lda."
@@ -227,5 +242,38 @@
     "law_p1": "Estes Termos são regidos pela legislação da República de Angola. As partes elegem o foro de Luanda para dirimir quaisquer conflitos.",
     "contact_title": "15. Contatos",
     "contact_p1": "Para dúvidas ou reclamações, o Usuário poderá contactar:<br />Avenatec Lda<br />Email: avepay@avenatec.it.com<br />Telefone: +244 935 325 003<br />Endereço: luanda, ingombota"
+  },
+  "about": {
+    "title": "Sobre Nós – AvePay | Avenatec Lda",
+    "p1": "A <strong>AvePay</strong> é um <strong>gateway de pagamentos multimoeda</strong> desenvolvido pela <strong>Avenatec – Tecnologia e Comunicação, SU, Lda</strong>, uma empresa angolana de tecnologia financeira que nasceu para simplificar, modernizar e internacionalizar a forma como pessoas e empresas movimentam dinheiro em Angola e no mundo.",
+    "p2": "Mais do que um simples processador de pagamentos, a <strong>AvePay</strong> é um <strong>ecossistema financeiro completo</strong>: permite criar contas digitais comerciais, enviar e receber pagamentos em <strong>diversas moedas (Kwanza, USD, Euro, Libra, Real, Yuan, Rand, Naira, Yen e até criptomoedas)</strong>, emitir <strong>cartões corporativos</strong>, gerar <strong>links de pagamento</strong>, automatizar <strong>faturação</strong>, e integrar-se a <strong>sistemas de gestão e plataformas de e-commerce</strong> como <strong>WordPress, Shopify, Magento</strong> e <strong>Joomla</strong>.",
+    "p3": "Com a <strong>AvePay</strong>, empresas, freelancers e organizações podem <strong>receber pagamentos de clientes nacionais e internacionais</strong> com segurança, rapidez e taxas competitivas, sem barreiras cambiais. Nosso objetivo é <strong>unir África e o mundo através da tecnologia financeira</strong>, oferecendo soluções que promovem inclusão, eficiência e confiança no ambiente digital.",
+    "mission_title": "🌍 <strong>Nossa Missão</strong>",
+    "mission_text": "Facilitar e democratizar o acesso a soluções de pagamento digitais, seguras e globais, que impulsionem o crescimento dos negócios angolanos e africanos.",
+    "vision_title": "💡 <strong>Nossa Visão</strong>",
+    "vision_text": "Ser o <strong>gateway de pagamentos de referência em África</strong>, reconhecido pela inovação, transparência, integração global e apoio ao desenvolvimento económico local.",
+    "values_title": "⚙️ <strong>Nossos Valores</strong>",
+    "values_list": [
+      "<strong>Inovação:</strong> criar soluções tecnológicas de impacto real.",
+      "<strong>Transparência:</strong> agir com clareza, ética e compromisso.",
+      "<strong>Conectividade:</strong> ligar pessoas, empresas e mercados.",
+      "<strong>Segurança:</strong> proteger dados, transações e reputações.",
+      "<strong>Excelência:</strong> entregar desempenho e confiabilidade em cada operação."
+    ],
+    "services_title": "💼 <strong>Serviços Principais</strong>",
+    "services_list": [
+      "Contas digitais multimoeda para empresas e empreendedores.",
+      "Emissão de <strong>cartões empresariais AvePay Card</strong> (físicos e virtuais).",
+      "Gateway de pagamento integrado para e-commerce e apps.",
+      "Faturação digital e emissão de links de pagamento.",
+      "Painel de gestão financeira completo com relatórios e automações.",
+      "APIs abertas para integração de sistemas.",
+      "Suporte a <strong>Mobile Money</strong>, <strong>QR Code</strong>, <strong>Transferências Bancárias</strong> e <strong>Criptomoedas</strong>."
+    ],
+    "who_we_are_title": "🧠 <strong>Quem Somos</strong>",
+    "who_we_are_p1": "A <strong>Avenatec Lda</strong> é uma <strong>startup tecnológica angolana</strong> especializada em <strong>pagamentos, comunicação digital e soluções empresariais integradas</strong>. Com escritórios em <strong>Luanda</strong>, atua no desenvolvimento de <strong>softwares, gateways, APIs, sistemas de faturação, e-commerce e serviços de nuvem</strong>, buscando <strong>posicionar Angola como um polo de inovação digital em África</strong>.",
+    "who_we_are_p2": "Acreditamos que o futuro dos pagamentos é <strong>global, seguro e sem fronteiras</strong>. Por isso, cada solução AvePay é projetada para oferecer <strong>liberdade, escalabilidade e desempenho</strong>, adaptando-se às necessidades de startups, empresas e instituições de qualquer dimensão.",
+    "contact_title": "📞 <strong>Contactos</strong>",
+    "contact_text": "<strong>Avenatec – Tecnologia e Comunicação, SU, Lda</strong><br />📍 Luanda – Angola<br />📧 avepay@avenatec.it.com | 🌐 avepay.avenatec.com | avenatec.it.com<br />📱 (+244) 935 325 003"
   }
 }

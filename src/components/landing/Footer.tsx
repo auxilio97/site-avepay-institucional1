@@ -1,11 +1,23 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
+interface FooterLink {
+  name: string;
+  href: string;
+}
+
 export const Footer = () => {
   const { t } = useTranslation();
-  const products = t("footer.products.items", { returnObjects: true }) as string[];
-  const company = t("footer.company.items", { returnObjects: true }) as string[];
-  const resources = t("footer.resources.items", { returnObjects: true }) as string[];
+  const products = t("footer.products.items", { returnObjects: true }) as FooterLink[];
+  const company = t("footer.company.items", { returnObjects: true }) as FooterLink[];
+  const resources = t("footer.resources.items", { returnObjects: true }) as FooterLink[];
+
+  const renderLink = (link: FooterLink) => {
+    if (link.href.startsWith('/')) {
+      return <Link to={link.href} className="hover:text-white">{link.name}</Link>;
+    }
+    return <a href={link.href} className="hover:text-white">{link.name}</a>;
+  };
 
   return (
     <footer className="bg-slate-900 text-slate-300">
@@ -27,19 +39,19 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold text-white mb-4">{t("footer.products.title")}</h4>
             <ul className="space-y-2 text-sm">
-              {products.map(p => <li key={p}><a href="#" className="hover:text-white">{p}</a></li>)}
+              {products.map(p => <li key={p.name}>{renderLink(p)}</li>)}
             </ul>
           </div>
           <div>
             <h4 className="font-semibold text-white mb-4">{t("footer.company.title")}</h4>
             <ul className="space-y-2 text-sm">
-              {company.map(c => <li key={c}><a href="#" className="hover:text-white">{c}</a></li>)}
+              {company.map(c => <li key={c.name}>{renderLink(c)}</li>)}
             </ul>
           </div>
           <div>
             <h4 className="font-semibold text-white mb-4">{t("footer.resources.title")}</h4>
             <ul className="space-y-2 text-sm">
-              {resources.map(r => <li key={r}><a href="#" className="hover:text-white">{r}</a></li>)}
+              {resources.map(r => <li key={r.name}>{renderLink(r)}</li>)}
             </ul>
           </div>
         </div>

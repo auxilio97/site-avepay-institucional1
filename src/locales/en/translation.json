@@ -153,15 +153,30 @@
     "description": "The global payments and finance platform for expanding businesses. Accept payments in Angolan Kwanza, naira, usd, euro, pound, cryptocurrencies, brazilian real, yuan, yen and various other currencies and withdraw in any currency in the world.",
     "products": {
       "title": "Products",
-      "items": ["Business Accounts", "AvePay Spend", "Payments", "Financial APIs"]
+      "items": [
+        { "name": "Business Accounts", "href": "#" },
+        { "name": "AvePay Spend", "href": "#" },
+        { "name": "Payments", "href": "#" },
+        { "name": "Financial APIs", "href": "#" }
+      ]
     },
     "company": {
       "title": "Company",
-      "items": ["About Us", "Careers", "Press", "Partners"]
+      "items": [
+        { "name": "About Us", "href": "/about" },
+        { "name": "Careers", "href": "#" },
+        { "name": "Press", "href": "#" },
+        { "name": "Partners", "href": "#" }
+      ]
     },
     "resources": {
       "title": "Resources",
-      "items": ["Documentation", "Blog", "Support", "Status"]
+      "items": [
+        { "name": "Documentation", "href": "#" },
+        { "name": "Blog", "href": "#" },
+        { "name": "Support", "href": "#" },
+        { "name": "Status", "href": "#" }
+      ]
     },
     "copyright": "© AvePay 2025 – All rights reserved. Created and developed by: Avenatec LDA",
     "legal": "Funds held in secure and regulated financial institutions. Payment services provided by AvePay Angola, Lda."
@@ -227,5 +242,38 @@
     "law_p1": "These Terms are governed by the laws of the Republic of Angola. The parties elect the jurisdiction of Luanda to resolve any disputes.",
     "contact_title": "15. Contacts",
     "contact_p1": "For questions or complaints, the User may contact:<br />Avenatec Lda<br />Email: avepay@avenatec.it.com<br />Phone: +244 935 325 003<br />Address: Luanda, Ingombota"
+  },
+  "about": {
+    "title": "About Us – AvePay | Avenatec Lda",
+    "p1": "<strong>AvePay</strong> is a <strong>multi-currency payment gateway</strong> developed by <strong>Avenatec – Tecnologia e Comunicação, SU, Lda</strong>, an Angolan financial technology company born to simplify, modernize, and internationalize the way people and businesses move money in Angola and worldwide.",
+    "p2": "More than just a payment processor, <strong>AvePay</strong> is a <strong>complete financial ecosystem</strong>: it allows creating digital business accounts, sending and receiving payments in <strong>various currencies (Kwanza, USD, Euro, Pound, Real, Yuan, Rand, Naira, Yen, and even cryptocurrencies)</strong>, issuing <strong>corporate cards</strong>, generating <strong>payment links</strong>, automating <strong>invoicing</strong>, and integrating with <strong>management systems and e-commerce platforms</strong> like <strong>WordPress, Shopify, Magento</strong>, and <strong>Joomla</strong>.",
+    "p3": "With <strong>AvePay</strong>, companies, freelancers, and organizations can <strong>receive payments from national and international customers</strong> securely, quickly, and at competitive rates, without currency barriers. Our goal is to <strong>unite Africa and the world through financial technology</strong>, offering solutions that promote inclusion, efficiency, and trust in the digital environment.",
+    "mission_title": "🌍 <strong>Our Mission</strong>",
+    "mission_text": "To facilitate and democratize access to digital, secure, and global payment solutions that drive the growth of Angolan and African businesses.",
+    "vision_title": "💡 <strong>Our Vision</strong>",
+    "vision_text": "To be the <strong>leading payment gateway in Africa</strong>, recognized for innovation, transparency, global integration, and support for local economic development.",
+    "values_title": "⚙️ <strong>Our Values</strong>",
+    "values_list": [
+      "<strong>Innovation:</strong> creating technological solutions with real impact.",
+      "<strong>Transparency:</strong> acting with clarity, ethics, and commitment.",
+      "<strong>Connectivity:</strong> connecting people, companies, and markets.",
+      "<strong>Security:</strong> protecting data, transactions, and reputations.",
+      "<strong>Excellence:</strong> delivering performance and reliability in every operation."
+    ],
+    "services_title": "💼 <strong>Main Services</strong>",
+    "services_list": [
+      "Multi-currency digital accounts for companies and entrepreneurs.",
+      "Issuance of <strong>AvePay Card business cards</strong> (physical and virtual).",
+      "Integrated payment gateway for e-commerce and apps.",
+      "Digital invoicing and issuance of payment links.",
+      "Complete financial management dashboard with reports and automations.",
+      "Open APIs for system integration.",
+      "Support for <strong>Mobile Money</strong>, <strong>QR Code</strong>, <strong>Bank Transfers</strong>, and <strong>Cryptocurrencies</strong>."
+    ],
+    "who_we_are_title": "🧠 <strong>Who We Are</strong>",
+    "who_we_are_p1": "<strong>Avenatec Lda</strong> is an <strong>Angolan tech startup</strong> specializing in <strong>payments, digital communication, and integrated business solutions</strong>. With offices in <strong>Luanda</strong>, it develops <strong>software, gateways, APIs, invoicing systems, e-commerce, and cloud services</strong>, aiming to <strong>position Angola as a hub of digital innovation in Africa</strong>.",
+    "who_we_are_p2": "We believe the future of payments is <strong>global, secure, and borderless</strong>. Therefore, each AvePay solution is designed to offer <strong>freedom, scalability, and performance</strong>, adapting to the needs of startups, companies, and institutions of any size.",
+    "contact_title": "📞 <strong>Contacts</strong>",
+    "contact_text": "<strong>Avenatec – Tecnologia e Comunicação, SU, Lda</strong><br />📍 Luanda – Angola<br />📧 avepay@avenatec.it.com | 🌐 avepay.avenatec.com | avenatec.it.com<br />📱 (+244) 935 325 003"
   }
 }

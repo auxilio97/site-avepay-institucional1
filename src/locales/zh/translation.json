@@ -153,15 +153,30 @@
     "description": "为扩张中企业打造的全球支付与金融平台。接受安哥拉宽扎、奈拉、美元、欧元、英镑、加密货币、巴西雷亚尔、人民币、日元等多种货币的付款，并以世界上任何货币提款。",
     "products": {
       "title": "产品",
-      "items": ["商业账户", "AvePay支出", "支付", "金融API"]
+      "items": [
+        { "name": "商业账户", "href": "#" },
+        { "name": "AvePay支出", "href": "#" },
+        { "name": "支付", "href": "#" },
+        { "name": "金融API", "href": "#" }
+      ]
     },
     "company": {
       "title": "公司",
-      "items": ["关于我们", "招聘", "新闻", "合作伙伴"]
+      "items": [
+        { "name": "关于我们", "href": "/about" },
+        { "name": "招聘", "href": "#" },
+        { "name": "新闻", "href": "#" },
+        { "name": "合作伙伴", "href": "#" }
+      ]
     },
     "resources": {
       "title": "资源",
-      "items": ["文档", "博客", "支持", "状态"]
+      "items": [
+        { "name": "文档", "href": "#" },
+        { "name": "博客", "href": "#" },
+        { "name": "支持", "href": "#" },
+        { "name": "状态", "href": "#" }
+      ]
     },
     "copyright": "© AvePay 2025 – 版权所有。由Avenatec LDA创建和开发",
     "legal": "资金存放在安全且受监管的金融机构中。支付服务由AvePay Angola, Lda.提供。"
@@ -227,5 +242,38 @@
     "law_p1": "本条款受安哥拉共和国法律管辖。双方选择罗安达的管辖区解决任何争议。",
     "contact_title": "15. 联系方式",
     "contact_p1": "如有问题或投诉，用户可联系：<br />Avenatec Lda<br />电子邮件：avepay@avenatec.it.com<br />电话：+244 935 325 003<br />地址：罗安达，Ingombota"
+  },
+  "about": {
+    "title": "关于我们 – AvePay | Avenatec Lda",
+    "p1": "<strong>AvePay</strong> 是由 <strong>Avenatec – Tecnologia e Comunicação, SU, Lda</strong> 开发的<strong>多币种支付网关</strong>，这是一家安哥拉金融科技公司，旨在简化、现代化和国际化安哥拉及全球个人和企业的资金流动方式。",
+    "p2": "<strong>AvePay</strong> 不仅仅是一个支付处理器，它还是一个<strong>完整的金融生态系统</strong>：它允许创建数字商业账户，以<strong>多种货币（宽扎、美元、欧元、英镑、雷亚尔、人民币、兰特、奈拉、日元甚至加密货币）</strong>发送和接收付款，发行<strong>公司卡</strong>，生成<strong>支付链接</strong>，自动化<strong>发票</strong>，并与<strong>管理系统和电子商务平台</strong>（如 <strong>WordPress、Shopify、Magento</strong> 和 <strong>Joomla</strong>）集成。",
+    "p3": "通过 <strong>AvePay</strong>，公司、自由职业者和组织可以安全、快速地以有竞争力的价格从国内外客户那里<strong>接收付款</strong>，没有货币壁垒。我们的目标是<strong>通过金融技术连接非洲和世界</strong>，提供促进数字环境中包容、效率和信任的解决方案。",
+    "mission_title": "🌍 <strong>我们的使命</strong>",
+    "mission_text": "促进和普及数字、安全和全球支付解决方案，推动安哥拉和非洲业务的增长。",
+    "vision_title": "💡 <strong>我们的愿景</strong>",
+    "vision_text": "成为<strong>非洲领先的支付网关</strong>，以创新、透明、全球一体化和支持地方经济发展而闻名。",
+    "values_title": "⚙️ <strong>我们的价值观</strong>",
+    "values_list": [
+      "<strong>创新：</strong>创造具有实际影响力的技术解决方案。",
+      "<strong>透明：</strong>以清晰、道德和承诺行事。",
+      "<strong>连接：</strong>连接人、公司和市场。",
+      "<strong>安全：</strong>保护数据、交易和声誉。",
+      "<strong>卓越：</strong>在每次操作中提供性能和可靠性。"
+    ],
+    "services_title": "💼 <strong>主要服务</strong>",
+    "services_list": [
+      "为公司和企业家提供多币种数字账户。",
+      "发行 <strong>AvePay Card 商务卡</strong>（实体和虚拟）。",
+      "为电子商务和应用程序提供集成支付网关。",
+      "数字发票和支付链接的发行。",
+      "带有报告和自动化的完整财务管理仪表板。",
+      "用于系统集成的开放 API。",
+      "支持<strong>移动货币</strong>、<strong>二维码</strong>、<strong>银行转账</strong>和<strong>加密货币</strong>。"
+    ],
+    "who_we_are_title": "🧠 <strong>我们是谁</strong>",
+    "who_we_are_p1": "<strong>Avenatec Lda</strong> 是一家<strong>安哥拉科技初创公司</strong>，专门从事<strong>支付、数字通信和集成业务解决方案</strong>。在<strong>罗安达</strong>设有办事处，开发<strong>软件、网关、API、发票系统、电子商务和云服务</strong>，旨在<strong>将安哥拉定位为非洲的数字创新中心</strong>。",
+    "who_we_are_p2": "我们相信支付的未来是<strong>全球化、安全和无国界的</strong>。因此，每个 AvePay 解决方案都旨在提供<strong>自由、可扩展性和性能</strong>，以适应任何规模的初创公司、公司和机构的需求。",
+    "contact_title": "📞 <strong>联系方式</strong>",
+    "contact_text": "<strong>Avenatec – Tecnologia e Comunicação, SU, Lda</strong><br />📍 罗安达 – 安哥拉<br />📧 avepay@avenatec.it.com | 🌐 avepay.avenatec.com | avenatec.it.com<br />📱 (+244) 935 325 003"
   }
 }

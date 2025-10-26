@@ -153,15 +153,30 @@
     "description": "La plateforme mondiale de paiements et de finance pour les entreprises en expansion. Acceptez les paiements en Kwanza angolais, naira, usd, euro, livre, crypto-monnaies, real brésilien, yuan, yen et diverses autres devises et retirez dans n'importe quelle devise du monde.",
     "products": {
       "title": "Produits",
-      "items": ["Comptes Professionnels", "AvePay Spend", "Paiements", "API Financières"]
+      "items": [
+        { "name": "Comptes Professionnels", "href": "#" },
+        { "name": "AvePay Spend", "href": "#" },
+        { "name": "Paiements", "href": "#" },
+        { "name": "API Financières", "href": "#" }
+      ]
     },
     "company": {
       "title": "Entreprise",
-      "items": ["À propos de nous", "Carrières", "Presse", "Partenaires"]
+      "items": [
+        { "name": "À propos de nous", "href": "/about" },
+        { "name": "Carrières", "href": "#" },
+        { "name": "Presse", "href": "#" },
+        { "name": "Partenaires", "href": "#" }
+      ]
     },
     "resources": {
       "title": "Ressources",
-      "items": ["Documentation", "Blog", "Support", "Statut"]
+      "items": [
+        { "name": "Documentation", "href": "#" },
+        { "name": "Blog", "href": "#" },
+        { "name": "Support", "href": "#" },
+        { "name": "Statut", "href": "#" }
+      ]
     },
     "copyright": "© AvePay 2025 – Tous droits réservés. Créé et développé par : Avenatec LDA",
     "legal": "Fonds détenus dans des institutions financières sécurisées et réglementées. Services de paiement fournis par AvePay Angola, Lda."
@@ -227,5 +242,38 @@
     "law_p1": "Les présentes Conditions sont régies par les lois de la République d'Angola. Les parties élisent la juridiction de Luanda pour résoudre tout litige.",
     "contact_title": "15. Contacts",
     "contact_p1": "Pour toute question ou réclamation, l'Utilisateur peut contacter :<br />Avenatec Lda<br />Email : avepay@avenatec.it.com<br />Téléphone : +244 935 325 003<br />Adresse : Luanda, Ingombota"
+  },
+  "about": {
+    "title": "À propos de nous – AvePay | Avenatec Lda",
+    "p1": "<strong>AvePay</strong> est une <strong>passerelle de paiement multidevise</strong> développée par <strong>Avenatec – Tecnologia e Comunicação, SU, Lda</strong>, une entreprise angolaise de technologie financière née pour simplifier, moderniser et internationaliser la manière dont les personnes et les entreprises déplacent de l'argent en Angola et dans le monde.",
+    "p2": "Plus qu'un simple processeur de paiement, <strong>AvePay</strong> est un <strong>écosystème financier complet</strong> : il permet de créer des comptes professionnels numériques, d'envoyer et de recevoir des paiements en <strong>diverses devises (Kwanza, USD, Euro, Livre, Real, Yuan, Rand, Naira, Yen et même des crypto-monnaies)</strong>, d'émettre des <strong>cartes d'entreprise</strong>, de générer des <strong>liens de paiement</strong>, d'automatiser la <strong>facturation</strong> et de s'intégrer à des <strong>systèmes de gestion et des plateformes de commerce électronique</strong> comme <strong>WordPress, Shopify, Magento</strong> et <strong>Joomla</strong>.",
+    "p3": "Avec <strong>AvePay</strong>, les entreprises, les indépendants et les organisations peuvent <strong>recevoir des paiements de clients nationaux et internationaux</strong> en toute sécurité, rapidement et à des tarifs compétitifs, sans barrières de change. Notre objectif est d'<strong>unir l'Afrique et le monde grâce à la technologie financière</strong>, en offrant des solutions qui favorisent l'inclusion, l'efficacité et la confiance dans l'environnement numérique.",
+    "mission_title": "🌍 <strong>Notre Mission</strong>",
+    "mission_text": "Faciliter et démocratiser l'accès à des solutions de paiement numériques, sécurisées et mondiales qui stimulent la croissance des entreprises angolaises et africaines.",
+    "vision_title": "💡 <strong>Notre Vision</strong>",
+    "vision_text": "Être la <strong>passerelle de paiement de référence en Afrique</strong>, reconnue pour son innovation, sa transparence, son intégration mondiale et son soutien au développement économique local.",
+    "values_title": "⚙️ <strong>Nos Valeurs</strong>",
+    "values_list": [
+      "<strong>Innovation :</strong> créer des solutions technologiques à impact réel.",
+      "<strong>Transparence :</strong> agir avec clarté, éthique et engagement.",
+      "<strong>Connectivité :</strong> connecter les personnes, les entreprises et les marchés.",
+      "<strong>Sécurité :</strong> protéger les données, les transactions et les réputations.",
+      "<strong>Excellence :</strong> offrir performance et fiabilité à chaque opération."
+    ],
+    "services_title": "💼 <strong>Services Principaux</strong>",
+    "services_list": [
+      "Comptes numériques multidevises pour les entreprises et les entrepreneurs.",
+      "Émission de <strong>cartes professionnelles AvePay Card</strong> (physiques et virtuelles).",
+      "Passerelle de paiement intégrée pour le commerce électronique et les applications.",
+      "Facturation numérique et émission de liens de paiement.",
+      "Tableau de bord de gestion financière complet avec rapports et automatisations.",
+      "API ouvertes pour l'intégration de systèmes.",
+      "Prise en charge de <strong>Mobile Money</strong>, <strong>QR Code</strong>, <strong>Virements Bancaires</strong> et <strong>Crypto-monnaies</strong>."
+    ],
+    "who_we_are_title": "🧠 <strong>Qui sommes-nous</strong>",
+    "who_we_are_p1": "<strong>Avenatec Lda</strong> est une <strong>startup technologique angolaise</strong> spécialisée dans les <strong>paiements, la communication numérique et les solutions d'entreprise intégrées</strong>. Avec des bureaux à <strong>Luanda</strong>, elle développe des <strong>logiciels, des passerelles, des API, des systèmes de facturation, du commerce électronique et des services cloud</strong>, visant à <strong>positionner l'Angola comme un pôle d'innovation numérique en Afrique</strong>.",
+    "who_we_are_p2": "Nous croyons que l'avenir des paiements est <strong>mondial, sécurisé et sans frontières</strong>. C'est pourquoi chaque solution AvePay est conçue pour offrir <strong>liberté, évolutivité et performance</strong>, en s'adaptant aux besoins des startups, des entreprises et des institutions de toute taille.",
+    "contact_title": "📞 <strong>Contacts</strong>",
+    "contact_text": "<strong>Avenatec – Tecnologia e Comunicação, SU, Lda</strong><br />📍 Luanda – Angola<br />📧 avepay@avenatec.it.com | 🌐 avepay.avenatec.com | avenatec.it.com<br />📱 (+244) 935 325 003"
   }
 }
