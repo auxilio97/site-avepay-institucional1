@@ -15,25 +15,25 @@ const Index = () => {
     <div className="bg-background text-foreground">
       <Header />
       <main className="overflow-x-hidden">
-        <AnimatedSection>
+        <AnimatedSection animation="fade-in-up">
           <Hero />
         </AnimatedSection>
-        <AnimatedSection>
+        <AnimatedSection animation="zoom-in">
           <Features />
         </AnimatedSection>
-        <AnimatedSection>
+        <AnimatedSection animation="fade-in-left">
           <Solutions />
         </AnimatedSection>
-        <AnimatedSection>
+        <AnimatedSection animation="fade-in-up">
           <Pricing />
         </AnimatedSection>
-        <AnimatedSection>
+        <AnimatedSection animation="zoom-in">
           <Testimonials />
         </AnimatedSection>
-        <AnimatedSection>
+        <AnimatedSection animation="fade-in-right">
           <Integration />
         </AnimatedSection>
-        <AnimatedSection>
+        <AnimatedSection animation="fade-in-up">
           <CTA />
         </AnimatedSection>
       </main>
