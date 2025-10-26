@@ -34,7 +34,7 @@ export const Integration = () => {
             <div className="space-y-3 mb-8">
               {features.map(feature => (
                 <div key={feature} className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-400 mr-2" />
+                  <CheckCircle className="h-5 w-5 text-green-400 me-2" />
                   <span>{feature}</span>
                 </div>
               ))}

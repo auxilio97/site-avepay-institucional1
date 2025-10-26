@@ -39,7 +39,7 @@ export const Hero = () => {
         <a href="https://avepaygateway.avenatec.it.com" target="_blank" rel="noopener noreferrer">
           <Button size="lg" className="bg-orange-500 hover:bg-primary text-primary-foreground transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
             {t("hero.cta")}
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <ArrowRight className="ms-2 h-5 w-5" />
           </Button>
         </a>
         

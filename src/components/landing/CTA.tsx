@@ -35,7 +35,7 @@ export const CTA = () => {
           </div>
           <div className="flex justify-center items-center space-x-6 mt-8 text-sm text-muted-foreground">
               {complianceItems.map(item => (
-                <div key={item} className="flex items-center"><ShieldCheck className="h-4 w-4 mr-1" /> {item}</div>
+                <div key={item} className="flex items-center"><ShieldCheck className="h-4 w-4 me-1" /> {item}</div>
               ))}
           </div>
         </div>

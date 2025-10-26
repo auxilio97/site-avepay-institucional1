@@ -18,7 +18,7 @@ export const Solutions = () => {
             <div className="space-y-4">
               {solutions.map((solution) => (
                 <div key={solution} className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
+                  <CheckCircle className="h-6 w-6 text-green-500 me-3" />
                   <span className="font-medium text-lg">{solution}</span>
                 </div>
               ))}
@@ -26,7 +26,7 @@ export const Solutions = () => {
           </div>
           <div className="relative">
             <img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="AvePay Dashboard" className="rounded-lg shadow-lg border" />
-            <div className="absolute bottom-4 left-4 p-3 rounded-lg bg-black/20 backdrop-blur-md border border-white/20 animate-fade-in-up">
+            <div className="absolute bottom-4 start-4 p-3 rounded-lg bg-black/20 backdrop-blur-md border border-white/20 animate-fade-in-up">
               <p className="text-sm text-white font-semibold">{t("solutions.dashboard_uptime")}</p>
             </div>
           </div>
@@ -60,7 +60,7 @@ export const Solutions = () => {
             <ul className="space-y-2">
                 {platformFeatures.map(feature => (
                     <li key={feature} className="flex items-center">
-                        <CheckCircle className="h-5 w-5 text-primary mr-2" />
+                        <CheckCircle className="h-5 w-5 text-primary me-2" />
                         {feature}
                     </li>
                 ))}

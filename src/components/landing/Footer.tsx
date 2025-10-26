@@ -58,14 +58,14 @@ export const Footer = () => {
         <div className="border-t border-slate-700 mt-8 pt-6 text-sm text-slate-400">
           <div className="flex flex-col sm:flex-row justify-between items-center">
             <p>{t("footer.copyright")}</p>
-            <div className="flex space-x-4 mt-4 sm:mt-0 items-center">
+            <div className="flex gap-4 mt-4 sm:mt-0 items-center">
               <Link to="/terms" className="hover:text-white underline">Termos & Condições</Link>
               <span>PCI DSS</span>
               <span>SOC1</span>
               <span>SOC2</span>
             </div>
           </div>
-          <p className="mt-4 text-xs text-center sm:text-left">
+          <p className="mt-4 text-xs text-center sm:text-start">
             {t("footer.legal")}
           </p>
         </div>

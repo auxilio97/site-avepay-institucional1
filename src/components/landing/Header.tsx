@@ -44,7 +44,7 @@ export const Header = () => {
         <Link to="/">
           <img src="/logo.png" alt="AvePay Logo" className="h-14" />
         </Link>
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -56,7 +56,7 @@ export const Header = () => {
           ))}
         </nav>
         <div className="flex items-center gap-2">
-          <div className="hidden md:flex items-center space-x-2">
+          <div className="hidden md:flex items-center gap-2">
             <a href="https://avepaygateway.avenatec.it.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="hover:bg-orange-500 hover:text-white">{t("header.login")}</Button>
             </a>
