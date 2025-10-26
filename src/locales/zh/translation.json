@@ -290,12 +290,24 @@
     "form_message": "信息",
     "form_message_placeholder": "在此处写下您的信息...",
     "form_submit": "发送信息",
+    "form_sending": "发送中...",
     "info_title": "联系信息",
     "info_email_title": "电子邮件",
     "info_email_description": "提供一般支持或问题。",
     "info_phone_title": "电话",
     "info_phone_description": "周一至周五，上午9点至下午5点可用。",
     "info_address_title": "地址",
-    "info_address_description": "欢迎访问我们的办公室。"
+    "info_address_description": "欢迎访问我们的办公室。",
+    "toast": {
+      "sending": "正在发送您的消息...",
+      "success": "消息发送成功！",
+      "error": "发送消息失败。请稍后再试。"
+    },
+    "validation": {
+      "name": "姓名必须至少包含2个字符。",
+      "email": "请输入有效的电子邮件地址。",
+      "subject": "主题必须至少包含5个字符。",
+      "message": "消息必须至少包含10个字符。"
+    }
   }
 }

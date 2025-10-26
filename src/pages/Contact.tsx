@@ -3,14 +3,95 @@ import { Footer } from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
+import { showLoading, showSuccess, showError, dismissToast } from "@/utils/toast";
+import { useState } from "react";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 
 const Contact = () => {
   const { t } = useTranslation();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const contactFormSchema = z.object({
+    name: z.string().min(2, { message: t("contact.validation.name") }),
+    email: z.string().email({ message: t("contact.validation.email") }),
+    subject: z.string().min(5, { message: t("contact.validation.subject") }),
+    message: z.string().min(10, { message: t("contact.validation.message") }),
+  });
+
+  type ContactFormValues = z.infer<typeof contactFormSchema>;
+
+  const form = useForm<ContactFormValues>({
+    resolver: zodResolver(contactFormSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    },
+  });
+
+  const onSubmit = async (data: ContactFormValues) => {
+    setIsSubmitting(true);
+    const toastId = showLoading(t("contact.toast.sending"));
+
+    // ========================================================================
+    // INÍCIO DA ÁREA DE INTEGRAÇÃO MANUAL
+    // ========================================================================
+    //
+    // Olá! É aqui que você precisa de adicionar a sua lógica de backend.
+    // O objeto `data` contém os dados do formulário: { name, email, subject, message }
+    //
+    // Substitua o código de simulação abaixo pela sua chamada `fetch` real
+    // para o seu endpoint no CyberPanel que envia o e-mail.
+    //
+    // Exemplo de chamada para um script PHP:
+    //
+    // try {
+    //   const response = await fetch('https://seu-dominio.com/api/enviar-email.php', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify(data),
+    //   });
+    //
+    //   if (!response.ok) {
+    //     throw new Error('A resposta da rede não foi OK');
+    //   }
+    //
+    //   dismissToast(toastId);
+    //   showSuccess(t("contact.toast.success"));
+    //   form.reset();
+    //
+    // } catch (error) {
+    //   console.error('Erro ao enviar e-mail:', error);
+    //   dismissToast(toastId);
+    //   showError(t("contact.toast.error"));
+    // } finally {
+    //   setIsSubmitting(false);
+    // }
+    //
+
+    // Simulação de chamada de API (substitua isto)
+    console.log("Dados do formulário a serem enviados para o backend:", data);
+    await new Promise(resolve => setTimeout(resolve, 2000)); // Simula atraso da rede
+
+    // Simulação de sucesso (remova isto quando integrar)
+    dismissToast(toastId);
+    showSuccess(`${t("contact.toast.success")} (Simulação)`);
+    form.reset();
+    
+    // ========================================================================
+    // FIM DA ÁREA DE INTEGRAÇÃO MANUAL
+    // ========================================================================
+
+    setIsSubmitting(false);
+  };
 
   return (
     <>
@@ -34,29 +115,67 @@ const Contact = () => {
                   <CardTitle>{t("contact.form_title")}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <form className="space-y-4">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="name">{t("contact.form_name")}</Label>
-                        <Input id="name" placeholder={t("contact.form_name_placeholder")} />
+                  <Form {...form}>
+                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <FormField
+                          control={form.control}
+                          name="name"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel>{t("contact.form_name")}</FormLabel>
+                              <FormControl>
+                                <Input placeholder={t("contact.form_name_placeholder")} {...field} />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                        <FormField
+                          control={form.control}
+                          name="email"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel>{t("contact.form_email")}</FormLabel>
+                              <FormControl>
+                                <Input type="email" placeholder={t("contact.form_email_placeholder")} {...field} />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
                       </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="email">{t("contact.form_email")}</Label>
-                        <Input id="email" type="email" placeholder={t("contact.form_email_placeholder")} />
-                      </div>
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="subject">{t("contact.form_subject")}</Label>
-                      <Input id="subject" placeholder={t("contact.form_subject_placeholder")} />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="message">{t("contact.form_message")}</Label>
-                      <Textarea id="message" placeholder={t("contact.form_message_placeholder")} rows={5} />
-                    </div>
-                    <Button type="submit" className="w-full bg-orange-500 hover:bg-primary text-white">
-                      {t("contact.form_submit")}
-                    </Button>
-                  </form>
+                      <FormField
+                        control={form.control}
+                        name="subject"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>{t("contact.form_subject")}</FormLabel>
+                            <FormControl>
+                              <Input placeholder={t("contact.form_subject_placeholder")} {...field} />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                      <FormField
+                        control={form.control}
+                        name="message"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>{t("contact.form_message")}</FormLabel>
+                            <FormControl>
+                              <Textarea placeholder={t("contact.form_message_placeholder")} rows={5} {...field} />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                      <Button type="submit" className="w-full bg-orange-500 hover:bg-primary text-white" disabled={isSubmitting}>
+                        {isSubmitting ? t("contact.form_sending") : t("contact.form_submit")}
+                      </Button>
+                    </form>
+                  </Form>
                 </CardContent>
               </Card>
             </AnimatedSection>

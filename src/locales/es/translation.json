@@ -290,12 +290,24 @@
     "form_message": "Mensaje",
     "form_message_placeholder": "Escriba su mensaje aquí...",
     "form_submit": "Enviar Mensaje",
+    "form_sending": "Enviando...",
     "info_title": "Información de Contacto",
     "info_email_title": "Correo Electrónico",
     "info_email_description": "Para soporte general o preguntas.",
     "info_phone_title": "Teléfono",
     "info_phone_description": "Disponible de lunes a viernes, de 9 a 17 h.",
     "info_address_title": "Dirección",
-    "info_address_description": "Venga a visitar nuestra oficina."
+    "info_address_description": "Venga a visitar nuestra oficina.",
+    "toast": {
+      "sending": "Enviando su mensaje...",
+      "success": "¡Mensaje enviado con éxito!",
+      "error": "Error al enviar el mensaje. Por favor, inténtelo de nuevo más tarde."
+    },
+    "validation": {
+      "name": "El nombre debe tener al menos 2 caracteres.",
+      "email": "Por favor, introduzca una dirección de correo electrónico válida.",
+      "subject": "El asunto debe tener al menos 5 caracteres.",
+      "message": "El mensaje debe tener al menos 10 caracteres."
+    }
   }
 }

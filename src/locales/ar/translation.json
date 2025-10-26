@@ -290,12 +290,24 @@
     "form_message": "الرسالة",
     "form_message_placeholder": "اكتب رسالتك هنا...",
     "form_submit": "إرسال الرسالة",
+    "form_sending": "جار الإرسال...",
     "info_title": "معلومات الاتصال",
     "info_email_title": "البريد الإلكتروني",
     "info_email_description": "للدعم العام أو الأسئلة.",
     "info_phone_title": "الهاتف",
     "info_phone_description": "متاح من الاثنين إلى الجمعة، من 9 صباحًا حتى 5 مساءً.",
     "info_address_title": "العنوان",
-    "info_address_description": "تعال لزيارة مكتبنا."
+    "info_address_description": "تعال لزيارة مكتبنا.",
+    "toast": {
+      "sending": "جارٍ إرسال رسالتك...",
+      "success": "تم إرسال الرسالة بنجاح!",
+      "error": "فشل إرسال الرسالة. يرجى المحاولة مرة أخرى لاحقًا."
+    },
+    "validation": {
+      "name": "يجب أن يتكون الاسم من حرفين على الأقل.",
+      "email": "الرجاء إدخال عنوان بريد إلكتروني صالح.",
+      "subject": "يجب أن يتكون الموضوع من 5 أحرف على الأقل.",
+      "message": "يجب أن تتكون الرسالة من 10 أحرف على الأقل."
+    }
   }
 }

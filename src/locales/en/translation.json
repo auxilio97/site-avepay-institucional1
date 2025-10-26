@@ -290,12 +290,24 @@
     "form_message": "Message",
     "form_message_placeholder": "Write your message here...",
     "form_submit": "Send Message",
+    "form_sending": "Sending...",
     "info_title": "Contact Information",
     "info_email_title": "Email",
     "info_email_description": "For general support or questions.",
     "info_phone_title": "Phone",
     "info_phone_description": "Available Mon-Fri, 9am-5pm.",
     "info_address_title": "Address",
-    "info_address_description": "Come visit our office."
+    "info_address_description": "Come visit our office.",
+    "toast": {
+      "sending": "Sending your message...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again later."
+    },
+    "validation": {
+      "name": "Name must be at least 2 characters.",
+      "email": "Please enter a valid email address.",
+      "subject": "Subject must be at least 5 characters.",
+      "message": "Message must be at least 10 characters."
+    }
   }
 }
