@@ -25,7 +25,7 @@ export const Solutions = () => {
             </div>
           </div>
           <div>
-            <img src="/placeholder.svg" alt="AvePay Dashboard" className="rounded-lg shadow-lg border" />
+            <img src="https://images.unsplash.com/photo-1611926653458-09294b3142d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="AvePay Dashboard" className="rounded-lg shadow-lg border" />
             <p className="text-center text-sm text-muted-foreground mt-2">{t("solutions.dashboard_uptime")}</p>
           </div>
         </div>
