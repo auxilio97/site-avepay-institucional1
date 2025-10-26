@@ -1,24 +1,20 @@
 import { useTranslation } from "react-i18next";
-import { EmisLogo } from "../icons/partners/EmisLogo";
-import { BnaLogo } from "../icons/partners/BnaLogo";
-import { WordpressLogo } from "../icons/partners/WordpressLogo";
-import { ShopifyLogo } from "../icons/partners/ShopifyLogo";
-import { MagentoLogo } from "../icons/partners/MagentoLogo";
 import { PrestashopLogo } from "../icons/partners/PrestashopLogo";
 import { StripeLogo } from "../icons/partners/StripeLogo";
 import { WiseLogo } from "../icons/partners/WiseLogo";
+import { cn } from "@/lib/utils";
 
 export const TrustedBy = () => {
   const { t } = useTranslation();
   const partners = [
-    { name: "EMIS", logo: <EmisLogo className="h-8 w-auto" /> },
-    { name: "BNA", logo: <BnaLogo className="h-8 w-auto" /> },
-    { name: "WordPress", logo: <WordpressLogo className="h-8 w-auto" /> },
-    { name: "Shopify", logo: <ShopifyLogo className="h-8 w-auto" /> },
-    { name: "Magento", logo: <MagentoLogo className="h-8 w-auto" /> },
-    { name: "PrestaShop", logo: <PrestashopLogo className="h-8 w-auto" /> },
-    { name: "Stripe", logo: <StripeLogo className="h-8 w-auto" /> },
-    { name: "Wise", logo: <WiseLogo className="h-8 w-auto" /> },
+    { name: "EMIS", imgSrc: "/logo_emis.svg" },
+    { name: "BNA", imgSrc: "/logotipo.png" },
+    { name: "WordPress", imgSrc: "/what-is-wordpress.webp", invertInDark: true },
+    { name: "Shopify", imgSrc: "/shopify_logo_black.png", invertInDark: true },
+    { name: "Magento", imgSrc: "/magento-logo.webp" },
+    { name: "PrestaShop", logo: <PrestashopLogo className="h-10 w-auto" /> },
+    { name: "Stripe", logo: <StripeLogo className="h-10 w-auto" /> },
+    { name: "Wise", logo: <WiseLogo className="h-10 w-auto" /> },
   ];
 
   return (
@@ -30,7 +26,18 @@ export const TrustedBy = () => {
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-8 items-center">
           {partners.map((partner) => (
             <div key={partner.name} className="flex justify-center opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300">
-              {partner.logo}
+              {partner.imgSrc ? (
+                <img 
+                  src={partner.imgSrc} 
+                  alt={partner.name} 
+                  className={cn(
+                    "h-10 w-auto object-contain",
+                    partner.invertInDark && "dark:invert"
+                  )}
+                />
+              ) : (
+                partner.logo
+              )}
             </div>
           ))}
         </div>
