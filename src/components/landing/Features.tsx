@@ -28,7 +28,7 @@ export const Features = () => {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-slate-50 dark:bg-slate-900">
+    <section className="py-20 md:py-28 bg-gradient-to-b from-background to-muted/40">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -40,9 +40,12 @@ export const Features = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature) => (
-            <Card key={feature.title} className="text-center border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+            <Card 
+              key={feature.title} 
+              className="text-center bg-background/50 backdrop-blur-sm border border-transparent hover:border-primary/20 shadow-lg hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-2"
+            >
               <CardHeader>
-                <div className="mx-auto bg-primary/10 p-3 rounded-full">
+                <div className="mx-auto bg-primary/10 p-4 rounded-full inline-block">
                   {feature.icon}
                 </div>
               </CardHeader>
