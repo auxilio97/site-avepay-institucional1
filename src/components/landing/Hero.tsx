@@ -22,7 +22,7 @@ export const Hero = () => {
           muted
           playsInline
           className="w-full h-full object-cover"
-          src="https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4"
+          src="https://videos.pexels.com/video-files/7205305/7205305-hd_1920_1080_25fps.mp4"
         />
       </div>
       {/* Overlay */}
@@ -62,7 +62,7 @@ export const Hero = () => {
                   {index < stats.length - 1 && (
                     <>
                       <Separator orientation="vertical" className="hidden md:block h-16" />
-                      <Separator orientation="horizontal" className="block md:hidden w-1/2 mx-auto" />
+                      <Separator orientation="horizontal" className="block md:hidden w-1-2 mx-auto" />
                     </>
                   )}
                 </>
