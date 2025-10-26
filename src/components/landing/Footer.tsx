@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   const { t } = useTranslation();
@@ -45,7 +46,8 @@ export const Footer = () => {
         <div className="border-t border-slate-700 mt-8 pt-6 text-sm text-slate-400">
           <div className="flex flex-col sm:flex-row justify-between items-center">
             <p>{t("footer.copyright")}</p>
-            <div className="flex space-x-4 mt-4 sm:mt-0">
+            <div className="flex space-x-4 mt-4 sm:mt-0 items-center">
+              <Link to="/terms" className="hover:text-white underline">Termos & Condições</Link>
               <span>PCI DSS</span>
               <span>SOC1</span>
               <span>SOC2</span>
