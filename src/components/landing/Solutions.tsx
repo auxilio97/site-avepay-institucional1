@@ -7,7 +7,7 @@ export const Solutions = () => {
   const platformFeatures = t("solutions.unified_platform.features", { returnObjects: true }) as string[];
 
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
