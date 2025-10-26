@@ -150,7 +150,7 @@
     ]
   },
   "footer": {
-    "description": "La plateforme mondiale de paiements et de finance pour les entreprises en expansion. Acceptez les paiements en Kwanza et retirez dans n'importe quelle devise du monde.",
+    "description": "La plateforme mondiale de paiements et de finance pour les entreprises en expansion. Acceptez les paiements en Kwanza angolais, naira, usd, euro, livre, crypto-monnaies, real brésilien, yuan, yen et diverses autres devises et retirez dans n'importe quelle devise du monde.",
     "products": {
       "title": "Produits",
       "items": ["Comptes Professionnels", "AvePay Spend", "Paiements", "API Financières"]
