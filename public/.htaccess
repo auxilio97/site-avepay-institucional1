@@ -1,3 +1,73 @@
+# ==============================================================================
+# Otimização de Desempenho e Segurança para LiteSpeed/CyberPanel
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Compressão de Arquivos (Gzip/Deflate)
+# Ativa a compressão para ficheiros de texto, reduzindo o seu tamanho.
+# ------------------------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# Cache do Navegador (Expires Headers)
+# Define por quanto tempo os navegadores devem guardar os ficheiros em cache.
+# ------------------------------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault                              "access plus 1 month"
+  
+  # Ficheiros HTML não devem ser cacheados por muito tempo
+  ExpiresByType text/html                     "access plus 0 seconds"
+  
+  # Dados dinâmicos
+  ExpiresByType application/json              "access plus 0 seconds"
+  ExpiresByType application/xml               "access plus 0 seconds"
+  
+  # CSS e JS com hash no nome podem ser cacheados por muito tempo
+  ExpiresByType text/css                      "access plus 1 year"
+  ExpiresByType application/javascript        "access plus 1 year"
+  
+  # Imagens e media
+  ExpiresByType image/gif                     "access plus 1 month"
+  ExpiresByType image/png                     "access plus 1 month"
+  ExpiresByType image/jpeg                    "access plus 1 month"
+  ExpiresByType image/webp                    "access plus 1 month"
+  ExpiresByType image/svg+xml                 "access plus 1 month"
+  ExpiresByType image/x-icon                  "access plus 1 week"
+  ExpiresByType video/mp4                     "access plus 1 year"
+
+  # Fontes
+  ExpiresByType application/font-woff         "access plus 1 year"
+  ExpiresByType application/font-woff2        "access plus 1 year"
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# Cabeçalhos de Segurança
+# Adiciona uma camada extra de proteção contra ataques comuns.
+# ------------------------------------------------------------------------------
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  # Descomente a linha abaixo APENAS se o seu site estiver a funcionar 100% em HTTPS.
+  # Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+
+# ==============================================================================
+# Regras de Reescrita para Single Page Application (SPA)
+# Garante que todas as rotas são geridas pelo React.
+# ==============================================================================
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
