@@ -10,6 +10,7 @@ import { CTA } from "@/components/landing/CTA";
 import { Footer } from "@/components/landing/Footer";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { FAQ } from "@/components/landing/FAQ";
+import { TrustedBy } from "@/components/landing/TrustedBy";
 
 const Index = () => {
   return (
@@ -18,6 +19,9 @@ const Index = () => {
       <main className="overflow-x-hidden">
         <AnimatedSection animation="fade-in-up">
           <Hero />
+        </AnimatedSection>
+        <AnimatedSection>
+          <TrustedBy />
         </AnimatedSection>
         <AnimatedSection animation="zoom-in">
           <Features />
