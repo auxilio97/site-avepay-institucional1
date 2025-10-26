@@ -20,9 +20,7 @@ const Index = () => {
         <AnimatedSection animation="fade-in-up">
           <Hero />
         </AnimatedSection>
-        <AnimatedSection>
-          <TrustedBy />
-        </AnimatedSection>
+        <TrustedBy />
         <AnimatedSection animation="zoom-in">
           <Features />
         </AnimatedSection>
