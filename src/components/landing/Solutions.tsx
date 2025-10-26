@@ -24,9 +24,11 @@ export const Solutions = () => {
               ))}
             </div>
           </div>
-          <div>
+          <div className="relative">
             <img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="AvePay Dashboard" className="rounded-lg shadow-lg border" />
-            <p className="text-center text-sm text-muted-foreground mt-2">{t("solutions.dashboard_uptime")}</p>
+            <div className="absolute bottom-4 left-4 p-3 rounded-lg bg-black/20 backdrop-blur-md border border-white/20 animate-fade-in-up">
+              <p className="text-sm text-white font-semibold">{t("solutions.dashboard_uptime")}</p>
+            </div>
           </div>
         </div>
         <div className="mt-20 md:mt-28 grid md:grid-cols-2 gap-12 items-center">
