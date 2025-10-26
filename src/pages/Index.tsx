@@ -12,7 +12,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 
 const Index = () => {
   return (
-    <div className="bg-background text-foreground">
+    <div className="text-foreground">
       <Header />
       <main className="overflow-x-hidden">
         <AnimatedSection animation="fade-in-up">
