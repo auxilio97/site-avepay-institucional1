@@ -10,6 +10,7 @@ import Login from "./pages/Login";
 import { ThemeProvider } from "./components/theme-provider";
 import Terms from "./pages/Terms";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import { useDirection } from "./hooks/useDirection";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const AppContent = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>

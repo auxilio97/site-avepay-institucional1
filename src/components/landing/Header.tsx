@@ -28,7 +28,7 @@ export const Header = () => {
     { name: t("header.services"), href: "#" },
     { name: t("header.solutions"), href: "#" },
     { name: t("header.howItWorks"), href: "#" },
-    { name: t("header.contact"), href: "#" },
+    { name: t("header.contact"), href: "/contact" },
   ];
 
   return (
@@ -46,13 +46,13 @@ export const Header = () => {
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               className="text-sm font-medium text-foreground/70 transition-colors hover:text-accent"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
         </nav>
         <div className="flex items-center gap-2">
@@ -79,13 +79,13 @@ export const Header = () => {
                     <img src="/logo.png" alt="AvePay Logo" className="h-14 dark:brightness-0 dark:invert" />
                   </Link>
                   {navLinks.map((link) => (
-                    <a
+                    <Link
                       key={link.name}
-                      href={link.href}
+                      to={link.href}
                       className="text-base font-medium text-foreground/70 transition-colors hover:text-accent"
                     >
                       {link.name}
-                    </a>
+                    </Link>
                   ))}
                   <div className="flex flex-col space-y-2 pt-6">
                     <a href="https://avepaygateway.avenatec.it.com" target="_blank" rel="noopener noreferrer" className="w-full">

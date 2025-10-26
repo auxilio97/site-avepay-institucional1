@@ -166,7 +166,8 @@
         { "name": "Sobre Nós", "href": "/about" },
         { "name": "Carreiras", "href": "#" },
         { "name": "Imprensa", "href": "#" },
-        { "name": "Parceiros", "href": "#" }
+        { "name": "Parceiros", "href": "#" },
+        { "name": "Contato", "href": "/contact" }
       ]
     },
     "resources": {
@@ -275,5 +276,26 @@
     "who_we_are_p2": "Acreditamos que o futuro dos pagamentos é <strong>global, seguro e sem fronteiras</strong>. Por isso, cada solução AvePay é projetada para oferecer <strong>liberdade, escalabilidade e desempenho</strong>, adaptando-se às necessidades de startups, empresas e instituições de qualquer dimensão.",
     "contact_title": "📞 <strong>Contactos</strong>",
     "contact_text": "<strong>Avenatec – Tecnologia e Comunicação, SU, Lda</strong><br />📍 Luanda – Angola<br />📧 avepay@avenatec.it.com | 🌐 avepay.avenatec.com | avenatec.it.com<br />📱 (+244) 935 325 003"
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "subtitle": "Tem alguma pergunta ou quer falar conosco? Adoraríamos ouvir de você.",
+    "form_title": "Envie-nos uma Mensagem",
+    "form_name": "Nome",
+    "form_name_placeholder": "Seu nome completo",
+    "form_email": "E-mail",
+    "form_email_placeholder": "seu.email@exemplo.com",
+    "form_subject": "Assunto",
+    "form_subject_placeholder": "Sobre o que gostaria de falar?",
+    "form_message": "Mensagem",
+    "form_message_placeholder": "Escreva sua mensagem aqui...",
+    "form_submit": "Enviar Mensagem",
+    "info_title": "Informações de Contato",
+    "info_email_title": "E-mail",
+    "info_email_description": "Para suporte geral ou perguntas.",
+    "info_phone_title": "Telefone",
+    "info_phone_description": "Disponível de Seg a Sex, 9h-17h.",
+    "info_address_title": "Endereço",
+    "info_address_description": "Visite nosso escritório."
   }
 }
