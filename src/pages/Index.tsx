@@ -37,10 +37,10 @@ const Index = () => {
           <Integration />
         </AnimatedSection>
         <AnimatedSection animation="fade-in-up">
-          <FAQ />
+          <CTA />
         </AnimatedSection>
         <AnimatedSection animation="fade-in-up">
-          <CTA />
+          <FAQ />
         </AnimatedSection>
       </main>
       <Footer />
