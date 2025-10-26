@@ -29,12 +29,12 @@ export const TrustedBy = () => {
         >
           <div className="flex w-max animate-infinite-scroll hover:[animation-play-state:paused]">
             {[...partners, ...partners].map((partner, index) => (
-              <div key={`${partner.name}-${index}`} className="flex-shrink-0 w-48 flex justify-center">
+              <div key={`${partner.name}-${index}`} className="flex-shrink-0 w-44 h-24 flex justify-center items-center mx-4">
                 <img
                   src={partner.imgSrc}
                   alt={partner.name}
                   className={cn(
-                    "h-10 w-auto object-contain",
+                    "max-h-12 max-w-full object-contain",
                     partner.invertInDark && "dark:invert"
                   )}
                 />
