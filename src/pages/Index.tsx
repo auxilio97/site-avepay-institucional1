@@ -8,19 +8,34 @@ import { Testimonials } from "@/components/landing/Testimonials";
 import { Integration } from "@/components/landing/Integration";
 import { CTA } from "@/components/landing/CTA";
 import { Footer } from "@/components/landing/Footer";
+import { AnimatedSection } from "@/components/AnimatedSection";
 
 const Index = () => {
   return (
     <div className="bg-background text-foreground">
       <Header />
-      <main>
-        <Hero />
-        <Features />
-        <Solutions />
-        <Pricing />
-        <Testimonials />
-        <Integration />
-        <CTA />
+      <main className="overflow-x-hidden">
+        <AnimatedSection>
+          <Hero />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Features />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Solutions />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Pricing />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Testimonials />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Integration />
+        </AnimatedSection>
+        <AnimatedSection>
+          <CTA />
+        </AnimatedSection>
       </main>
       <Footer />
       <MadeWithDyad />
