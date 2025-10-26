@@ -17,7 +17,7 @@ const Register = () => {
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <Link to="/" className="mb-4 inline-block">
-            <img src="/logo.png" alt="AvePay Logo" className="h-14 mx-auto" />
+            <img src="/logo.png" alt="AvePay Logo" className="h-14 mx-auto dark:brightness-0 dark:invert" />
           </Link>
           <CardTitle className="text-2xl">Criar uma conta</CardTitle>
           <CardDescription>
