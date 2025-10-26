@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import CountUp from "react-countup";
+import { Separator } from "@/components/ui/separator";
 
 export const Hero = () => {
   const { t } = useTranslation();
@@ -12,34 +13,47 @@ export const Hero = () => {
   ];
 
   return (
-    <section className="py-24 md:py-32 bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-950">
+    <section className="relative py-28 md:py-40 bg-gradient-to-b from-slate-50/50 via-white to-slate-50/50 dark:from-slate-900/80 dark:via-slate-950 dark:to-slate-900/80">
       <div className="container mx-auto text-center px-4 md:px-6">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-6 text-slate-900 dark:text-slate-50">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-50 dark:to-slate-300">
           {t("hero.title")}
         </h1>
         <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground mb-10">
           {t("hero.subtitle")}
         </p>
         <a href="https://avepaygateway.avenatec.it.com" target="_blank" rel="noopener noreferrer">
-          <Button size="lg" className="bg-orange-500 hover:bg-primary text-primary-foreground">
+          <Button size="lg" className="bg-orange-500 hover:bg-primary text-primary-foreground transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
             {t("hero.cta")}
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </a>
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {stats.map((stat) => (
-            <div key={stat.label}>
-              <p className="text-4xl font-bold">
-                <CountUp 
-                  end={stat.end} 
-                  duration={2.5} 
-                  separator={stat.separator} 
-                  suffix={stat.suffix} 
-                />
-              </p>
-              <p className="text-muted-foreground">{stat.label}</p>
+        
+        <div className="mt-20 max-w-4xl mx-auto">
+          <div className="bg-background/50 backdrop-blur-sm border dark:border-slate-800 rounded-2xl p-8 shadow-sm">
+            <div className="flex flex-col md:flex-row items-center justify-around gap-8">
+              {stats.map((stat, index) => (
+                <>
+                  <div key={stat.label} className="flex flex-col items-center">
+                    <p className="text-4xl font-bold text-primary dark:text-orange-400">
+                      <CountUp 
+                        end={stat.end} 
+                        duration={2.5} 
+                        separator={stat.separator} 
+                        suffix={stat.suffix} 
+                      />
+                    </p>
+                    <p className="text-muted-foreground mt-1">{stat.label}</p>
+                  </div>
+                  {index < stats.length - 1 && (
+                    <>
+                      <Separator orientation="vertical" className="hidden md:block h-16" />
+                      <Separator orientation="horizontal" className="block md:hidden w-1/2 mx-auto" />
+                    </>
+                  )}
+                </>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
