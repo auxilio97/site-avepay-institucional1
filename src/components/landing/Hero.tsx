@@ -13,8 +13,16 @@ export const Hero = () => {
   ];
 
   return (
-    <section className="relative py-28 md:py-40 bg-gradient-to-b from-slate-50/50 via-white to-slate-50/50 dark:from-slate-900/80 dark:via-slate-950 dark:to-slate-900/80">
-      <div className="container mx-auto text-center px-4 md:px-6">
+    <section className="relative py-28 md:py-40 overflow-hidden">
+      {/* Background Container */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-50/50 to-background dark:from-slate-900/50 dark:to-background" />
+        <div className="absolute -top-1/2 left-1/2 -translate-x-1/2 w-[200%] h-[200%] bg-[radial-gradient(circle_farthest-side,hsl(var(--accent)/0.15),transparent)] blur-3xl" />
+        <div className="absolute inset-0 bg-[radial-gradient(hsl(var(--muted)/0.4)_1px,transparent_1px)] [background-size:24px_24px]" />
+      </div>
+
+      {/* Content Container */}
+      <div className="container mx-auto text-center px-4 md:px-6 relative">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-50 dark:to-slate-300">
           {t("hero.title")}
         </h1>
