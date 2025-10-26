@@ -1,6 +1,14 @@
+import * as React from "react";
+import Autoplay from "embla-carousel-autoplay";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { useTranslation } from "react-i18next";
 
 interface Testimonial {
@@ -12,10 +20,19 @@ interface Testimonial {
 
 export const Testimonials = () => {
   const { t } = useTranslation();
-  const testimonials: Testimonial[] = t("testimonials.items", { returnObjects: true }).map((item: Omit<Testimonial, 'avatar'>) => ({
+  const testimonials: Testimonial[] = t("testimonials.items", {
+    returnObjects: true,
+  }).map((item: Omit<Testimonial, "avatar">) => ({
     ...item,
-    avatar: item.name.split(' ').map(n => n[0]).join('')
+    avatar: item.name
+      .split(" ")
+      .map((n) => n[0])
+      .join(""),
   }));
+
+  const plugin = React.useRef(
+    Autoplay({ delay: 12000, stopOnInteraction: true })
+  );
 
   return (
     <section className="py-20 md:py-28 bg-slate-50">
@@ -28,22 +45,37 @@ export const Testimonials = () => {
             {t("testimonials.subtitle")}
           </p>
         </div>
-        <Carousel opts={{ loop: true }} className="w-full max-w-4xl mx-auto">
-          <CarouselContent>
+        <Carousel
+          opts={{ loop: true }}
+          plugins={[plugin.current]}
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
+          className="w-full max-w-6xl mx-auto"
+        >
+          <CarouselContent className="-ml-4">
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index}>
-                <div className="p-1">
-                  <Card>
-                    <CardContent className="flex flex-col items-center justify-center p-8 text-center">
-                      <p className="text-lg italic mb-6">"{testimonial.quote}"</p>
+              <CarouselItem
+                key={index}
+                className="pl-4 md:basis-1/2 lg:basis-1/3"
+              >
+                <div className="p-1 h-full">
+                  <Card className="h-full flex flex-col">
+                    <CardContent className="flex flex-col items-center justify-center p-8 text-center flex-grow">
+                      <p className="text-lg italic mb-6 flex-grow">
+                        "{testimonial.quote}"
+                      </p>
                       <div className="flex items-center">
                         <Avatar className="h-12 w-12 mr-4">
-                          <AvatarImage src={`https://api.dicebear.com/8.x/initials/svg?seed=${testimonial.name}`} />
+                          <AvatarImage
+                            src={`https://api.dicebear.com/8.x/initials/svg?seed=${testimonial.name}`}
+                          />
                           <AvatarFallback>{testimonial.avatar}</AvatarFallback>
                         </Avatar>
                         <div>
                           <p className="font-semibold">{testimonial.name}</p>
-                          <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                          <p className="text-sm text-muted-foreground">
+                            {testimonial.title}
+                          </p>
                         </div>
                       </div>
                     </CardContent>
