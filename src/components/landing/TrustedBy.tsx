@@ -1,7 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { PrestashopLogo } from "../icons/partners/PrestashopLogo";
-import { StripeLogo } from "../icons/partners/StripeLogo";
-import { WiseLogo } from "../icons/partners/WiseLogo";
 import { cn } from "@/lib/utils";
 
 export const TrustedBy = () => {
@@ -9,12 +7,13 @@ export const TrustedBy = () => {
   const partners = [
     { name: "EMIS", imgSrc: "/logo_emis.svg" },
     { name: "BNA", imgSrc: "/logotipo.png" },
+    { name: "Atlantico", imgSrc: "/logo_atlantico_green.png" },
+    { name: "Stripe", imgSrc: "/Stripe_Logo,_revised_2016.svg.png" },
+    { name: "Wise", imgSrc: "/470456-Frame-c061f4-large-1677657684.png" },
     { name: "WordPress", imgSrc: "/what-is-wordpress.webp", invertInDark: true },
     { name: "Shopify", imgSrc: "/shopify_logo_black.png", invertInDark: true },
     { name: "Magento", imgSrc: "/magento-logo.webp" },
     { name: "PrestaShop", logo: <PrestashopLogo className="h-12 w-auto text-foreground" /> },
-    { name: "Stripe", logo: <StripeLogo className="h-12 w-auto text-foreground" /> },
-    { name: "Wise", logo: <WiseLogo className="h-12 w-auto text-foreground" /> },
   ];
 
   return (
@@ -23,7 +22,7 @@ export const TrustedBy = () => {
         <h2 className="text-center text-lg font-semibold text-muted-foreground mb-8">
           {t("trusted_by.title")}
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-8 items-center">
+        <div className="grid grid-cols-3 sm:grid-cols-5 gap-x-8 gap-y-12 items-center justify-items-center">
           {partners.map((partner) => (
             <div key={partner.name} className="flex justify-center">
               {partner.imgSrc ? (
