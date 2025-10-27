@@ -15,10 +15,11 @@ export const Hero = () => {
 
   return (
     <section className="relative overflow-hidden bg-background">
-      {/* Futuristic Gradient Blobs */}
-      <div aria-hidden="true" className="absolute inset-0 z-0">
-        <div className="absolute top-[-10rem] left-[-10rem] w-96 h-96 bg-purple-500/30 dark:bg-purple-500/20 rounded-full filter blur-3xl opacity-50 animate-pulse" />
-        <div className="absolute bottom-[-5rem] right-[-5rem] w-96 h-96 bg-blue-500/30 dark:bg-blue-500/20 rounded-full filter blur-3xl opacity-50 animate-pulse" />
+      {/* Futuristic Animated Gradient Blobs */}
+      <div aria-hidden="true" className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute top-[-10rem] left-[-15rem] w-[30rem] h-[30rem] bg-purple-500/20 rounded-full filter blur-3xl animate-blob-1" />
+        <div className="absolute bottom-[-5rem] right-[-10rem] w-96 h-96 bg-blue-500/20 rounded-full filter blur-3xl animate-blob-2 [animation-delay:2s]" />
+        <div className="absolute top-[5rem] right-[5rem] w-80 h-80 bg-orange-500/20 rounded-full filter blur-3xl animate-blob-3 [animation-delay:4s]" />
       </div>
 
       <div className="relative z-10">
