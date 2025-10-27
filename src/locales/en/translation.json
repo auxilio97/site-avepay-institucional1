@@ -340,6 +340,10 @@
       {
         "question": "Are there monthly fees?",
         "answer": "No, our main plans do not have monthly fees. We charge a one-time adhesion fee and a small percentage per transaction, making costs predictable and affordable."
+      },
+      {
+        "question": "Are there fees for withdrawing funds?",
+        "answer": "Yes, we apply a 3% fee on the withdrawal amount. This fee has a minimum value of 100 Kz and a maximum value of 3,500 Kz, ensuring that costs are always predictable and fair, regardless of the transaction amount."
       }
     ]
   }

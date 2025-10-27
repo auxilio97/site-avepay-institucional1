@@ -340,6 +340,10 @@
       {
         "question": "Y a-t-il des frais mensuels ?",
         "answer": "Non, nos principaux plans n'ont pas de frais mensuels. Nous facturons des frais d'adhésion uniques et un petit pourcentage par transaction, ce qui rend les coûts prévisibles et abordables."
+      },
+      {
+        "question": "Y a-t-il des frais pour retirer des fonds ?",
+        "answer": "Oui, nous appliquons des frais de 3% sur le montant du retrait. Ces frais ont une valeur minimale de 100 Kz et une valeur maximale de 3 500 Kz, garantissant que les coûts sont toujours prévisibles et justes, quel que soit le montant de la transaction."
       }
     ]
   }

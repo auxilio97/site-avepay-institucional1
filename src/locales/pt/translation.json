@@ -340,6 +340,10 @@
       {
         "question": "Existem taxas mensais?",
         "answer": "Não, os nossos planos principais não têm taxas mensais. Cobramos uma taxa de adesão única e uma pequena percentagem por transação, tornando os custos previsíveis e acessíveis."
+      },
+      {
+        "question": "Existem taxas para levantamento de fundos?",
+        "answer": "Sim, aplicamos uma taxa de 3% sobre o valor do levantamento. Esta taxa tem um valor mínimo de 100 Kz e um valor máximo de 3.500 Kz, garantindo que os custos sejam sempre previsíveis e justos, independentemente do montante transacionado."
       }
     ]
   }

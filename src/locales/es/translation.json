@@ -340,6 +340,10 @@
       {
         "question": "¿Hay tarifas mensuales?",
         "answer": "No, nuestros planes principales no tienen tarifas mensuales. Cobramos una tarifa de adhesión única y un pequeño porcentaje por transacción, lo que hace que los costos sean predecibles y asequibles."
+      },
+      {
+        "question": "¿Existen comisiones por retirar fondos?",
+        "answer": "Sí, aplicamos una comisión del 3% sobre el importe de la retirada. Esta comisión tiene un valor mínimo de 100 Kz y un valor máximo de 3.500 Kz, lo que garantiza que los costes sean siempre predecibles y justos, independientemente del importe de la transacción."
       }
     ]
   }
