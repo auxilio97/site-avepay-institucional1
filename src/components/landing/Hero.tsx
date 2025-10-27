@@ -14,19 +14,7 @@ export const Hero = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover"
-          src="/hero-video.mp4"
-        />
-        <div className="absolute inset-0 bg-background/60 dark:bg-slate-950/70" />
-      </div>
-
+    <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted/40">
       <div className="relative z-10">
         <div className="container mx-auto text-center px-4 md:px-6 pt-28 md:pt-32">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-50 dark:to-slate-300">
