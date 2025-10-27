@@ -14,7 +14,13 @@ export const Hero = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted/40">
+    <section className="relative overflow-hidden bg-background">
+      {/* Futuristic Gradient Blobs */}
+      <div aria-hidden="true" className="absolute inset-0 z-0">
+        <div className="absolute top-[-10rem] left-[-10rem] w-96 h-96 bg-purple-500/30 dark:bg-purple-500/20 rounded-full filter blur-3xl opacity-50 animate-pulse" />
+        <div className="absolute bottom-[-5rem] right-[-5rem] w-96 h-96 bg-blue-500/30 dark:bg-blue-500/20 rounded-full filter blur-3xl opacity-50 animate-pulse" />
+      </div>
+
       <div className="relative z-10">
         <div className="container mx-auto text-center px-4 md:px-6 pt-28 md:pt-32">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-50 dark:to-slate-300">
