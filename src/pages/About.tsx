@@ -1,5 +1,6 @@
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
+import { SEO } from "@/components/SEO";
 import { useTranslation } from "react-i18next";
 
 const About = () => {
@@ -7,8 +8,15 @@ const About = () => {
   const valuesList = t("about.values_list", { returnObjects: true }) as string[];
   const servicesList = t("about.services_list", { returnObjects: true }) as string[];
 
+  // Remove HTML tags for meta description
+  const metaDescription = t("about.p1").replace(/<[^>]*>?/gm, '');
+
   return (
     <>
+      <SEO
+        title={t("about.title").replace(/<[^>]*>?/gm, '')}
+        description={metaDescription}
+      />
       <Header />
       <main className="bg-slate-50 dark:bg-slate-900">
         <div className="container mx-auto px-4 md:px-6 py-12 md:py-20">

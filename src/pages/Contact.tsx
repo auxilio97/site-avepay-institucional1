@@ -13,6 +13,7 @@ import * as z from "zod";
 import { showLoading, showSuccess, showError, dismissToast } from "@/utils/toast";
 import { useState } from "react";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { SEO } from "@/components/SEO";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -95,6 +96,10 @@ const Contact = () => {
 
   return (
     <>
+      <SEO
+        title={t("contact.title")}
+        description={t("contact.subtitle")}
+      />
       <Header />
       <main className="bg-slate-50 dark:bg-slate-900 py-20 md:py-28">
         <div className="container mx-auto px-4 md:px-6">
