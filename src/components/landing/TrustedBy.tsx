@@ -3,17 +3,18 @@ import { cn } from "@/lib/utils";
 
 export const TrustedBy = () => {
   const { t } = useTranslation();
+  // Usando o logótipo principal do site para todos os parceiros como um teste definitivo
   const partners = [
-    { name: "EMIS", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=EMIS" },
-    { name: "BNA", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=BNA" },
-    { name: "Atlantico", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=Atlantico" },
-    { name: "Stripe", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=Stripe" },
-    { name: "Wise", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=Wise" },
-    { name: "WordPress", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=WordPress" },
-    { name: "Shopify", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=Shopify" },
-    { name: "Magento", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=Magento" },
-    { name: "PrestaShop", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=PrestaShop" },
-    { name: "WooCommerce", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=WooCommerce" },
+    { name: "EMIS", imgSrc: "/logo.png" },
+    { name: "BNA", imgSrc: "/logo.png" },
+    { name: "Atlantico", imgSrc: "/logo.png" },
+    { name: "Stripe", imgSrc: "/logo.png" },
+    { name: "Wise", imgSrc: "/logo.png" },
+    { name: "WordPress", imgSrc: "/logo.png" },
+    { name: "Shopify", imgSrc: "/logo.png" },
+    { name: "Magento", imgSrc: "/logo.png" },
+    { name: "PrestaShop", imgSrc: "/logo.png" },
+    { name: "WooCommerce", imgSrc: "/logo.png" },
   ];
 
   return (
@@ -34,10 +35,7 @@ export const TrustedBy = () => {
                 <img
                   src={partner.imgSrc}
                   alt={partner.name}
-                  className={cn(
-                    "max-h-12 max-w-full object-contain",
-                    partner.invertInDark && "dark:invert"
-                  )}
+                  className="max-h-12 max-w-full object-contain dark:brightness-0 dark:invert"
                 />
               </div>
             ))}
