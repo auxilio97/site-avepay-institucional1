@@ -4,16 +4,16 @@ import { cn } from "@/lib/utils";
 export const TrustedBy = () => {
   const { t } = useTranslation();
   const partners = [
-    { name: "EMIS", imgSrc: "/logos/logo-emis.png" },
-    { name: "BNA", imgSrc: "/logos/logo-bna.png" },
-    { name: "Atlantico", imgSrc: "/logos/logo-atlantico.png" },
-    { name: "Stripe", imgSrc: "/logos/logo-stripe.png" },
-    { name: "Wise", imgSrc: "/logos/logo-wise.png" },
-    { name: "WordPress", imgSrc: "/logos/logo-wordpress.png", invertInDark: true },
-    { name: "Shopify", imgSrc: "/logos/logo-shopify.png", invertInDark: true },
-    { name: "Magento", imgSrc: "/logos/logo-magento.png" },
-    { name: "PrestaShop", imgSrc: "/logos/logo-prestashop.png" },
-    { name: "WooCommerce", imgSrc: "/logos/logo-woocommerce.png", invertInDark: true },
+    { name: "EMIS", imgSrc: "/logo-emis.png" },
+    { name: "BNA", imgSrc: "/logo-bna.png" },
+    { name: "Atlantico", imgSrc: "/logo-atlantico.png" },
+    { name: "Stripe", imgSrc: "/logo-stripe.png" },
+    { name: "Wise", imgSrc: "/logo-wise.png" },
+    { name: "WordPress", imgSrc: "/logo-wordpress.png", invertInDark: true },
+    { name: "Shopify", imgSrc: "/logo-shopify.png", invertInDark: true },
+    { name: "Magento", imgSrc: "/logo-magento.png" },
+    { name: "PrestaShop", imgSrc: "/logo-prestashop.png" },
+    { name: "WooCommerce", imgSrc: "/logo-woocommerce.png", invertInDark: true },
   ];
 
   return (
