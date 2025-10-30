@@ -22,6 +22,8 @@ export const SEO: React.FC<SEOProps> = ({ title, description, keywords, children
   const currentPath = window.location.pathname;
   const canonicalUrl = `${siteUrl}${currentPath}`;
 
+  const supportedLanguages = ["pt", "en", "fr", "es", "zh", "ar"];
+
   return (
     <Helmet
       htmlAttributes={{
@@ -49,6 +51,12 @@ export const SEO: React.FC<SEOProps> = ({ title, description, keywords, children
 
       {/* Canonical URL */}
       <link rel="canonical" href={canonicalUrl} />
+
+      {/* Hreflang links for multilingual SEO */}
+      <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />
+      {supportedLanguages.map(lang => (
+        <link key={lang} rel="alternate" hrefLang={lang} href={canonicalUrl} />
+      ))}
 
       {children}
     </Helmet>
