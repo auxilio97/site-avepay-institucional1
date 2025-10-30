@@ -4,15 +4,16 @@ import { cn } from "@/lib/utils";
 export const TrustedBy = () => {
   const { t } = useTranslation();
   const partners = [
-    { name: "EMIS", imgSrc: "/logo_emis.svg" },
-    { name: "BNA", imgSrc: "/logotipo.png" },
-    { name: "Atlantico", imgSrc: "/logo_atlantico_green.png" },
-    { name: "Stripe", imgSrc: "/Stripe_Logo,_revised_2016.svg.png" },
-    { name: "Wise", imgSrc: "/470456-Frame-c061f4-large-1677657684.png" },
-    { name: "WordPress", imgSrc: "/what-is-wordpress.webp", invertInDark: true },
-    { name: "Shopify", imgSrc: "/shopify_logo_black.png", invertInDark: true },
-    { name: "Magento", imgSrc: "/magento-logo.webp" },
-    { name: "PrestaShop", imgSrc: "/png-clipart-prestashop-logo-e-commerce-clearsale-magento-online-shop-logo-purple-violet.png" },
+    { name: "EMIS", imgSrc: "/logos/logo-emis.png" },
+    { name: "BNA", imgSrc: "/logos/logo-bna.png" },
+    { name: "Atlantico", imgSrc: "/logos/logo-atlantico.png" },
+    { name: "Stripe", imgSrc: "/logos/logo-stripe.png" },
+    { name: "Wise", imgSrc: "/logos/logo-wise.png" },
+    { name: "WordPress", imgSrc: "/logos/logo-wordpress.png", invertInDark: true },
+    { name: "Shopify", imgSrc: "/logos/logo-shopify.png", invertInDark: true },
+    { name: "Magento", imgSrc: "/logos/logo-magento.png" },
+    { name: "PrestaShop", imgSrc: "/logos/logo-prestashop.png" },
+    { name: "WooCommerce", imgSrc: "/logos/logo-woocommerce.png", invertInDark: true },
   ];
 
   return (
@@ -29,12 +30,12 @@ export const TrustedBy = () => {
         >
           <div className="flex w-max animate-infinite-scroll hover:[animation-play-state:paused]">
             {[...partners, ...partners].map((partner, index) => (
-              <div key={`${partner.name}-${index}`} className="flex-shrink-0 h-24 flex justify-center items-center px-8">
+              <div key={`${partner.name}-${index}`} className="flex-shrink-0 h-24 w-48 flex justify-center items-center px-8">
                 <img
                   src={partner.imgSrc}
                   alt={partner.name}
                   className={cn(
-                    "max-h-12 w-auto object-contain",
+                    "max-h-10 w-auto object-contain",
                     partner.invertInDark && "dark:invert"
                   )}
                 />
