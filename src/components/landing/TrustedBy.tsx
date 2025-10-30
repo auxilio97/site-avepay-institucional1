@@ -3,18 +3,17 @@ import { cn } from "@/lib/utils";
 
 export const TrustedBy = () => {
   const { t } = useTranslation();
-  // Usando o logótipo principal do site para todos os parceiros como um teste definitivo
   const partners = [
-    { name: "EMIS", imgSrc: "/logo.png" },
-    { name: "BNA", imgSrc: "/logo.png" },
-    { name: "Atlantico", imgSrc: "/logo.png" },
-    { name: "Stripe", imgSrc: "/logo.png" },
-    { name: "Wise", imgSrc: "/logo.png" },
-    { name: "WordPress", imgSrc: "/logo.png" },
-    { name: "Shopify", imgSrc: "/logo.png" },
-    { name: "Magento", imgSrc: "/logo.png" },
-    { name: "PrestaShop", imgSrc: "/logo.png" },
-    { name: "WooCommerce", imgSrc: "/logo.png" },
+    { name: "EMIS", imgSrc: "/logo-emis.png" },
+    { name: "BNA", imgSrc: "/logo-bna.png" },
+    { name: "Atlantico", imgSrc: "/logo-atlantico.png" },
+    { name: "Stripe", imgSrc: "/logo-stripe.png" },
+    { name: "Wise", imgSrc: "/logo-wise.png" },
+    { name: "WordPress", imgSrc: "/logo-wordpress.png", invertInDark: true },
+    { name: "Shopify", imgSrc: "/logo-shopify.png", invertInDark: true },
+    { name: "Magento", imgSrc: "/logo-magento.png" },
+    { name: "PrestaShop", imgSrc: "/logo-prestashop.png" },
+    { name: "WooCommerce", imgSrc: "/logo-woocommerce.png", invertInDark: true },
   ];
 
   return (
@@ -35,7 +34,10 @@ export const TrustedBy = () => {
                 <img
                   src={partner.imgSrc}
                   alt={partner.name}
-                  className="max-h-12 max-w-full object-contain dark:brightness-0 dark:invert"
+                  className={cn(
+                    "max-h-12 max-w-full object-contain",
+                    partner.invertInDark && "dark:invert"
+                  )}
                 />
               </div>
             ))}
