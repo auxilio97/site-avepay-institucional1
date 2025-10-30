@@ -50,7 +50,7 @@ export const Testimonials = () => {
           plugins={[plugin.current]}
           onMouseEnter={plugin.current.stop}
           onMouseLeave={plugin.current.reset}
-          className="w-full max-w-6xl mx-auto"
+          className="w-full max-w-6xl mx-auto touch-pan-y"
         >
           <CarouselContent className="-ms-4">
             {testimonials.map((testimonial, index) => (
