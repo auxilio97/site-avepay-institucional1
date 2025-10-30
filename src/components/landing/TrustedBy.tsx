@@ -28,7 +28,7 @@ export const TrustedBy = () => {
             maskImage: "linear-gradient(to right, transparent, white 10%, white 90%, transparent)"
           }}
         >
-          <div className="flex w-max animate-infinite-scroll hover:[animation-play-state:paused]">
+          <div className="flex w-max animate-infinite-scroll hover:[animation-play-state:paused] will-change-transform">
             {[...partners, ...partners].map((partner, index) => (
               <div key={`${partner.name}-${index}`} className="flex-shrink-0 h-20 w-44 flex justify-center items-center px-6">
                 <img

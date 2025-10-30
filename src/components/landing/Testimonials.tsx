@@ -10,6 +10,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useTranslation } from "react-i18next";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface Testimonial {
   quote: string;
@@ -20,6 +21,7 @@ interface Testimonial {
 
 export const Testimonials = () => {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
   const testimonialItems = t("testimonials.items", {
     returnObjects: true,
   }) as Omit<Testimonial, "avatar">[];
@@ -48,7 +50,7 @@ export const Testimonials = () => {
           </p>
         </div>
         <Carousel
-          opts={{ loop: true }}
+          opts={{ loop: true, watchDrag: !isMobile }}
           plugins={[plugin.current]}
           onMouseEnter={plugin.current.stop}
           onMouseLeave={plugin.current.reset}

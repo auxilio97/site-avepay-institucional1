@@ -62,4 +62,7 @@
   .touch-pan-y {
     touch-action: pan-y;
   }
+  .will-change-transform {
+    will-change: transform;
+  }
 }
