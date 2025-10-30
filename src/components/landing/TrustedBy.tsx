@@ -4,16 +4,16 @@ import { cn } from "@/lib/utils";
 export const TrustedBy = () => {
   const { t } = useTranslation();
   const partners = [
-    { name: "EMIS", imgSrc: "/logo-emis.png" },
-    { name: "BNA", imgSrc: "/logo-bna.png" },
-    { name: "Atlantico", imgSrc: "/logo-atlantico.png" },
-    { name: "Stripe", imgSrc: "/logo-stripe.png" },
-    { name: "Wise", imgSrc: "/logo-wise.png" },
-    { name: "WordPress", imgSrc: "/logo-wordpress.png", invertInDark: true },
-    { name: "Shopify", imgSrc: "/logo-shopify.png", invertInDark: true },
-    { name: "Magento", imgSrc: "/logo-magento.png" },
-    { name: "PrestaShop", imgSrc: "/logo-prestashop.png" },
-    { name: "WooCommerce", imgSrc: "/logo-woocommerce.png", invertInDark: true },
+    { name: "EMIS", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=EMIS" },
+    { name: "BNA", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=BNA" },
+    { name: "Atlantico", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=Atlantico" },
+    { name: "Stripe", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=Stripe" },
+    { name: "Wise", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=Wise" },
+    { name: "WordPress", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=WordPress" },
+    { name: "Shopify", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=Shopify" },
+    { name: "Magento", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=Magento" },
+    { name: "PrestaShop", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=PrestaShop" },
+    { name: "WooCommerce", imgSrc: "https://via.placeholder.com/150x50/E5E7EB/4B5563?text=WooCommerce" },
   ];
 
   return (
