@@ -11,6 +11,7 @@ export const TrustedBy = () => {
     { name: "Wise", imgSrc: "/logo-wise.png" },
     { name: "WordPress", imgSrc: "/logo-wordpress.png", invertInDark: true },
     { name: "Shopify", imgSrc: "/logo-shopify.png", invertInDark: true },
+    { name: "Magento", imgSrc: "/logo-magento.png" },
     { name: "PrestaShop", imgSrc: "/logo-prestashop.png" },
     { name: "WooCommerce", imgSrc: "/logo-woocommerce.png", invertInDark: true },
   ];
