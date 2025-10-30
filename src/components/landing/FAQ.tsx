@@ -13,7 +13,7 @@ interface FaqItem {
 
 export const FAQ = () => {
   const { t } = useTranslation();
-  const faqs: FaqItem[] = t("faq.items", { returnObjects: true });
+  const faqs = t("faq.items", { returnObjects: true }) as FaqItem[];
 
   const faqSchema = {
     "@context": "https://schema.org",

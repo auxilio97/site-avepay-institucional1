@@ -20,9 +20,11 @@ interface Testimonial {
 
 export const Testimonials = () => {
   const { t } = useTranslation();
-  const testimonials: Testimonial[] = t("testimonials.items", {
+  const testimonialItems = t("testimonials.items", {
     returnObjects: true,
-  }).map((item: Omit<Testimonial, "avatar">) => ({
+  }) as Omit<Testimonial, "avatar">[];
+
+  const testimonials: Testimonial[] = testimonialItems.map((item) => ({
     ...item,
     avatar: item.name
       .split(" ")
