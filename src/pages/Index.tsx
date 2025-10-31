@@ -1,4 +1,3 @@
-import { MadeWithDyad } from "@/components/made-with-dyad";
 import { Header } from "@/components/landing/Header";
 import { Hero } from "@/components/landing/Hero";
 import { Features } from "@/components/landing/Features";
@@ -77,7 +76,6 @@ const Index = () => {
           </AnimatedSection>
         </main>
         <Footer />
-        <MadeWithDyad />
       </div>
     </>
   );
