@@ -74,7 +74,7 @@ export const Pricing = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
           {plans.map((plan) => (
-            <Card key={plan.name} className={cn('relative flex flex-col h-full transition-all duration-300 hover:-translate-y-2 border-2 shadow-md', plan.borderColor, { 'shadow-lg': plan.popular })}>
+            <Card key={plan.name} className={cn('relative flex flex-col h-full transition-all duration-300 hover:-translate-y-2 border-2 shadow-md', plan.borderColor, { 'shadow-lg': plan.popular, 'hover:scale-105': plan.popular })}>
               {plan.popular && (
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-orange-500 text-white text-sm font-bold px-4 py-1 rounded-full">
                   {t("pricing.popular")}
