@@ -1,5 +1,6 @@
 import { Header } from "@/components/landing/Header";
 import { Hero } from "@/components/landing/Hero";
+import { Partners } from "@/components/landing/Partners";
 import { Features } from "@/components/landing/Features";
 import { Solutions } from "@/components/landing/Solutions";
 import { Pricing } from "@/components/landing/Pricing";
@@ -64,6 +65,9 @@ const Index = () => {
         <main className="overflow-x-hidden">
           <AnimatedSection animation="fade-in-up">
             <Hero />
+          </AnimatedSection>
+          <AnimatedSection animation="fade-in-up">
+            <Partners />
           </AnimatedSection>
           <AnimatedSection animation="zoom-in">
             <Features />

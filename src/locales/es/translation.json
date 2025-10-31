@@ -18,8 +18,8 @@
       "processed": "Procesados"
     }
   },
-  "trusted_by": {
-    "title": "Con la confianza de las principales empresas de Angola y del mundo"
+  "partners": {
+    "title": "Nuestros Socios Locales e Internacionales"
   },
   "features": {
     "title": "Soluciones potentes para empresas modernas",
@@ -221,7 +221,7 @@
     "currency_p2": "6.2 Si una transacción implica conversión de moneda, el tipo de cambio utilizado y las posibles tasas deberán ser informados claramente al Usuario.",
     "currency_p3": "6.3 Avenatec no se responsabiliza por variaciones cambiarias o retrasos de entidades bancarias externas.",
     "security_title": "7. Seguridad, Cumplimiento y Datos",
-    "security_p1": "7.1 Avenatec cumple con las normas internacionales de seguridad (ej: PCI DSS, SOC1, SOC2) y mantiene los fondos de los clientes en instituciones financieras reguladas.",
+    "security_p1": "7.1 Avenatec cumple con las normas internacionales de seguridad (ej: PCI DSS, SOC1, SOC2) y mantiene los fondos de los clientes en instituciones financeiras reguladas.",
     "security_p2": "7.2 El Usuario deberá mantener las credenciales de acceso seguras y comunicar inmediatamente cualquier uso no autorizado.",
     "security_p3": "7.3 El tratamiento de datos personales sigue la Política de Privacidad de Avenatec, respetando la legislación angoleña e internacional.",
     "liability_title": "8. Responsabilidades y Limitaciones de Responsabilidad",
@@ -335,7 +335,7 @@
       },
       {
         "question": "¿Cómo puedo integrar AvePay en mi sitio web?",
-        "answer": "Ofrecemos una API robusta y bien documentada, junto con guías paso a paso y ejemplos de código para varios idiomas. La integración está diseñada para ser rápida y sencilla."
+        "answer": "Oferecemos una API robusta y bien documentada, junto con guías paso a paso y ejemplos de código para varios idiomas. La integración está diseñada para ser rápida y sencilla."
       },
       {
         "question": "¿Hay tarifas mensuales?",
