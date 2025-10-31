@@ -1,15 +1,15 @@
 import { useTranslation } from "react-i18next";
 
 const partners = [
-  { name: "Stripe", logo: "/partners/Stripe.png" },
-  { name: "Wise", logo: "/partners/Wise.png" },
-  { name: "Shopify", logo: "/partners/Shopify.png" },
-  { name: "Wordpress", logo: "/partners/Wordpress.png" },
-  { name: "Woocommerce", logo: "/partners/Woocommerce.png" },
-  { name: "Prestashop", logo: "/partners/Prestashop.png" },
-  { name: "Atlantico", logo: "/partners/Atlantico.png" },
-  { name: "BNA", logo: "/partners/Bna.png" },
-  { name: "EMIS", logo: "/partners/Emis.png" },
+  { name: "Stripe", logo: "/Stripe.png" },
+  { name: "Wise", logo: "/Wise.png" },
+  { name: "Shopify", logo: "/Shopify.png" },
+  { name: "Wordpress", logo: "/Wordpress.png" },
+  { name: "Woocommerce", logo: "/Woocommerce.png" },
+  { name: "Prestashop", logo: "/Prestashop.png" },
+  { name: "Atlantico", logo: "/Atlantico.png" },
+  { name: "BNA", logo: "/Bna.png" },
+  { name: "EMIS", logo: "/Emis.png" },
 ];
 
 export const Partners = () => {
