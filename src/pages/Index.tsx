@@ -9,7 +9,6 @@ import { CTA } from "@/components/landing/CTA";
 import { Footer } from "@/components/landing/Footer";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { FAQ } from "@/components/landing/FAQ";
-import { TrustedBy } from "@/components/landing/TrustedBy";
 import { SEO } from "@/components/SEO";
 import { useTranslation } from "react-i18next";
 
@@ -66,7 +65,6 @@ const Index = () => {
           <AnimatedSection animation="fade-in-up">
             <Hero />
           </AnimatedSection>
-          <TrustedBy />
           <AnimatedSection animation="zoom-in">
             <Features />
           </AnimatedSection>
