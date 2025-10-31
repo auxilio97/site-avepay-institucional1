@@ -50,7 +50,7 @@ export const Testimonials = () => {
           </p>
         </div>
         <Carousel
-          opts={{ loop: true, watchDrag: !isMobile }}
+          opts={{ loop: true }}
           plugins={[plugin.current]}
           onMouseEnter={plugin.current.stop}
           onMouseLeave={plugin.current.reset}
@@ -89,8 +89,12 @@ export const Testimonials = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          {!isMobile && (
+            <>
+              <CarouselPrevious />
+              <CarouselNext />
+            </>
+          )}
         </Carousel>
       </div>
     </section>
