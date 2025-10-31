@@ -2,6 +2,7 @@ import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
 import { SEO } from "@/components/SEO";
 import { useTranslation } from "react-i18next";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const Terms = () => {
   const { t } = useTranslation();
@@ -14,6 +15,7 @@ const Terms = () => {
         description={t("terms.acceptance_p1")}
       />
       <Header />
+      <Breadcrumbs />
       <main className="bg-slate-50 dark:bg-slate-900">
         <div className="container mx-auto px-4 md:px-6 py-12 md:py-20">
           <article className="prose dark:prose-invert max-w-4xl mx-auto bg-background p-8 rounded-lg shadow-md">

@@ -36,6 +36,17 @@ const Index = () => {
     }
   };
 
+  const webSiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://avepaygateway.avenatec.it.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://avepaygateway.avenatec.it.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <>
       <SEO
@@ -44,6 +55,9 @@ const Index = () => {
       >
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(webSiteSchema)}
         </script>
       </SEO>
       <div className="text-foreground">

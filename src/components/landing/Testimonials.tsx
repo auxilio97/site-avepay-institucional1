@@ -72,6 +72,7 @@ export const Testimonials = () => {
                         <Avatar className="h-12 w-12 me-4">
                           <AvatarImage
                             src={`https://api.dicebear.com/8.x/initials/svg?seed=${testimonial.name}`}
+                            loading="lazy"
                           />
                           <AvatarFallback>{testimonial.avatar}</AvatarFallback>
                         </Avatar>

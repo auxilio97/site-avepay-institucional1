@@ -14,6 +14,7 @@ import { showLoading, showSuccess, showError, dismissToast } from "@/utils/toast
 import { useState } from "react";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { SEO } from "@/components/SEO";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -101,6 +102,7 @@ const Contact = () => {
         description={t("contact.subtitle")}
       />
       <Header />
+      <Breadcrumbs />
       <main className="bg-slate-50 dark:bg-slate-900 py-20 md:py-28">
         <div className="container mx-auto px-4 md:px-6">
           <AnimatedSection>
