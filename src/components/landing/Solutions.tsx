@@ -1,10 +1,18 @@
 import { CheckCircle } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import CountUp from "react-countup";
 
 export const Solutions = () => {
   const { t } = useTranslation();
   const solutions = t("solutions.items", { returnObjects: true }) as string[];
   const platformFeatures = t("solutions.unified_platform.features", { returnObjects: true }) as string[];
+
+  const stats = [
+    { end: 60, suffix: "+", label: t("solutions.stats.local_receipts") },
+    { end: 120, suffix: "+", label: t("solutions.stats.direct_transfers") },
+    { end: 200, suffix: "Mi Kz", label: t("solutions.stats.processed_annually") },
+    { end: 180, suffix: "+", label: t("solutions.stats.active_markets") },
+  ];
 
   return (
     <section id="solutions" className="py-20 md:py-28 bg-background">
@@ -34,22 +42,20 @@ export const Solutions = () => {
         <div className="mt-20 md:mt-28 grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
              <div className="grid grid-cols-2 gap-8 text-center">
-                <div>
-                    <p className="text-4xl font-bold text-primary">60+</p>
-                    <p className="text-muted-foreground">{t("solutions.stats.local_receipts")}</p>
-                </div>
-                 <div>
-                    <p className="text-4xl font-bold text-primary">120+</p>
-                    <p className="text-muted-foreground">{t("solutions.stats.direct_transfers")}</p>
-                </div>
-                 <div>
-                    <p className="text-4xl font-bold text-primary">200Mi Kz</p>
-                    <p className="text-muted-foreground">{t("solutions.stats.processed_annually")}</p>
-                </div>
-                 <div>
-                    <p className="text-4xl font-bold text-primary">180+</p>
-                    <p className="text-muted-foreground">{t("solutions.stats.active_markets")}</p>
-                </div>
+                {stats.map((stat) => (
+                  <div key={stat.label}>
+                    <p className="text-4xl font-bold text-primary">
+                      <CountUp 
+                        end={stat.end} 
+                        duration={3} 
+                        suffix={stat.suffix} 
+                        enableScrollSpy
+                        scrollSpyDelay={300}
+                      />
+                    </p>
+                    <p className="text-muted-foreground mt-1">{stat.label}</p>
+                  </div>
+                ))}
              </div>
           </div>
           <div className="order-1 md:order-2">
