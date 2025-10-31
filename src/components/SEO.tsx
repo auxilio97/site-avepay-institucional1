@@ -13,7 +13,7 @@ export const SEO: React.FC<SEOProps> = ({ title, description, keywords, children
   const siteName = "AvePay - Plataforma Global de Pagamentos e Finanças";
   const defaultDescription = "Aceite pagamentos em múltiplas moedas e gerencie suas finanças em uma única plataforma integrada.";
   const defaultKeywords = "AvePay, pagamentos, finanças, API, gateway de pagamento, Angola, Kwanza, cartões internacionais";
-  const siteUrl = "https://avepaygateway.avenatec.it.com";
+  const siteUrl = "https://avepay.avenatec.it.com";
   const logoUrl = `${siteUrl}/logo.png`;
 
   const pageTitle = title ? `${title} | ${siteName}` : siteName;

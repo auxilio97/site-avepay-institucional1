@@ -20,8 +20,8 @@ const Index = () => {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "AvePay",
-    "url": "https://avepaygateway.avenatec.it.com",
-    "logo": "https://avepaygateway.avenatec.it.com/logo.png",
+    "url": "https://avepay.avenatec.it.com",
+    "logo": "https://avepay.avenatec.it.com/logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+244-935-325-003",
@@ -39,10 +39,10 @@ const Index = () => {
   const webSiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "url": "https://avepaygateway.avenatec.it.com/",
+    "url": "https://avepay.avenatec.it.com/",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://avepaygateway.avenatec.it.com/search?q={search_term_string}",
+      "target": "https://avepay.avenatec.it.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };

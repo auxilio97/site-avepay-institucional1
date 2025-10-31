@@ -38,7 +38,7 @@ export const Breadcrumbs = () => {
       '@type': 'ListItem',
       'position': index + 1,
       'name': crumb.name,
-      'item': `https://avepaygateway.avenatec.it.com${crumb.path}`,
+      'item': `https://avepay.avenatec.it.com${crumb.path}`,
     })),
   };
 
