@@ -40,9 +40,9 @@ export const Header = () => {
           : "bg-transparent border-b border-transparent"
       )}
     >
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link to="/">
-          <img src="/logo.png" alt="AvePay Logo" className="h-14 dark:brightness-0 dark:invert" />
+          <img src="/logo.png" alt="AvePay Logo" className="h-16 dark:brightness-0 dark:invert" />
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
@@ -76,7 +76,7 @@ export const Header = () => {
               <SheetContent side="right">
                 <div className="grid gap-4 py-6">
                   <Link to="/" className="mb-4">
-                    <img src="/logo.png" alt="AvePay Logo" className="h-14 dark:brightness-0 dark:invert" />
+                    <img src="/logo.png" alt="AvePay Logo" className="h-16 dark:brightness-0 dark:invert" />
                   </Link>
                   {navLinks.map((link) => (
                     <Link
