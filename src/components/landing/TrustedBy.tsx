@@ -34,6 +34,7 @@ export const TrustedBy = () => {
                 <img
                   src={partner.imgSrc}
                   alt={partner.name}
+                  loading="lazy"
                   className={cn(
                     "max-h-12 max-w-full object-contain",
                     partner.invertInDark && "dark:invert"

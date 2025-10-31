@@ -20,7 +20,7 @@ export const Integration = () => {
   const features = t("integration.features", { returnObjects: true }) as string[];
 
   return (
-    <section className="py-20 md:py-28 bg-gradient-to-br from-slate-900 to-slate-800 text-slate-100">
+    <section id="how-it-works" className="py-20 md:py-28 bg-gradient-to-br from-slate-900 to-slate-800 text-slate-100">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>

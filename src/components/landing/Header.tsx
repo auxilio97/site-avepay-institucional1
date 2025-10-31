@@ -24,10 +24,10 @@ export const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: t("header.product"), href: "#" },
-    { name: t("header.services"), href: "#" },
-    { name: t("header.solutions"), href: "#" },
-    { name: t("header.howItWorks"), href: "#" },
+    { name: t("header.product"), href: "/#product" },
+    { name: t("header.services"), href: "/#services" },
+    { name: t("header.solutions"), href: "/#solutions" },
+    { name: t("header.howItWorks"), href: "/#how-it-works" },
     { name: t("header.contact"), href: "/contact" },
   ];
 
