@@ -34,6 +34,7 @@ export const SEO: React.FC<SEOProps> = ({ title, description, keywords, children
       <title>{pageTitle}</title>
       <meta name="description" content={pageDescription} />
       <meta name="keywords" content={pageKeywords} />
+      <meta name="theme-color" content="#F97316" />
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
