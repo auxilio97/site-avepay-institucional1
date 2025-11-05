@@ -62,7 +62,7 @@ const Index = () => {
       </SEO>
       <div className="text-foreground overflow-x-hidden">
         <Header />
-        <main>
+        <main className="pb-80">
           <AnimatedSection animation="fade-in-up">
             <Hero />
           </AnimatedSection>
