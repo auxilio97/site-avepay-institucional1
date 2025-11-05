@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
@@ -9,19 +8,7 @@ import { LanguageSelector } from "../LanguageSelector";
 import { useTranslation } from "react-i18next";
 
 export const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const { t } = useTranslation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const navLinks = [
     { name: t("header.product"), href: "/#product" },
@@ -34,10 +21,8 @@ export const Header = () => {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 transition-all duration-300",
-        isScrolled
-          ? "bg-background/80 backdrop-blur-sm border-b"
-          : "bg-transparent border-b border-transparent"
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "bg-background/80 backdrop-blur-sm border-b"
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
