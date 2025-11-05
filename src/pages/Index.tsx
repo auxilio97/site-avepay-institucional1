@@ -60,9 +60,9 @@ const Index = () => {
           {JSON.stringify(webSiteSchema)}
         </script>
       </SEO>
-      <div className="text-foreground">
+      <div className="text-foreground overflow-x-hidden">
         <Header />
-        <main className="overflow-x-hidden">
+        <main>
           <AnimatedSection animation="fade-in-up">
             <Hero />
           </AnimatedSection>
