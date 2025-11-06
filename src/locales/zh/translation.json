@@ -347,5 +347,52 @@
         "answer": "是的，我们对提款金额收取3%的手续费。此手续费的最低金额为100宽扎，最高金额为3500宽扎，确保无论交易金额大小，成本都是可预测和公平的。"
       }
     ]
+  },
+  "product_page": {
+    "title": "💠 产品 — AvePay 平台",
+    "subtitle": "<strong>AvePay</strong> 是一个<strong>智能数字支付平台</strong>，将不同的支付方式统一到一个生态系统中，使买卖过程快速、安全且人人可用。",
+    "features": [
+      {
+        "key": "gateway",
+        "title": "⚙️ 一个网关，多种解决方案",
+        "description": "AvePay 产品作为一个<strong>统一网关</strong>，连接客户、银行和企业。它允许在线和现场支付的完全集成，并进行集中管理。"
+      },
+      {
+        "key": "checkout",
+        "title": "💳 智能结账",
+        "description": "<strong>AvePay 结账</strong>适应您的业务，并允许通过银行卡、转账、数字钱包、二维码和集成 POS 进行支付——所有这些都流畅且安全。"
+      },
+      {
+        "key": "dashboard",
+        "title": "📊 完整的管理仪表板",
+        "description": "实时跟踪所有交易。在现代化且响应迅速的界面中查看报告、历史记录、结算和财务分析。"
+      },
+      {
+        "key": "api",
+        "title": "🧩 API 和集成",
+        "description": "使用我们的 <strong>RESTful API</strong> 和即用型 SDK 将 <strong>AvePay</strong> 集成到您的网站、应用程序或系统中。与 PHP、Node.js、Python、React、WooCommerce 和 Shopify 兼容。"
+      },
+      {
+        "key": "security",
+        "title": "🛡️ 银行级安全",
+        "description": "我们使用<strong>端到端加密</strong>、<strong>令牌化</strong>和 <strong>24/7 反欺诈</strong>系统。国际 <strong>PCI DSS</strong> 认证和 <strong>KYC</strong> 合规性。"
+      },
+      {
+        "key": "multichannel",
+        "title": "🌍 多渠道和多币种",
+        "description": "可在网站、应用程序和 POS 上使用，接受<strong>宽扎 (AOA)</strong>、<strong>美元 (USD)</strong> 和<strong>欧元 (EUR)</strong> 付款。是本地和国际业务的理想选择。"
+      },
+      {
+        "key": "experience",
+        "title": "💡 定制体验",
+        "description": "根据您的品牌标识和目标受众配置支付环境的外观、方法和规则，提供无缝的客户体验。"
+      },
+      {
+        "key": "innovation",
+        "title": "🚀 持续创新",
+        "description": "AvePay 不断发展，推出新功能、支付方式和人工智能反欺诈系统，确保长期效率和信任。"
+      }
+    ],
+    "summary": "💬 <strong>总而言之：</strong>AvePay 产品是一个<strong>完整的支付平台</strong>，旨在通过技术、安全和简单性连接企业和客户。"
   }
 }

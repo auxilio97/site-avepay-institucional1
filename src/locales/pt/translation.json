@@ -347,5 +347,52 @@
         "answer": "Sim, aplicamos uma taxa de 3% sobre o valor do levantamento. Esta taxa tem um valor mínimo de 100 Kz e um valor máximo de 3.500 Kz, garantindo que os custos sejam sempre previsíveis e justos, independentemente do montante transacionado."
       }
     ]
+  },
+  "product_page": {
+    "title": "💠 Produto — A Plataforma AvePay",
+    "subtitle": "A <strong>AvePay</strong> é uma <strong>plataforma inteligente de pagamentos digitais</strong> que unifica diferentes formas de pagamento em um só ecossistema, tornando o processo de compra e venda rápido, seguro e acessível a todos.",
+    "features": [
+      {
+        "key": "gateway",
+        "title": "⚙️ Um Gateway, Várias Soluções",
+        "description": "O produto AvePay atua como um <strong>gateway unificado</strong>, conectando clientes, bancos e empresas. Permite integração total de pagamentos online e presenciais, com gestão centralizada."
+      },
+      {
+        "key": "checkout",
+        "title": "💳 Checkout Inteligente",
+        "description": "O <strong>Checkout AvePay</strong> adapta-se ao seu negócio e permite pagamentos via cartões, transferências, carteiras digitais, QR Codes e POS integrados — tudo com fluidez e segurança."
+      },
+      {
+        "key": "dashboard",
+        "title": "📊 Painel de Gestão Completo",
+        "description": "Acompanhe todas as transações em tempo real. Visualize relatórios, histórico, liquidações e análises financeiras em uma interface moderna e responsiva."
+      },
+      {
+        "key": "api",
+        "title": "🧩 API e Integrações",
+        "description": "Integre a <strong>AvePay</strong> ao seu site, app ou sistema com nossa <strong>API RESTful</strong> e SDKs prontos. Compatível com PHP, Node.js, Python, React, WooCommerce e Shopify."
+      },
+      {
+        "key": "security",
+        "title": "🛡️ Segurança de Nível Bancário",
+        "description": "Utilizamos <strong>criptografia ponta a ponta</strong>, <strong>tokenização</strong> e <strong>antifraude 24h</strong>. Certificação internacional <strong>PCI DSS</strong> e conformidade <strong>KYC</strong>."
+      },
+      {
+        "key": "multichannel",
+        "title": "🌍 Multicanal e Multimoeda",
+        "description": "Funciona em sites, apps e POS, aceitando pagamentos em <strong>Kwanza (AOA)</strong>, <strong>Dólar (USD)</strong> e <strong>Euro (EUR)</strong>. Ideal para negócios locais e internacionais."
+      },
+      {
+        "key": "experience",
+        "title": "💡 Experiência Personalizada",
+        "description": "Configure a aparência, os métodos e as regras do seu ambiente de pagamento conforme sua identidade e público-alvo, proporcionando fluidez total na experiência do cliente."
+      },
+      {
+        "key": "innovation",
+        "title": "🚀 Inovação Contínua",
+        "description": "A AvePay está em constante evolução, com novos recursos, métodos de pagamento e sistemas de IA antifraude, garantindo eficiência e confiança a longo prazo."
+      }
+    ],
+    "summary": "💬 <strong>Em resumo:</strong> O produto AvePay é uma <strong>plataforma completa de pagamentos</strong>, projetada para conectar empresas e clientes através de tecnologia, segurança e simplicidade."
   }
 }
