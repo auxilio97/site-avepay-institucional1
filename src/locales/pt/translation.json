@@ -128,15 +128,16 @@
     ]
   },
   "integration": {
-    "title": "Integre a AvePay ao seu negócio",
-    "subtitle": "Integre a AvePay ao seu site, app ou sistema com nossa API multilíngue segura e bem documentada. Comece a aceitar pagamentos em minutos.",
+    "title": "Integração Poderosa e Flexível para o Seu Negócio",
+    "subtitle": "A nossa API RESTful foi desenhada para ser intuitiva e robusta, permitindo que integre pagamentos globais no seu site, aplicação ou sistema ERP com o mínimo de esforço. Oferecemos SDKs para as linguagens mais populares e documentação completa para acelerar o seu desenvolvimento.",
     "features": [
-      "Guias passo a passo",
-      "Exemplos de código",
-      "Sandbox para testes",
-      "Suporte técnico dedicado"
+      "Documentação Interativa e Guias Detalhados",
+      "SDKs e Exemplos de Código Prontos a Usar",
+      "Ambiente de Sandbox Completo para Testes Seguros",
+      "Suporte a Desenvolvedores por Especialistas",
+      "Webhooks para Notificações em Tempo Real"
     ],
-    "docs_title": "Documentação Completa",
+    "docs_title": "Recursos para Desenvolvedores",
     "more": "+ Mais"
   },
   "cta": {
