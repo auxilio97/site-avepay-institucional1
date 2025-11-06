@@ -12,6 +12,10 @@ const pageTitles: { [key: string]: string } = {
   '/about': 'about.title',
   '/contact': 'contact.title',
   '/terms': 'terms.title',
+  '/product': 'header.product',
+  '/services': 'header.services',
+  '/solutions': 'header.solutions',
+  '/how-it-works': 'header.howItWorks',
 };
 
 export const Breadcrumbs = () => {
