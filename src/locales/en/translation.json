@@ -463,5 +463,268 @@
         ]
       }
     ]
+  },
+  "services_page": {
+    "title": "🚀 <strong>SERVICES — AVEPAY</strong>",
+    "subtitle": "Complete Financial Infrastructure for Individuals, Businesses, and Financial Institutions",
+    "description": "AVEPAY offers an ecosystem of digital financial services designed to eliminate barriers, accelerate transactions, and enable your business to operate with efficiency, scale, and security — in Angola and worldwide. Each service is built with advanced technology, international compliance, and full integration with the Angolan and global financial system.",
+    "sections": [
+      {
+        "key": "gateway",
+        "icon": "CreditCard",
+        "title": "⭐ 1. Smart Payment Gateway",
+        "intro": "The heart of AVEPAY: a complete system for accepting payments quickly, securely, and seamlessly.",
+        "subsections": [
+          {
+            "title": "Accept multiple payment methods",
+            "items": [
+              "National and international cards",
+              "Bank transfers",
+              "Digital wallets",
+              "QR Code",
+              "Prepaid card (advanced phase)",
+              "Processing in various currencies"
+            ]
+          },
+          {
+            "title": "Smart features",
+            "items": [
+              "Real-time payment confirmation",
+              "Support for single and recurring payments",
+              "Automatic failure recovery",
+              "Card approval optimization",
+              "AI-based anti-fraud system"
+            ]
+          }
+        ],
+        "footer": "Ideal for E-commerce, service platforms, apps, businesses, and financial institutions."
+      },
+      {
+        "key": "links",
+        "icon": "Link",
+        "title": "⭐ 2. Payment Links & Express Payments",
+        "intro": "Receive payments without a website, without POS, and without complications.",
+        "subsections": [
+          {
+            "title": "How it works",
+            "items": [
+              "Generate a link in seconds",
+              "Send via WhatsApp, SMS, email, or social media",
+              "Receive the amount instantly in your AVEPAY wallet"
+            ]
+          },
+          {
+            "title": "Additional features",
+            "items": [
+              "Recurring links",
+              "Installment payments (in eligible markets)",
+              "Customization with logo and description",
+              "Clean and conversion-optimized payment page"
+            ]
+          }
+        ],
+        "footer": "The simplest method for those who sell services, make deliveries, teach classes, offer consulting, and direct sales."
+      },
+      {
+        "key": "dashboard",
+        "icon": "LayoutDashboard",
+        "title": "⭐ 3. Financial Management Platform (AVEPAY Dashboard)",
+        "intro": "A complete panel to control and automate your business's financial operations.",
+        "subsections": [
+          {
+            "title": "Real-time management",
+            "items": [
+              "Fund inflow and outflow",
+              "Sales analysis",
+              "Pending payments",
+              "Detailed history",
+              "Exportable reports"
+            ]
+          },
+          {
+            "title": "Automation",
+            "items": [
+              "Automatic notifications",
+              "Smart invoices",
+              "Scheduled payments",
+              "Automatic reconciliation"
+            ]
+          },
+          {
+            "title": "Indicators and metrics",
+            "items": [
+              "Fees and commissions",
+              "Campaign performance",
+              "Comparison by period",
+              "Advanced customer analysis"
+            ]
+          }
+        ],
+        "footer": null
+      },
+      {
+        "key": "invoicing",
+        "icon": "Receipt",
+        "title": "⭐ 4. Digital Invoicing & Receipt Issuance",
+        "intro": "Transform your company's collection process.",
+        "subsections": [
+          {
+            "title": "Issue invoices",
+            "items": [
+              "Automatically generated",
+              "With QR Code",
+              "With “Pay Now” button",
+              "With email or SMS notifications"
+            ]
+          },
+          {
+            "title": "Automatic receipts",
+            "items": [
+              "After payment confirmation",
+              "Integrated into customer history",
+              "With sequential numbering"
+            ]
+          }
+        ],
+        "footer": "Perfect for accounting, schools, clinics, offices, consulting, and freelancers."
+      },
+      {
+        "key": "api",
+        "icon": "Code",
+        "title": "⭐ 5. Integrations, API & Solutions for Developers",
+        "intro": "AVEPAY was built to integrate with any system.",
+        "subsections": [
+          {
+            "title": "Modern REST API",
+            "items": [
+              "Payments",
+              "Sub-accounts",
+              "Queries",
+              "Invoices",
+              "Events and Webhooks"
+            ]
+          },
+          {
+            "title": "SDKs and plugins",
+            "items": [
+              "WooCommerce",
+              "Shopify",
+              "Android and iOS Apps",
+              "Custom internal systems"
+            ]
+          },
+          {
+            "title": "Tools for developers",
+            "items": [
+              "Sandbox Dashboard for testing",
+              "Detailed logs",
+              "Sandbox Mode",
+              "Complete documentation"
+            ]
+          }
+        ],
+        "footer": "Fast integration for those who need flexibility and scalability."
+      },
+      {
+        "key": "security",
+        "icon": "ShieldCheck",
+        "title": "⭐ 6. International Level Security and Compliance",
+        "intro": "AVEPAY protects you and your customers with cutting-edge technology.",
+        "subsections": [
+          {
+            "title": "Protection layers",
+            "items": [
+              "Advanced encryption",
+              "Tokenization",
+              "2FA (two-factor authentication)",
+              "Smart anti-fraud system",
+              "Real-time monitoring"
+            ]
+          },
+          {
+            "title": "Compliance",
+            "items": [
+              "KYC (Know Your Customer)",
+              "KYB (Know Your Business)",
+              "AML (Anti-Money Laundering)",
+              "International PCI DSS standards",
+              "Data protection policies"
+            ]
+          }
+        ],
+        "footer": "Security is not a service: it is the foundation of our platform."
+      },
+      {
+        "key": "corporate",
+        "icon": "Building2",
+        "title": "⭐ 7. Solutions for Financial Institutions & Large Corporations",
+        "intro": "AVEPAY also provides infrastructure for banks, cooperatives, insurance companies, and fintechs.",
+        "subsections": [
+          {
+            "title": "What we offer",
+            "items": [
+              "Payment processing",
+              "Sub-accounts and multi-agencies",
+              "Automated bank reconciliation",
+              "Smart settlement and routing",
+              "Dedicated APIs for institutions",
+              "White Label for companies",
+              "Multi-user management tools"
+            ]
+          },
+          {
+            "title": "Benefits",
+            "items": [
+              "Reduction of operational costs",
+              "Acceleration of internal processes",
+              "Modernization of the financial system",
+              "Expansion into the digital ecosystem"
+            ]
+          }
+        ],
+        "footer": null
+      },
+      {
+        "key": "support",
+        "icon": "Headset",
+        "title": "⭐ 8. Premium Service and Support",
+        "intro": "You are not alone. We offer:",
+        "subsections": [
+          {
+            "title": null,
+            "items": [
+              "24/7 technical support",
+              "Dedicated commercial service",
+              "Integration consulting",
+              "Support for large corporations",
+              "Team trained in IT, security, and finance"
+            ]
+          }
+        ],
+        "footer": "AVEPAY accompanies every step of your growth."
+      },
+      {
+        "key": "roadmap",
+        "icon": "Rocket",
+        "title": "⭐ 9. Complementary Services (Roadmap and Expansion)",
+        "intro": "To make Angola a globally connected economy:",
+        "subsections": [
+          {
+            "title": null,
+            "items": [
+              "Multi-currency conversion",
+              "AVEPAY Cards (Visa, Mastercard, UnionPay)",
+              "International payments",
+              "Integration with tax systems",
+              "Issuance of virtual accounts in USD/EUR/GBP",
+              "Payment of public services",
+              "Advanced services for the 27PAY ecosystem"
+            ]
+          }
+        ],
+        "footer": null
+      }
+    ],
+    "conclusion": "🌍 AVEPAY is not just a service. It is the bridge that connects Angola to the global financial system and the global financial system to Angola."
   }
 }

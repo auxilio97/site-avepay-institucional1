@@ -234,7 +234,7 @@
     "fraud_p2": "9.2 如果发生退款或支付争议，用户同意 Avenatec 可根据合同条款扣留资金或撤销交易。",
     "fraud_p3": "9.3 用户必须在调查中与 Avenatec 合作，并赔偿因欺诈或违规造成的损失。",
     "termination_title": "10. 终止和暂停",
-    "termination_p1": "10.1 如果出现欺诈、高风险、违反本条款或监管命令的情况，Avenatec 可以暂停或终止用户的访问。",
+    "termination_p1": "10.1 如果出现欺诈、高风险或违反本条款或监管命令的情况，Avenatec 可以暂停或终止用户的访问。",
     "termination_p2": "10.2 服务终止后，用户必须结清所有未偿义务，并停止使用平台的权利。",
     "termination_p3": "10.3 保密、责任和费用条款在终止后仍然有效。",
     "changes_title": "11. 条款变更",
@@ -403,7 +403,7 @@
         "key": "ecommerce",
         "title": "⚙️ 1. 电子商务集成",
         "features": [
-          "与 <strong>WooCommerce、Shopify、WordPress、Laravel、React、Node.js</strong> 等框架兼容的插件和 API。",
+          "Plugins 和 API 兼容 <strong>WooCommerce、Shopify、WordPress、Laravel、React、Node.js</strong> 和其他框架。",
           "允许接受<strong>宽扎 (AOA)</strong> 和国际货币（美元、欧元等）的在线支付。",
           "支持<strong>透明结账</strong>、<strong>支付链接</strong>和<strong>定期付款</strong>。"
         ]
@@ -463,5 +463,268 @@
         ]
       }
     ]
+  },
+  "services_page": {
+    "title": "🚀 <strong>服务 — AVEPAY</strong>",
+    "subtitle": "为个人、企业和金融机构提供完整的金融基础设施",
+    "description": "AVEPAY 提供了一个数字金融服务生态系统，旨在消除障碍、加速交易，并使您的业务能够在安哥拉和全球范围内以效率、规模和安全的方式运营。每项服务都采用先进技术、国际合规性以及与安哥拉和全球金融系统的完全集成。",
+    "sections": [
+      {
+        "key": "gateway",
+        "icon": "CreditCard",
+        "title": "⭐ 1. 智能支付网关",
+        "intro": "AVEPAY 的核心：一个以快速、安全和集成方式接受付款的完整系统。",
+        "subsections": [
+          {
+            "title": "接受多种支付方式",
+            "items": [
+              "国内和国际卡",
+              "银行转账",
+              "数字钱包",
+              "二维码",
+              "预付卡（高级阶段）",
+              "多种货币处理"
+            ]
+          },
+          {
+            "title": "智能功能",
+            "items": [
+              "实时支付确认",
+              "支持单次和定期付款",
+              "自动故障恢复",
+              "卡批准优化",
+              "基于人工智能的反欺诈系统"
+            ]
+          }
+        ],
+        "footer": "适用于电子商务、服务平台、应用程序、企业和金融机构。"
+      },
+      {
+        "key": "links",
+        "icon": "Link",
+        "title": "⭐ 2. 支付链接和快捷支付",
+        "intro": "无需网站、无需 POS、无需复杂操作即可接收付款。",
+        "subsections": [
+          {
+            "title": "如何运作",
+            "items": [
+              "在几秒钟内生成链接",
+              "通过 WhatsApp、短信、电子邮件或社交媒体发送",
+              "在您的 AVEPAY 钱包中即时接收金额"
+            ]
+          },
+          {
+            "title": "附加功能",
+            "items": [
+              "定期链接",
+              "分期付款（在符合条件的市场）",
+              "使用徽标和描述进行个性化",
+              "简洁且针对转化优化的支付页面"
+            ]
+          }
+        ],
+        "footer": "适用于销售服务、送货、教学、咨询和直销的最简单方法。"
+      },
+      {
+        "key": "dashboard",
+        "icon": "LayoutDashboard",
+        "title": "⭐ 3. 财务管理平台（AVEPAY 仪表板）",
+        "intro": "一个完整的面板，用于控制和自动化您的业务财务运营。",
+        "subsections": [
+          {
+            "title": "实时管理",
+            "items": [
+              "资金流入和流出",
+              "销售分析",
+              "待处理付款",
+              "详细历史记录",
+              "可导出报告"
+            ]
+          },
+          {
+            "title": "自动化",
+            "items": [
+              "自动通知",
+              "智能发票",
+              "预定付款",
+              "自动对账"
+            ]
+          },
+          {
+            "title": "指标和衡量标准",
+            "items": [
+              "费用和佣金",
+              "活动绩效",
+              "按期间比较",
+              "高级客户分析"
+            ]
+          }
+        ],
+        "footer": null
+      },
+      {
+        "key": "invoicing",
+        "icon": "Receipt",
+        "title": "⭐ 4. 数字发票和收据开具",
+        "intro": "改变您公司的收款流程。",
+        "subsections": [
+          {
+            "title": "开具发票",
+            "items": [
+              "自动生成",
+              "带有二维码",
+              "带有“立即支付”按钮",
+              "带有电子邮件或短信通知"
+            ]
+          },
+          {
+            "title": "自动收据",
+            "items": [
+              "付款确认后",
+              "集成到客户历史记录中",
+              "带有顺序编号"
+            ]
+          }
+        ],
+        "footer": "非常适合会计、学校、诊所、办公室、咨询和自由职业者。"
+      },
+      {
+        "key": "api",
+        "icon": "Code",
+        "title": "⭐ 5. 集成、API 和开发者解决方案",
+        "intro": "AVEPAY 旨在与任何系统集成。",
+        "subsections": [
+          {
+            "title": "现代 REST API",
+            "items": [
+              "支付",
+              "子账户",
+              "查询",
+              "发票",
+              "事件和 Webhooks"
+            ]
+          },
+          {
+            "title": "SDK 和插件",
+            "items": [
+              "WooCommerce",
+              "Shopify",
+              "Android 和 iOS 应用程序",
+              "定制内部系统"
+            ]
+          },
+          {
+            "title": "开发者工具",
+            "items": [
+              "测试仪表板",
+              "详细日志",
+              "沙盒模式",
+              "完整文档"
+            ]
+          }
+        ],
+        "footer": "为需要灵活性和可扩展性的人提供快速集成。"
+      },
+      {
+        "key": "security",
+        "icon": "ShieldCheck",
+        "title": "⭐ 6. 国际级安全和合规性",
+        "intro": "AVEPAY 使用尖端技术保护您和您的客户。",
+        "subsections": [
+          {
+            "title": "保护层",
+            "items": [
+              "高级加密",
+              "令牌化",
+              "2FA（双因素身份验证）",
+              "智能反欺诈系统",
+              "实时监控"
+            ]
+          },
+          {
+            "title": "合规性",
+            "items": [
+              "KYC（了解您的客户）",
+              "KYB（了解您的业务）",
+              "AML（反洗钱）",
+              "国际 PCI DSS 标准",
+              "数据保护政策"
+            ]
+          }
+        ],
+        "footer": "安全不是一项服务：它是我们平台的基础。"
+      },
+      {
+        "key": "corporate",
+        "icon": "Building2",
+        "title": "⭐ 7. 金融机构和大型企业解决方案",
+        "intro": "AVEPAY 还为银行、合作社、保险公司和金融科技公司提供基础设施。",
+        "subsections": [
+          {
+            "title": "我们提供什么",
+            "items": [
+              "支付处理",
+              "子账户和多机构",
+              "自动银行对账",
+              "智能结算和路由",
+              "机构专用 API",
+              "企业白标",
+              "多用户管理工具"
+            ]
+          },
+          {
+            "title": "优势",
+            "items": [
+              "降低运营成本",
+              "加速内部流程",
+              "金融系统现代化",
+              "扩展到数字生态系统"
+            ]
+          }
+        ],
+        "footer": null
+      },
+      {
+        "key": "support",
+        "icon": "Headset",
+        "title": "⭐ 8. 高级服务和支持",
+        "intro": "您并不孤单。我们提供：",
+        "subsections": [
+          {
+            "title": null,
+            "items": [
+              "24/7 技术支持",
+              "专属商业服务",
+              "集成咨询",
+              "为大型企业提供支持",
+              "经过 IT、安全和金融培训的团队"
+            ]
+          }
+        ],
+        "footer": "AVEPAY 伴随您成长的每一步。"
+      },
+      {
+        "key": "roadmap",
+        "icon": "Rocket",
+        "title": "⭐ 9. 补充服务（路线图和扩展）",
+        "intro": "为了使安哥拉成为一个全球互联的经济体：",
+        "subsections": [
+          {
+            "title": null,
+            "items": [
+              "多币种转换",
+              "AVEPAY 卡（Visa、万事达卡、银联）",
+              "国际支付",
+              "与税务系统集成",
+              "发行 USD/EUR/GBP 虚拟账户",
+              "公共服务支付",
+              "27PAY 生态系统的高级服务"
+            ]
+          }
+        ],
+        "footer": null
+      }
+    ],
+    "conclusion": "🌍 AVEPAY 不仅仅是一项服务。它是连接安哥拉与全球金融系统以及全球金融系统与安哥拉的桥梁。"
   }
 }

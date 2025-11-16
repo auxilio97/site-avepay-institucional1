@@ -463,5 +463,268 @@
         ]
       }
     ]
+  },
+  "services_page": {
+    "title": "🚀 <strong>SERVIÇOS — AVEPAY</strong>",
+    "subtitle": "Infraestrutura Financeira Completa Para Pessoas, Empresas e Instituições Financeiras",
+    "description": "A AVEPAY oferece um ecossistema de serviços financeiros digitais projetado para eliminar barreiras, acelerar transações e permitir que o seu negócio opere com eficiência, escala e segurança — em Angola e no mundo. Cada serviço é construído com tecnologia avançada, conformidade internacional e integração total com o sistema financeiro angolano e global.",
+    "sections": [
+      {
+        "key": "gateway",
+        "icon": "CreditCard",
+        "title": "⭐ 1. Gateway de Pagamentos Inteligente",
+        "intro": "O coração da AVEPAY: um sistema completo para aceitar pagamentos de forma rápida, segura e integrada.",
+        "subsections": [
+          {
+            "title": "Aceite múltiplos métodos de pagamento",
+            "items": [
+              "Cartões nacionais e internacionais",
+              "Transferências bancárias",
+              "Wallets digitais",
+              "QR Code",
+              "Cartão pré-pago (fase avançada)",
+              "Processamento em diversas moedas"
+            ]
+          },
+          {
+            "title": "Funcionalidades inteligentes",
+            "items": [
+              "Confirmação de pagamento em tempo real",
+              "Suporte a pagamentos únicos e recorrentes",
+              "Recuperação automática de falhas",
+              "Otimização de aprovação de cartões",
+              "Sistema antifraude baseado em IA"
+            ]
+          }
+        ],
+        "footer": "Ideal para E-commerces, plataformas de serviço, apps, empresas e instituições financeiras."
+      },
+      {
+        "key": "links",
+        "icon": "Link",
+        "title": "⭐ 2. Links de Pagamento & Pagamentos Expressos",
+        "intro": "Receba pagamentos sem website, sem POS e sem complicações.",
+        "subsections": [
+          {
+            "title": "Como funciona",
+            "items": [
+              "Gere um link em segundos",
+              "Envie por WhatsApp, SMS, e-mail ou redes sociais",
+              "Receba o valor instantaneamente na sua carteira AVEPAY"
+            ]
+          },
+          {
+            "title": "Funcionalidades adicionais",
+            "items": [
+              "Links recorrentes",
+              "Pagamentos parcelados (em mercados elegíveis)",
+              "Personalização com logo e descrição",
+              "Página de pagamento limpa e otimizada para conversão"
+            ]
+          }
+        ],
+        "footer": "O método mais simples para quem vende serviços, faz entregas, aulas, consultorias e vendas diretas."
+      },
+      {
+        "key": "dashboard",
+        "icon": "LayoutDashboard",
+        "title": "⭐ 3. Plataforma de Gestão Financeira (Dashboard AVEPAY)",
+        "intro": "Um painel completo para controlar e automatizar as operações financeiras do seu negócio.",
+        "subsections": [
+          {
+            "title": "Gestão em tempo real",
+            "items": [
+              "Entrada e saída de fundos",
+              "Análises de vendas",
+              "Pagamentos pendentes",
+              "Histórico detalhado",
+              "Relatórios exportáveis"
+            ]
+          },
+          {
+            "title": "Automação",
+            "items": [
+              "Notificações automáticas",
+              "Faturas inteligentes",
+              "Pagamentos programados",
+              "Reconciliação automática"
+            ]
+          },
+          {
+            "title": "Indicadores e métricas",
+            "items": [
+              "Taxas e comissões",
+              "Desempenho de campanhas",
+              "Comparação por período",
+              "Análises avançadas por cliente"
+            ]
+          }
+        ],
+        "footer": null
+      },
+      {
+        "key": "invoicing",
+        "icon": "Receipt",
+        "title": "⭐ 4. Faturação Digital & Emissão de Recibos",
+        "intro": "Transforme o processo de cobrança da sua empresa.",
+        "subsections": [
+          {
+            "title": "Emitir faturas",
+            "items": [
+              "Geradas automaticamente",
+              "Com QR Code",
+              "Com botão “Pagar Agora”",
+              "Com notificações por e-mail ou SMS"
+            ]
+          },
+          {
+            "title": "Recibos automáticos",
+            "items": [
+              "Após a confirmação do pagamento",
+              "Integrados ao histórico do cliente",
+              "Com numeração sequencial"
+            ]
+          }
+        ],
+        "footer": "Perfeito para contabilidade, escolas, clínicas, escritórios, consultorias e freelancers."
+      },
+      {
+        "key": "api",
+        "icon": "Code",
+        "title": "⭐ 5. Integrações, API & Soluções para Developers",
+        "intro": "A AVEPAY foi construída para integrar-se a qualquer sistema.",
+        "subsections": [
+          {
+            "title": "API REST moderna",
+            "items": [
+              "Pagamentos",
+              "Subcontas",
+              "Consultas",
+              "Faturas",
+              "Eventos e Webhooks"
+            ]
+          },
+          {
+            "title": "SDKs e plugins",
+            "items": [
+              "WooCommerce",
+              "Shopify",
+              "Apps Android e iOS",
+              "Sistemas internos personalizados"
+            ]
+          },
+          {
+            "title": "Ferramentas para developers",
+            "items": [
+              "Dashboard para testes",
+              "Logs detalhados",
+              "Modo Sandbox",
+              "Documentação completa"
+            ]
+          }
+        ],
+        "footer": "Integração rápida para quem precisa de flexibilidade e escalabilidade."
+      },
+      {
+        "key": "security",
+        "icon": "ShieldCheck",
+        "title": "⭐ 6. Segurança e Compliance de Nível Internacional",
+        "intro": "A AVEPAY protege você e seus clientes com tecnologia de ponta.",
+        "subsections": [
+          {
+            "title": "Camadas de proteção",
+            "items": [
+              "Encriptação avançada",
+              "Tokenização",
+              "2FA (autenticação de dois fatores)",
+              "Sistema antifraude inteligente",
+              "Monitorização em tempo real"
+            ]
+          },
+          {
+            "title": "Compliance",
+            "items": [
+              "KYC (Know Your Customer)",
+              "KYB (Know Your Business)",
+              "AML (Anti-Money Laundering)",
+              "Padrões internacionais PCI DSS",
+              "Políticas de proteção de dados"
+            ]
+          }
+        ],
+        "footer": "Segurança não é um serviço: é a base da nossa plataforma."
+      },
+      {
+        "key": "corporate",
+        "icon": "Building2",
+        "title": "⭐ 7. Soluções para Instituições Financeiras & Grandes Empresas",
+        "intro": "A AVEPAY também fornece infraestrutura para bancos, cooperativas, seguradoras e fintechs.",
+        "subsections": [
+          {
+            "title": "O que oferecemos",
+            "items": [
+              "Processamento de pagamentos",
+              "Subcontas e multiagências",
+              "Conciliação bancária automatizada",
+              "Liquidação e roteamento inteligente",
+              "APIs dedicadas para instituições",
+              "White Label para empresas",
+              "Ferramentas de gestão multiusuário"
+            ]
+          },
+          {
+            "title": "Benefícios",
+            "items": [
+              "Redução de custos operacionais",
+              "Aceleração de processos internos",
+              "Modernização do sistema financeiro",
+              "Expansão para o ecossistema digital"
+            ]
+          }
+        ],
+        "footer": null
+      },
+      {
+        "key": "support",
+        "icon": "Headset",
+        "title": "⭐ 8. Atendimento e Suporte Premium",
+        "intro": "Você não está sozinho. Oferecemos:",
+        "subsections": [
+          {
+            "title": null,
+            "items": [
+              "Suporte técnico 24/7",
+              "Atendimento comercial dedicado",
+              "Consultoria de integração",
+              "Acompanhamento para grandes empresas",
+              "Equipa treinada em TI, segurança e finanças"
+            ]
+          }
+        ],
+        "footer": "A AVEPAY acompanha cada etapa do seu crescimento."
+      },
+      {
+        "key": "roadmap",
+        "icon": "Rocket",
+        "title": "⭐ 9. Serviços Complementares (Roadmap e Expansão)",
+        "intro": "Para tornar Angola uma economia conectada globalmente:",
+        "subsections": [
+          {
+            "title": null,
+            "items": [
+              "Conversão multimoeda",
+              "Cartões AVEPAY (Visa, Mastercard, UnionPay)",
+              "Pagamentos internacionais",
+              "Integração com sistemas fiscais",
+              "Emissão de contas virtuais em USD/EUR/GBP",
+              "Pagamento de serviços públicos",
+              "Serviços avançados para o ecossistema 27PAY"
+            ]
+          }
+        ],
+        "footer": null
+      }
+    ],
+    "conclusion": "🌍 A AVEPAY não é apenas um serviço. É a ponte que liga Angola ao sistema financeiro global e o sistema financeiro global a angola."
   }
 }
