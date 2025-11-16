@@ -394,5 +394,74 @@
       }
     ],
     "summary": "💬 <strong>En résumé :</strong> Le produit AvePay est une <strong>plateforme de paiement complète</strong>, conçue pour connecter les entreprises et les clients grâce à la technologie, la sécurité et la simplicité."
+  },
+  "solutions_page": {
+    "title": "💳 Solutions AvePay",
+    "subtitle": "AvePay est une passerelle de paiement numérique qui connecte les entreprises, les clients et les institutions financières via une plateforme moderne, sécurisée et intégrée. L'objectif est de simplifier les paiements en ligne et en personne, en offrant technologie, rapidité et fiabilité aux entreprises de toutes tailles.",
+    "solutions": [
+      {
+        "key": "ecommerce",
+        "title": "⚙️ 1. Intégration E-commerce",
+        "features": [
+          "Plugins et API compatibles avec <strong>WooCommerce, Shopify, WordPress, Laravel, React, Node.js</strong> et d'autres frameworks.",
+          "Permet d'accepter les paiements en ligne en <strong>Kwanza (AOA)</strong> et en devises internationales (USD, EUR, etc.).",
+          "Prise en charge du <strong>paiement transparent</strong>, des <strong>liens de paiement</strong> et des <strong>paiements récurrents</strong>."
+        ]
+      },
+      {
+        "key": "gateway",
+        "title": "💡 2. Passerelle de Paiement Sécurisée",
+        "features": [
+          "Traitement instantané avec <strong>cryptage avancé</strong> et <strong>authentification à deux facteurs</strong>.",
+          "Conformité aux normes <strong>PCI DSS</strong> et <strong>protection anti-fraude</strong> en temps réel.",
+          "Rapports de transaction détaillés et rapprochement automatique."
+        ]
+      },
+      {
+        "key": "multichannel",
+        "title": "📲 3. Paiements Multicanaux",
+        "features": [
+          "Accepte les <strong>cartes, virements, portefeuilles numériques et QR Code</strong>.",
+          "Prise en charge des <strong>TPV physiques et terminaux mobiles</strong>, intégrant les magasins physiques et en ligne.",
+          "Lien de paiement via <strong>WhatsApp, SMS ou e-mail</strong> pour les petites entreprises."
+        ]
+      },
+      {
+        "key": "fintech",
+        "title": "🌍 4. Solutions pour Entreprises et Fintechs",
+        "features": [
+          "API ouverte pour l'intégration de <strong>systèmes financiers et de fintechs partenaires</strong>.",
+          "Création de <strong>sous-comptes</strong>, <strong>partage des paiements</strong> et gestion des commissions.",
+          "Panneau d'administration pour la gestion des transactions, des utilisateurs et des rapports."
+        ]
+      },
+      {
+        "key": "corporate",
+        "title": "💼 5. Paiements d'Entreprise",
+        "features": [
+          "Système de <strong>paiement de masse</strong> pour les salaires et les fournisseurs.",
+          "Gestion des <strong>portefeuilles numériques d'entreprise</strong> avec contrôle des limites et des accès.",
+          "Tableau de bord financier complet avec filtres par date, canal et statut."
+        ]
+      },
+      {
+        "key": "tech",
+        "title": "🔒 6. Technologie et Innovation",
+        "features": [
+          "Infrastructure <strong>cloud évolutive et redondante</strong>.",
+          "<strong>API RESTful</strong> haute performance et documentation technique complète.",
+          "Surveillance 24/7 et <strong>SLA garanti</strong> pour les opérations critiques."
+        ]
+      },
+      {
+        "key": "support",
+        "title": "✨ 7. Expérience et Support",
+        "features": [
+          "Interface moderne et intuitive, conçue pour la <strong>facilité et la confiance</strong>.",
+          "Équipe de <strong>support technique et commercial disponible 24h/24</strong>.",
+          "Matériel d'intégration, tutoriels et sandbox pour les développeurs."
+        ]
+      }
+    ]
   }
 }

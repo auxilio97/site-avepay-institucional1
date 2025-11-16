@@ -394,5 +394,74 @@
       }
     ],
     "summary": "💬 <strong>总而言之：</strong>AvePay 产品是一个<strong>完整的支付平台</strong>，旨在通过技术、安全和简单性连接企业和客户。"
+  },
+  "solutions_page": {
+    "title": "💳 AvePay 解决方案",
+    "subtitle": "AvePay 是一个数字支付网关，通过一个现代化、安全和集成的平台连接企业、客户和金融机构。目标是简化在线和现场支付，为各种规模的企业提供技术、速度和可靠性。",
+    "solutions": [
+      {
+        "key": "ecommerce",
+        "title": "⚙️ 1. 电子商务集成",
+        "features": [
+          "与 <strong>WooCommerce、Shopify、WordPress、Laravel、React、Node.js</strong> 等框架兼容的插件和 API。",
+          "允许接受<strong>宽扎 (AOA)</strong> 和国际货币（美元、欧元等）的在线支付。",
+          "支持<strong>透明结账</strong>、<strong>支付链接</strong>和<strong>定期付款</strong>。"
+        ]
+      },
+      {
+        "key": "gateway",
+        "title": "💡 2. 安全支付网关",
+        "features": [
+          "使用<strong>高级加密</strong>和<strong>两步验证</strong>进行即时处理。",
+          "符合 <strong>PCI DSS</strong> 标准和实时<strong>欺诈保护</strong>。",
+          "详细的交易报告和自动对账。"
+        ]
+      },
+      {
+        "key": "multichannel",
+        "title": "📲 3. 多渠道支付",
+        "features": [
+          "接受<strong>银行卡、转账、数字钱包和二维码</strong>。",
+          "支持<strong>实体 POS 和移动终端</strong>，整合实体店和在线商店。",
+          "通过 <strong>WhatsApp、短信或电子邮件</strong>为小企业提供支付链接。"
+        ]
+      },
+      {
+        "key": "fintech",
+        "title": "🌍 4. 企业和金融科技解决方案",
+        "features": [
+          "用于集成<strong>金融系统和合作伙伴金融科技</strong>的开放 API。",
+          "创建<strong>子账户</strong>、<strong>分账</strong>和佣金管理。",
+          "用于管理交易、用户和报告的管理面板。"
+        ]
+      },
+      {
+        "key": "corporate",
+        "title": "💼 5. 企业支付",
+        "features": [
+          "用于工资和供应商的<strong>批量支付</strong>系统。",
+          "管理<strong>企业数字钱包</strong>，控制限额和访问权限。",
+          "按日期、渠道和状态筛选的完整财务仪表板。"
+        ]
+      },
+      {
+        "key": "tech",
+        "title": "🔒 6. 技术与创新",
+        "features": [
+          "<strong>可扩展和冗余的云端</strong>基础设施。",
+          "高性能 <strong>RESTful API</strong> 和完整的技术文档。",
+          "24/7 监控和关键操作的<strong>保证 SLA</strong>。"
+        ]
+      },
+      {
+        "key": "support",
+        "title": "✨ 7. 体验与支持",
+        "features": [
+          "现代化直观的界面，专为<strong>便捷和信任</strong>而设计。",
+          "提供 <strong>24 小时技术和商业支持团队</strong>。",
+          "为开发者提供集成材料、教程和沙盒。"
+        ]
+      }
+    ]
   }
 }
