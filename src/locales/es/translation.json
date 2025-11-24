@@ -279,7 +279,7 @@
     "who_we_are_p1": "<strong>Avenatec Lda</strong> es una <strong>startup tecnológica angoleña</strong> especializada en <strong>pagos, comunicación digital y soluciones empresariales integradas</strong>. Con oficinas en <strong>Luanda</strong>, desarrolla <strong>software, pasarelas, API, sistemas de facturación, comercio electrónico y servicios en la nube</strong>, con el objetivo de <strong>posicionar a Angola como un centro de innovación digital en África</strong>.",
     "who_we_are_p2": "Creemos que el futuro de los pagos es <strong>global, seguro y sin fronteras</strong>. Por ello, cada solución de AvePay está diseñada para ofrecer <strong>libertad, escalabilidad y rendimiento</strong>, adaptándose a las necesidades de startups, empresas e instituciones de cualquier tamaño.",
     "contact_title": "📞 <strong>Contactos</strong>",
-    "contact_text": "<strong>Avenatec – Tecnologia e Comunicação, SU, Lda</strong><br />📍 Luanda – Angola<br />📧 avepay@avenatec.it.com | 🌐 avepay.avenatec.com | avenatec.it.com<br />📱 (+244) 935 325 003"
+    "contact_text": "<strong>Avenatec – Tecnologia e Comunicação, SU, Lda</strong><br />📍 Luanda – Angola<br />📧 avepay@avenatec.it.com<br />Teléfono: +244 935 325 003<br />Dirección: Luanda, Ingombota"
   },
   "contact": {
     "title": "Póngase en Contacto",
@@ -671,15 +671,6 @@
               "Marca Blanca para empresas",
               "Herramientas de gestión multiusuario"
             ]
-          },
-          {
-            "title": "Beneficios",
-            "items": [
-              "Reducción de costos operativos",
-              "Aceleración de procesos internos",
-              "Modernización del sistema financiero",
-              "Expansión al ecosistema digital"
-            ]
           }
         ],
         "footer": null
@@ -726,5 +717,235 @@
       }
     ],
     "conclusion": "🌍 La AVEPAY no es solo un servicio. Es el puente que conecta Angola con el sistema financiero global y el sistema financiero global con Angola."
+  },
+  "how_it_works_page": {
+    "title": "⚙️ 4. CÓMO FUNCIONA — AVEPAY",
+    "subtitle": "La tecnología adecuada, en el flujo correcto, para pagos rápidos, seguros y sin fronteras. AVEPAY fue construida para ser simple en la superficie y potente por dentro. Cada proceso, desde la creación de la cuenta hasta la liquidación de los pagos, está diseñado para ofrecer velocidad, seguridad, integración total y una experiencia intuitiva para empresas, profesionales y usuarios comunes.",
+    "sections": [
+      {
+        "key": "account",
+        "icon": "User",
+        "title": "🔹 1. Cree su Cuenta AVEPAY (Persona o Empresa)",
+        "intro": "El primer paso es registrarse en la plataforma:",
+        "subsections": [
+          {
+            "title": null,
+            "items": [
+              "Informe sus datos personales o empresariales",
+              "Complete el proceso de verificación KYC/KYB",
+              "Active la cuenta con autenticación segura (2FA)",
+              "Acceda al panel de control completo inmediatamente"
+            ]
+          }
+        ],
+        "footer": "En menos de 5 minutos, su cuenta puede estar lista para recibir pagos."
+      },
+      {
+        "key": "multiwallet",
+        "icon": "Wallet",
+        "title": "🔹 2. Configure su Billetera Multidivisa (Multiwallet)",
+        "intro": "Después de activar la cuenta, tendrá acceso a una billetera digital capaz de operar en:",
+        "subsections": [
+          {
+            "title": "Kwanza (AOA), Dólar (USD), Euro (EUR), Libra (GBP), Rand (ZAR), Naira (NGN), Real (BRL), Yuan (CNY), Yen (JPY), Criptomonedas seleccionadas",
+            "items": [
+              "Cuentas virtuales por moneda",
+              "Gestión separada para subcuentas",
+              "Perfiles de usuario y permisos internos (empresas)"
+            ]
+          }
+        ],
+        "footer": "Todo integrado en un solo panel."
+      },
+      {
+        "key": "receive",
+        "icon": "CreditCard",
+        "title": "🔹 3. Elija Cómo Quiere Recibir Pagos",
+        "intro": "AVEPAY ofrece varios métodos para que empresas y profesionales reciban dinero de forma simple:",
+        "subsections": [
+          {
+            "title": "a) Pasarela de Pagos",
+            "items": [
+              "Integre a su sitio web, aplicación o tienda.",
+              "Acepte tarjetas, transferencias bancarias, pagos digitales y monedas internacionales."
+            ]
+          },
+          {
+            "title": "b) Enlaces de Pago",
+            "items": [
+              "Cree un enlace → envíe al cliente → reciba al instante."
+            ]
+          },
+          {
+            "title": "c) TPV Virtual",
+            "items": [
+              "Ideal para ventas presenciales y llamadas de videoconferencia."
+            ]
+          },
+          {
+            "title": "d) Integración por API",
+            "items": [
+              "Para sistemas personalizados o plataformas tecnológicas."
+            ]
+          },
+          {
+            "title": "e) Pago por Código QR",
+            "items": [
+              "Genere un QR dinámicamente y permita al cliente pagar en segundos."
+            ]
+          }
+        ],
+        "footer": null
+      },
+      {
+        "key": "payment",
+        "icon": "CreditCard",
+        "title": "🔹 4. El Cliente Realiza el Pago",
+        "intro": "El cliente elige el método y paga:",
+        "subsections": [
+          {
+            "title": null,
+            "items": [
+              "La plataforma procesa los datos",
+              "Aplica seguridad, validación y antifraude",
+              "Realiza la conversión automática si es necesario",
+              "Confirma el pago en tiempo real",
+              "Registra inmediatamente en su billetera AVEPAY"
+            ]
+          }
+        ],
+        "footer": "Todo esto sucede en menos de 3 segundos (dependiendo de la red adquirente)."
+      },
+      {
+        "key": "notifications",
+        "icon": "Bell",
+        "title": "🔹 5. Confirmación y Notificaciones Instantáneas",
+        "intro": "Tan pronto como se completa el pago, usted recibe:",
+        "subsections": [
+          {
+            "title": "Para usted:",
+            "items": [
+              "Notificación en el panel de control",
+              "Alerta por correo electrónico",
+              "Alerta por WhatsApp (opcional)",
+              "Actualización automática de la factura o recibo"
+            ]
+          },
+          {
+            "title": "Y para el cliente:",
+            "items": [
+              "Recibo automático",
+              "Confirmación de pago",
+              "Código o ID de la transacción",
+              "Estado de la compra actualizado"
+            ]
+          }
+        ],
+        "footer": null
+      },
+      {
+        "key": "management",
+        "icon": "BarChart",
+        "title": "🔹 6. Gestión Completa y Automática de las Finanzas",
+        "intro": "Todo pago se organiza en el panel de control:",
+        "subsections": [
+          {
+            "title": null,
+            "items": [
+              "Historial de transacciones",
+              "Informes financieros",
+              "Control de entrada y salida",
+              "Comparación por períodos",
+              "Detalles del cliente y factura",
+              "Exportación para contabilidad (CSV, PDF, Excel)",
+              "Integración con herramientas externas"
+            ]
+          }
+        ],
+        "footer": "La automatización elimina hasta el 80% del trabajo manual."
+      },
+      {
+        "key": "withdrawals",
+        "icon": "ArrowRightLeft",
+        "title": "🔹 7. Retiros, Levantamientos y Transferencias",
+        "intro": "El dinero disponible en la billetera AVEPAY puede ser:",
+        "subsections": [
+          {
+            "title": "Opciones de movimiento:",
+            "items": [
+              "Transferido a bancos nacionales",
+              "Transferido a bancos internacionales",
+              "Convertido a otra moneda",
+              "Movido entre subcuentas internas",
+              "Enviado a otros usuarios AVEPAY"
+            ]
+          },
+          {
+            "title": "Para usuarios del ecosistema 27PAY, también será posible:",
+            "items": [
+              "Retirar en diversas monedas",
+              "Emitir tarjeta Visa/Mastercard",
+              "Pagar servicios públicos y privados",
+              "Conectar instituciones de crédito"
+            ]
+          }
+        ],
+        "footer": null
+      },
+      {
+        "key": "security",
+        "icon": "Shield",
+        "title": "🔹 8. Seguridad y Cumplimiento en Cada Paso",
+        "intro": "Cada operación pasa por:",
+        "subsections": [
+          {
+            "title": null,
+            "items": [
+              "Cifrado avanzado",
+              "Tokenización de tarjeta",
+              "Sistema antifraude",
+              "Monitorización por IA",
+              "Estándares internacionales (PCI DSS)",
+              "Auditoría interna automática",
+              "Verificación continua de identidad",
+              "Protección contra el blanqueo de dinero (AML)"
+            ]
+          }
+        ],
+        "footer": "La seguridad es invisible para el cliente, pero está activa el 100% del tiempo."
+      },
+      {
+        "key": "support",
+        "icon": "Headset",
+        "title": "🔹 9. Soporte y Asistencia Premium 24/7",
+        "intro": "Siempre que lo necesite, el equipo AVEPAY ofrece:",
+        "subsections": [
+          {
+            "title": null,
+            "items": [
+              "Soporte técnico",
+              "Consultoría de integración",
+              "Orientación para empresas",
+              "Acompañamiento VIP para grandes cuentas",
+              "Documentación completa y actualizada"
+            ]
+          }
+        ],
+        "footer": null
+      }
+    ],
+    "summary": {
+      "title": "🔥 En resumen: Cómo Funciona AvePay",
+      "items": [
+        "Usted crea la cuenta.",
+        "Activa la billetera multidivisa.",
+        "Elige cómo desea recibir pagos.",
+        "El cliente paga.",
+        "La transacción es validada y confirmada.",
+        "El valor entra en su billetera.",
+        "Usted transfiere, retira o reinvierte.",
+        "La plataforma automatiza todo."
+      ]
+    }
   }
 }

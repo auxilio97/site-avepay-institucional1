@@ -671,15 +671,6 @@
               "White Label for companies",
               "Multi-user management tools"
             ]
-          },
-          {
-            "title": "Benefits",
-            "items": [
-              "Reduction of operational costs",
-              "Acceleration of internal processes",
-              "Modernization of the financial system",
-              "Expansion into the digital ecosystem"
-            ]
           }
         ],
         "footer": null
@@ -726,5 +717,235 @@
       }
     ],
     "conclusion": "🌍 AVEPAY is not just a service. It is the bridge that connects Angola to the global financial system and the global financial system to Angola."
+  },
+  "how_it_works_page": {
+    "title": "⚙️ 4. HOW IT WORKS — AVEPAY",
+    "subtitle": "The right technology, in the right flow, for fast, secure, and borderless payments. AVEPAY was built to be simple on the surface and powerful inside. Every process — from account creation to payment settlement — is designed to offer speed, security, full integration, and an intuitive experience for businesses, professionals, and ordinary users.",
+    "sections": [
+      {
+        "key": "account",
+        "icon": "User",
+        "title": "🔹 1. Create Your AVEPAY Account (Individual or Business)",
+        "intro": "The first step is to register on the platform:",
+        "subsections": [
+          {
+            "title": null,
+            "items": [
+              "Provide your personal or business data",
+              "Complete the KYC/KYB verification process",
+              "Activate the account with secure authentication (2FA)",
+              "Access the full dashboard immediately"
+            ]
+          }
+        ],
+        "footer": "In less than 5 minutes, your account can be ready to receive payments."
+      },
+      {
+        "key": "multiwallet",
+        "icon": "Wallet",
+        "title": "🔹 2. Configure Your Multi-currency Wallet (Multiwallet)",
+        "intro": "After activating the account, you will have access to a digital wallet capable of operating in:",
+        "subsections": [
+          {
+            "title": "Kwanza (AOA), Dollar (USD), Euro (EUR), Pound (GBP), Rand (ZAR), Naira (NGN), Real (BRL), Yuan (CNY), Yen (JPY), Selected Cryptocurrencies",
+            "items": [
+              "Virtual accounts per currency",
+              "Separate management for sub-accounts",
+              "User profiles and internal permissions (businesses)"
+            ]
+          }
+        ],
+        "footer": "Everything integrated into a single panel."
+      },
+      {
+        "key": "receive",
+        "icon": "CreditCard",
+        "title": "🔹 3. Choose How You Want to Receive Payments",
+        "intro": "AVEPAY offers several methods for businesses and professionals to receive money simply:",
+        "subsections": [
+          {
+            "title": "a) Payment Gateway",
+            "items": [
+              "Integrate with your website, app, or store.",
+              "Accept cards, bank transfers, digital payments, and international currencies."
+            ]
+          },
+          {
+            "title": "b) Payment Links",
+            "items": [
+              "Create a link → send to the customer → receive instantly."
+            ]
+          },
+          {
+            "title": "c) Virtual POS",
+            "items": [
+              "Ideal for in-person sales and video conference calls."
+            ]
+          },
+          {
+            "title": "d) API Integration",
+            "items": [
+              "For custom systems or technological platforms."
+            ]
+          },
+          {
+            "title": "e) QR Code Payment",
+            "items": [
+              "Dynamically generate a QR and allow the customer to pay in seconds."
+            ]
+          }
+        ],
+        "footer": null
+      },
+      {
+        "key": "payment",
+        "icon": "CreditCard",
+        "title": "🔹 4. Customer Makes the Payment",
+        "intro": "The customer chooses the method and pays:",
+        "subsections": [
+          {
+            "title": null,
+            "items": [
+              "The platform processes the data",
+              "Applies security, validation, and anti-fraud measures",
+              "Performs automatic conversion if necessary",
+              "Confirms the payment in real-time",
+              "Registers immediately in your AVEPAY wallet"
+            ]
+          }
+        ],
+        "footer": "All this happens in less than 3 seconds (depending on the acquiring network)."
+      },
+      {
+        "key": "notifications",
+        "icon": "Bell",
+        "title": "🔹 5. Confirmation and Instant Notifications",
+        "intro": "As soon as the payment is completed, you receive:",
+        "subsections": [
+          {
+            "title": "For you:",
+            "items": [
+              "Notification on the dashboard",
+              "Email alert",
+              "WhatsApp alert (optional)",
+              "Automatic update of the invoice or receipt"
+            ]
+          },
+          {
+            "title": "And for the customer:",
+            "items": [
+              "Automatic receipt",
+              "Payment confirmation",
+              "Transaction code or ID",
+              "Updated purchase status"
+            ]
+          }
+        ],
+        "footer": null
+      },
+      {
+        "key": "management",
+        "icon": "BarChart",
+        "title": "🔹 6. Complete and Automatic Financial Management",
+        "intro": "Every payment is organized in the dashboard:",
+        "subsections": [
+          {
+            "title": null,
+            "items": [
+              "Transaction history",
+              "Financial reports",
+              "Inflow and outflow control",
+              "Comparison by periods",
+              "Customer and invoice details",
+              "Export for accounting (CSV, PDF, Excel)",
+              "Integration with external tools"
+            ]
+          }
+        ],
+        "footer": "Automation removes up to 80% of manual work."
+      },
+      {
+        "key": "withdrawals",
+        "icon": "ArrowRightLeft",
+        "title": "🔹 7. Withdrawals, Transfers, and Payments",
+        "intro": "The money available in the AVEPAY wallet can be:",
+        "subsections": [
+          {
+            "title": "Movement options:",
+            "items": [
+              "Transferred to national banks",
+              "Transferred to international banks",
+              "Converted to another currency",
+              "Moved between internal sub-accounts",
+              "Sent to other AVEPAY users"
+            ]
+          },
+          {
+            "title": "For users of the 27PAY ecosystem, it will also be possible to:",
+            "items": [
+              "Withdraw in various currencies",
+              "Issue Visa/Mastercard card",
+              "Pay public and private services",
+              "Connect credit institutions"
+            ]
+          }
+        ],
+        "footer": null
+      },
+      {
+        "key": "security",
+        "icon": "Shield",
+        "title": "🔹 8. Security and Compliance at Every Step",
+        "intro": "Every operation goes through:",
+        "subsections": [
+          {
+            "title": null,
+            "items": [
+              "Advanced encryption",
+              "Card tokenization",
+              "Anti-fraud system",
+              "AI monitoring",
+              "International standards (PCI DSS)",
+              "Automatic internal audit",
+              "Continuous identity verification",
+              "Anti-money laundering protection (AML)"
+            ]
+          }
+        ],
+        "footer": "Security is invisible to the customer but is 100% active all the time."
+      },
+      {
+        "key": "support",
+        "icon": "Headset",
+        "title": "🔹 9. Premium 24/7 Support and Assistance",
+        "intro": "Whenever you need it, the AVEPAY team offers:",
+        "subsections": [
+          {
+            "title": null,
+            "items": [
+              "Technical support",
+              "Integration consulting",
+              "Guidance for businesses",
+              "VIP support for large accounts",
+              "Complete and updated documentation"
+            ]
+          }
+        ],
+        "footer": null
+      }
+    ],
+    "summary": {
+      "title": "🔥 In summary: How AvePay Works",
+      "items": [
+        "You create the account.",
+        "Activate the multi-currency wallet.",
+        "Choose how you want to receive payments.",
+        "The customer pays.",
+        "The transaction is validated and confirmed.",
+        "The amount enters your wallet.",
+        "You transfer, withdraw, or reinvest.",
+        "The platform automates everything."
+      ]
+    }
   }
 }
